@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<net name="flashvsr_plus_text_bf16" version="11">
+	<layers>
+		<layer id="0" name="prompt" type="Parameter" version="opset1">
+			<data shape="1,512,4096" element_type="bf16" />
+			<output>
+				<port id="0" precision="BF16" names="prompt">
+					<dim>1</dim>
+					<dim>512</dim>
+					<dim>4096</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="1" name="weight__text_embedding_0_weight" type="Parameter" version="opset1">
+			<data shape="1536,4096" element_type="bf16" />
+			<output>
+				<port id="0" precision="BF16" names="weight__text_embedding_0_weight">
+					<dim>1536</dim>
+					<dim>4096</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="2" name="weight__text_embedding_0_bias" type="Parameter" version="opset1">
+			<data shape="1536" element_type="bf16" />
+			<output>
+				<port id="0" precision="BF16" names="weight__text_embedding_0_bias">
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="3" name="weight__text_embedding_2_weight" type="Parameter" version="opset1">
+			<data shape="1536,1536" element_type="bf16" />
+			<output>
+				<port id="0" precision="BF16" names="weight__text_embedding_2_weight">
+					<dim>1536</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="4" name="weight__text_embedding_2_bias" type="Parameter" version="opset1">
+			<data shape="1536" element_type="bf16" />
+			<output>
+				<port id="0" precision="BF16" names="weight__text_embedding_2_bias">
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="5" name="MatMul_6" type="MatMul" version="opset1">
+			<data transpose_a="false" transpose_b="true" />
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>512</dim>
+					<dim>4096</dim>
+				</port>
+				<port id="1" precision="BF16">
+					<dim>1536</dim>
+					<dim>4096</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="BF16">
+					<dim>1</dim>
+					<dim>512</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="6" name="Add_7" type="Add" version="opset1">
+			<data auto_broadcast="numpy" />
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>512</dim>
+					<dim>1536</dim>
+				</port>
+				<port id="1" precision="BF16">
+					<dim>1536</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="BF16" names="text_linear">
+					<dim>1</dim>
+					<dim>512</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="7" name="Gelu_8" type="Gelu" version="opset7">
+			<data approximation_mode="TANH" />
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>512</dim>
+					<dim>1536</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="BF16">
+					<dim>1</dim>
+					<dim>512</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="8" name="MatMul_9" type="MatMul" version="opset1">
+			<data transpose_a="false" transpose_b="true" />
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>512</dim>
+					<dim>1536</dim>
+				</port>
+				<port id="1" precision="BF16">
+					<dim>1536</dim>
+					<dim>1536</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="BF16">
+					<dim>1</dim>
+					<dim>512</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="9" name="Add_10" type="Add" version="opset1">
+			<data auto_broadcast="numpy" />
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>512</dim>
+					<dim>1536</dim>
+				</port>
+				<port id="1" precision="BF16">
+					<dim>1536</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="BF16" names="context">
+					<dim>1</dim>
+					<dim>512</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="10" name="Result_11" type="Result" version="opset1" output_names="context">
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>512</dim>
+					<dim>1536</dim>
+				</port>
+			</input>
+		</layer>
+		<layer id="11" name="Result_12" type="Result" version="opset1" output_names="text_linear">
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>512</dim>
+					<dim>1536</dim>
+				</port>
+			</input>
+		</layer>
+	</layers>
+	<edges>
+		<edge from-layer="0" from-port="0" to-layer="5" to-port="0" />
+		<edge from-layer="1" from-port="0" to-layer="5" to-port="1" />
+		<edge from-layer="2" from-port="0" to-layer="6" to-port="1" />
+		<edge from-layer="3" from-port="0" to-layer="8" to-port="1" />
+		<edge from-layer="4" from-port="0" to-layer="9" to-port="1" />
+		<edge from-layer="5" from-port="2" to-layer="6" to-port="0" />
+		<edge from-layer="6" from-port="2" to-layer="7" to-port="0" />
+		<edge from-layer="6" from-port="2" to-layer="11" to-port="0" />
+		<edge from-layer="7" from-port="1" to-layer="8" to-port="0" />
+		<edge from-layer="8" from-port="2" to-layer="9" to-port="0" />
+		<edge from-layer="9" from-port="2" to-layer="10" to-port="0" />
+	</edges>
+	<rt_info />
+</net>

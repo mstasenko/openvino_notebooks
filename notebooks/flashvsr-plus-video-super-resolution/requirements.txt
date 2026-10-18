@@ -1,0 +1,10 @@
+# Convenience dependencies for the Python reference helpers.
+# The qualified OpenVINO runtime is a pinned 2026.5 development build and is
+# intentionally not replaced by an unconstrained pip wheel here.
+numpy
+safetensors
+Pillow
+opencv-python
+einops
+tqdm
+torch

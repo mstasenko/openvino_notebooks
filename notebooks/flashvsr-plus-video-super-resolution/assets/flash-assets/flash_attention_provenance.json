@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "role": "shared direct, precise-cross, and split-4 BF16 attention",
+  "historical_split_source": {
+    "kernel": "evidence/attention_splitkey_20261017.cl",
+    "kernel_sha256": "7c0f81254adaa8d2363e0a5eba3e32c01eaf0fa5c28e9f09ed92b3b2e1269f08",
+    "config": "evidence/attention_splitkey_20261017.xml",
+    "config_sha256": "364d6856031f0c8e5691ad51fd2764de87cc7736285ecab0aaff83fb5fcf1740"
+  },
+  "adaptation": "One shared source implements direct/precise-cross and split partial/merge. B580 retains SIMD16 DPAS with 2D block IO. A770 uses SIMD8 DPAS with raw-word scalar loads and probability shuffles, selected at compile time when 2D block IO is absent. Both use the same raw-BF16 and FP32 partial-buffer ABI. A770 split partial uses repeat-eight DPAS in one active subgroup to reuse K/V across the existing eight-query tile; direct and merge retain two four-row subgroups. The 16-thread XML workgroup and output ABI are unchanged.",
+  "assets": {
+    "plus_sparse_xmx.cl": {
+      "bytes": 25101,
+      "sha256": "eef7a585e37c4277d764fbe5f62110a012d68b02db0be4e852c722edc75738c2"
+    },
+    "plus_split_key.xml": {
+      "bytes": 1196,
+      "sha256": "47d707b6b4918d649607e5aa989fdd658f39ae438960376e01e48bbe7ed7930d"
+    }
+  },
+  "binary_prefix_candidate": {
+    "macro": "OTC_BINARY_PREFIX",
+    "scope": "split partial only",
+    "precondition": "packed IDs are a contiguous nonnegative prefix followed by -1",
+    "qualification": "A770 independent CPU-reference GPU gate passed for empty, full, odd and partition-boundary prefixes. Linear/binary output and FP32 partial buffers match byte-for-byte at H12/Q16/K256, prefixes32/128; event timing was effectively neutral at these prefix lengths. The shared repeat-eight/binary-prefix source also completed matched Turbo and Base full-worker runs with byte-identical baseline outputs."
+  },
+  "precision": "BF16 words through F16-shaped transport; FP32 partial accumulators; no numeric FP16 conversion",
+  "qualification": {
+    "a770": "Current source eef7a585e37c4277d764fbe5f62110a012d68b02db0be4e852c722edc75738c2 passed the independent CPU-reference raw OpenCL gate: direct and split-merge outputs match exactly, including empty/full/odd prefixes, empty split partitions, nonzero offsets, unchanged inputs and canaries. Precise-cross maximum absolute difference is 0.00048828125 (one BF16 step); it is not bit-exact. A770 split-partial repeat-eight also matches the prior repeat-four FP32 partial/final output bytes at H12/Q16/K256 with selected prefixes32/128; event partial time improved approximately37 percent, not a full-worker throughput claim.",
+    "a770_full_worker": {
+      "turbo": "Repeat-eight source eef7a585, worker2c1735e8, completed the matched45-frame1280x720 to3840x2160 spatial run in487.78s (10.8396s/source frame), versus repeat-four workerb3d77238 at597.03s (13.2673s/frame):18.3percent less wall time. Whole1,119,744,000byte output SHA2566a7648efa05cf0f965fd4976a252f447db2130b5751ef36c22077530643256b9 is byte-identical to the baseline's45unique frames. Empty scratch, no OOM/swap/newGPU faults, no competing workload observed. Same-capped B580 repeat-four baseline completed243.24s (5.4053s/frame). Process wall includes initialization/compile and resizing/writes, excludes source decode/RIFE/encoding;10GiB RAM, zero swap, CPU400percent, Tasks1024. The later LOW queue-throttle policy was not in this full-worker binary; no full-worker speed claim is made for that policy. Historical warm research clocks are separate.",
+      "base": "Repeat-eight source eef7a585, worker2c1735e8, completed the matched45-frame1280x720 to3840x2160 spatial run in1322.86s (29.3969s/source frame), versus repeat-four A7701959.24s (43.5387s/frame):32.5percent less wall time. Whole1,119,744,000byte output SHA25629dbb3b66a0a5b2d5013d729244bd8debd31a72ef363bf2e558ea451f869b99b is byte-identical to baseline. Empty scratch, no OOM/swap/newGPU faults and no competing workload observed during the candidate. Cgroup memory reached its10GiB cap (memory.events max102038), with substantial I/O pressure; maximum process RSS6655108KiB. These capped process-wall timings include initialization/compile, resizing and disk writes, not pure GPU execution, and exclude decode/RIFE/encoding. Later LOW queue-throttle policy was not included. The prior A770 baseline has an ownership-observation gap after12:20PDT. Same-capped B580 baseline completed412.68s (9.1707s/frame)."
+    },
+    "b580": "Fresh shared-source finite raw OpenCL numerical gate passed: direct and split-merge outputs match the independent CPU reference exactly, including empty splits, nonzero offsets, canaries and unchanged inputs. Precise-cross maximum absolute difference is 0.00048828125 (one BF16 step); it is not bit-exact. No new GPU faults. This is not a full-worker throughput measurement; historical resident clocks apply only to their previous measured sources.",
+    "b580_receipt_sha256": "d0b1479fb09f8f1971c1ff79f320fafeae054510bef48c0e1bfcffd01c9cf3f2",
+    "runtime": "2026.5.0-23457-7d81aad55a5",
+    "a770_opencl_driver": "26.22.38646.7",
+    "evidence": "External OTC msh-a770-20261018/a770-numerical-gate and b580-shared-source-gate; no private media or generated GPU artifacts are redistributed."
+  }
+}

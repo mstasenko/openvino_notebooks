@@ -1,0 +1,177 @@
+{
+  "artifacts": {
+    "bin": {
+      "bytes": 12,
+      "path": "flash_cross_kv_bf16.bin",
+      "sha256": "862ca08291ff0bf5f96f630f2f8e3a42384ddc458dde33057ed473fe26612aa5"
+    },
+    "xml": {
+      "bytes": 9493,
+      "path": "flash_cross_kv_bf16.xml",
+      "sha256": "e57aee54756cd34d775371b8137358fff7ddfb4680ee680dd1c93dc1f299a82d"
+    }
+  },
+  "context_shape": [
+    1,
+    512,
+    1536
+  ],
+  "cross_shape": [
+    1,
+    512,
+    1536
+  ],
+  "export_helper": {
+    "name": "flash_export.py",
+    "sha256": "87aecbacb8965a76a1e4d0605542e4c22aeda544a9c62b997b00199384f88edf"
+  },
+  "exporter_sha256": "a2dd102d072bbd4127d3e755cddc97f237b83872fb643e56e1650c690585c002",
+  "graph": {
+    "constant_bytes": 12,
+    "constant_names": [
+      "Constant_11",
+      "Constant_15"
+    ],
+    "constant_node_count": 2,
+    "context_shape": [
+      1,
+      512,
+      1536
+    ],
+    "cross_shape": [
+      1,
+      512,
+      1536
+    ],
+    "friendly_name": "flashvsr_plus_cross_kv_bf16",
+    "inputs": [
+      {
+        "element_type": "bf16",
+        "name": "context",
+        "shape": [
+          1,
+          512,
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "weight__blocks_0_cross_attn_k_bias",
+        "shape": [
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "weight__blocks_0_cross_attn_k_weight",
+        "shape": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "weight__blocks_0_cross_attn_norm_k_weight",
+        "shape": [
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "weight__blocks_0_cross_attn_v_bias",
+        "shape": [
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "weight__blocks_0_cross_attn_v_weight",
+        "shape": [
+          1536,
+          1536
+        ]
+      }
+    ],
+    "learned_parameter_names": [
+      "weight__blocks_0_cross_attn_k_bias",
+      "weight__blocks_0_cross_attn_k_weight",
+      "weight__blocks_0_cross_attn_norm_k_weight",
+      "weight__blocks_0_cross_attn_v_bias",
+      "weight__blocks_0_cross_attn_v_weight"
+    ],
+    "openvino_types": {
+      "bf16": "<Type: 'bfloat16'>",
+      "f32": "<Type: 'float32'>"
+    },
+    "outputs": [
+      {
+        "element_type": "bf16",
+        "name": "cross_k",
+        "shape": [
+          1,
+          512,
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "cross_v",
+        "shape": [
+          1,
+          512,
+          1536
+        ]
+      }
+    ],
+    "sinks": [],
+    "state_variables": []
+  },
+  "graph_role": "context_to_cross_k_cross_v",
+  "openvino": {
+    "actual_version": "2026.5.0-23457-7d81aad55a5",
+    "compilation_performed": false,
+    "inference_performed": false,
+    "required_version": "2026.5.0-23457-7d81aad55a5"
+  },
+  "precision": "bf16",
+  "schema": 1,
+  "scope": "structural Flash cross K/V IR; learned BF16 Parameters only",
+  "source_files": [
+    {
+      "bytes": 17964,
+      "path": "openvino/full_runtime/plus_edges.py",
+      "sha256": "83353b9b60d49952f4d1594a1d65338efb148f084d4e61642e346ecf38c0c917"
+    },
+    {
+      "bytes": 4832,
+      "path": "openvino/full_runtime/plus_modes.py",
+      "sha256": "1e2fe526b1dfa639783c3f1b664422963dd089509cc986428b89a9c44d7a4427"
+    },
+    {
+      "bytes": 2659,
+      "path": "openvino/full_runtime/plus_storage.py",
+      "sha256": "d1d8da6265e7aade177d99b4e0ac3e8fc76e6f88a9319654c998be0ed1a1037d"
+    },
+    {
+      "bytes": 10717,
+      "path": "openvino/full_runtime/plus_text.py",
+      "sha256": "62c08d24fa69192a9848dd82c8da6139dc910c64d343782486c68242a8399473"
+    },
+    {
+      "bytes": 8191,
+      "path": "openvino/full_runtime/plus_weights.py",
+      "sha256": "c9a89c3eabcce654b2a3055bbb1c62e16ccc7f96425f130cef2b8fdcbe9d0ca7"
+    },
+    {
+      "bytes": 4248,
+      "path": "openvino/parameter_layers/contract.py",
+      "sha256": "1050e4dc27557273d38c2f38e9380d34ca7b7d87664bc018cdee2cb582158575"
+    }
+  ],
+  "status": "pass",
+  "trust": {
+    "learned_payloads_loaded": false,
+    "reference_root": "explicit curated executable source; not sandboxed",
+    "source_hashes_are_provenance_only": true
+  }
+}

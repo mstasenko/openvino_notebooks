@@ -1,0 +1,25 @@
+<CustomLayer name="OtcPlusSplitKeyPartial" type="SimpleGPU" version="1">
+  <Kernel entry="otc_plus_split_key_partial">
+    <Source filename="attention_splitkey_20261017.cl"/>
+  </Kernel>
+  <Buffers>
+    <Tensor arg-index="0" type="input" port-index="0" format="BFYX"/>
+    <Tensor arg-index="1" type="input" port-index="1" format="BFYX"/>
+    <Tensor arg-index="2" type="input" port-index="2" format="BFYX"/>
+    <Tensor arg-index="3" type="input" port-index="3" format="BFYX"/>
+    <Tensor arg-index="4" type="output" port-index="0" format="BFYX"/>
+  </Buffers>
+  <CompilerOptions options="-cl-intel-256-GRF-per-thread -DOTC_SPLIT_PARTIAL"/>
+  <WorkSizes global="16,F*Y/8,B" local="16,1,1"/>
+</CustomLayer>
+<CustomLayer name="OtcPlusSplitKeyMerge" type="SimpleGPU" version="1">
+  <Kernel entry="otc_plus_split_key_merge">
+    <Source filename="attention_splitkey_20261017.cl"/>
+  </Kernel>
+  <Buffers>
+    <Tensor arg-index="0" type="input" port-index="0" format="BFYX"/>
+    <Tensor arg-index="1" type="output" port-index="0" format="BFYX"/>
+  </Buffers>
+  <CompilerOptions options="-cl-intel-256-GRF-per-thread"/>
+  <WorkSizes global="16,F*Y/8,B" local="16,1,1"/>
+</CustomLayer>

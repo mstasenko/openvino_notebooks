@@ -1,0 +1,662 @@
+<?xml version="1.0"?>
+<net name="flashvsr_plus_plus_f4_3840x2176_suffix_bf16" version="11">
+	<layers>
+		<layer id="0" name="plus_f4_3840x2176_tokens_in" type="Parameter" version="opset1">
+			<data shape="1,130560,1536" element_type="bf16" />
+			<output>
+				<port id="0" precision="BF16" names="plus_f4_3840x2176_tokens_in">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="1" name="plus_f4_3840x2176_t_in" type="Parameter" version="opset1">
+			<data shape="1,1,1536" element_type="bf16" />
+			<output>
+				<port id="0" precision="BF16" names="plus_f4_3840x2176_t_in">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="2" name="weight__head_modulation" type="Parameter" version="opset1">
+			<data shape="1,2,1536" element_type="bf16" />
+			<output>
+				<port id="0" precision="BF16" names="weight__head_modulation">
+					<dim>1</dim>
+					<dim>2</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="3" name="weight__head_proj_weight" type="Parameter" version="opset1">
+			<data shape="64,1536" element_type="bf16" />
+			<output>
+				<port id="0" precision="BF16" names="weight__head_proj_weight">
+					<dim>64</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="4" name="weight__head_proj_bias" type="Parameter" version="opset1">
+			<data shape="64" element_type="bf16" />
+			<output>
+				<port id="0" precision="BF16" names="weight__head_proj_bias">
+					<dim>64</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="5" name="Convert_49" type="Convert" version="opset1">
+			<data destination_type="f32" />
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="6" name="Constant_51" type="Const" version="opset1">
+			<data element_type="i64" shape="1" offset="0" size="8" />
+			<output>
+				<port id="0" precision="I64">
+					<dim>1</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="7" name="ReduceMean_52" type="ReduceMean" version="opset1">
+			<data keep_dims="true" />
+			<input>
+				<port id="0" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+				<port id="1" precision="I64">
+					<dim>1</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="8" name="Subtract_53" type="Subtract" version="opset1">
+			<data auto_broadcast="numpy" />
+			<input>
+				<port id="0" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+				<port id="1" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="9" name="Multiply_54" type="Multiply" version="opset1">
+			<data auto_broadcast="numpy" />
+			<input>
+				<port id="0" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+				<port id="1" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="10" name="ReduceMean_55" type="ReduceMean" version="opset1">
+			<data keep_dims="true" />
+			<input>
+				<port id="0" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+				<port id="1" precision="I64">
+					<dim>1</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="11" name="Constant_57" type="Const" version="opset1">
+			<data element_type="f32" shape="" offset="8" size="4" />
+			<output>
+				<port id="0" precision="FP32" />
+			</output>
+		</layer>
+		<layer id="12" name="Add_58" type="Add" version="opset1">
+			<data auto_broadcast="numpy" />
+			<input>
+				<port id="0" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1</dim>
+				</port>
+				<port id="1" precision="FP32" />
+			</input>
+			<output>
+				<port id="2" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="13" name="Sqrt_59" type="Sqrt" version="opset1">
+			<input>
+				<port id="0" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="14" name="Divide_60" type="Divide" version="opset1">
+			<data auto_broadcast="numpy" m_pythondiv="true" />
+			<input>
+				<port id="0" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+				<port id="1" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="15" name="Convert_61" type="Convert" version="opset1">
+			<data destination_type="bf16" />
+			<input>
+				<port id="0" precision="FP32">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="BF16">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="16" name="Constant_63" type="Const" version="opset1">
+			<data element_type="bf16" shape="" offset="12" size="2" />
+			<output>
+				<port id="0" precision="BF16" />
+			</output>
+		</layer>
+		<layer id="17" name="Add_34" type="Add" version="opset1">
+			<data auto_broadcast="numpy" />
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>2</dim>
+					<dim>1536</dim>
+				</port>
+				<port id="1" precision="BF16">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>1536</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="BF16">
+					<dim>1</dim>
+					<dim>2</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="18" name="Constant_43" type="Const" version="opset1">
+			<data element_type="i64" shape="3" offset="16" size="24" />
+			<output>
+				<port id="0" precision="I64">
+					<dim>3</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="19" name="Constant_45" type="Const" version="opset1">
+			<data element_type="i64" shape="3" offset="40" size="24" />
+			<output>
+				<port id="0" precision="I64">
+					<dim>3</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="20" name="Constant_47" type="Const" version="opset1">
+			<data element_type="i64" shape="3" offset="64" size="24" />
+			<output>
+				<port id="0" precision="I64">
+					<dim>3</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="21" name="StridedSlice_48" type="StridedSlice" version="opset1">
+			<data begin_mask="0, 0, 0" end_mask="0, 0, 0" new_axis_mask="" shrink_axis_mask="" ellipsis_mask="" />
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>2</dim>
+					<dim>1536</dim>
+				</port>
+				<port id="1" precision="I64">
+					<dim>3</dim>
+				</port>
+				<port id="2" precision="I64">
+					<dim>3</dim>
+				</port>
+				<port id="3" precision="I64">
+					<dim>3</dim>
+				</port>
+			</input>
+			<output>
+				<port id="4" precision="BF16">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="22" name="Add_64" type="Add" version="opset1">
+			<data auto_broadcast="numpy" />
+			<input>
+				<port id="0" precision="BF16" />
+				<port id="1" precision="BF16">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>1536</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="BF16">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="23" name="Multiply_65" type="Multiply" version="opset1">
+			<data auto_broadcast="numpy" />
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+				<port id="1" precision="BF16">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>1536</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="BF16">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="24" name="Constant_36" type="Const" version="opset1">
+			<data element_type="i64" shape="3" offset="88" size="24" />
+			<output>
+				<port id="0" precision="I64">
+					<dim>3</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="25" name="Constant_38" type="Const" version="opset1">
+			<data element_type="i64" shape="3" offset="112" size="24" />
+			<output>
+				<port id="0" precision="I64">
+					<dim>3</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="26" name="Constant_40" type="Const" version="opset1">
+			<data element_type="i64" shape="3" offset="64" size="24" />
+			<output>
+				<port id="0" precision="I64">
+					<dim>3</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="27" name="StridedSlice_41" type="StridedSlice" version="opset1">
+			<data begin_mask="0, 0, 0" end_mask="0, 0, 0" new_axis_mask="" shrink_axis_mask="" ellipsis_mask="" />
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>2</dim>
+					<dim>1536</dim>
+				</port>
+				<port id="1" precision="I64">
+					<dim>3</dim>
+				</port>
+				<port id="2" precision="I64">
+					<dim>3</dim>
+				</port>
+				<port id="3" precision="I64">
+					<dim>3</dim>
+				</port>
+			</input>
+			<output>
+				<port id="4" precision="BF16">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="28" name="Add_66" type="Add" version="opset1">
+			<data auto_broadcast="numpy" />
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+				<port id="1" precision="BF16">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>1536</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="BF16">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="29" name="MatMul_67" type="MatMul" version="opset1">
+			<data transpose_a="false" transpose_b="true" />
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>1536</dim>
+				</port>
+				<port id="1" precision="BF16">
+					<dim>64</dim>
+					<dim>1536</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="BF16">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>64</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="30" name="Constant_69" type="Const" version="opset1">
+			<data element_type="i64" shape="3" offset="136" size="24" />
+			<output>
+				<port id="0" precision="I64">
+					<dim>3</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="31" name="Reshape_70" type="Reshape" version="opset1">
+			<data special_zero="false" />
+			<input>
+				<port id="0" precision="BF16">
+					<dim>64</dim>
+				</port>
+				<port id="1" precision="I64">
+					<dim>3</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="BF16">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>64</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="32" name="Add_71" type="Add" version="opset1">
+			<data auto_broadcast="numpy" />
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>64</dim>
+				</port>
+				<port id="1" precision="BF16">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>64</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="BF16">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>64</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="33" name="Constant_73" type="Const" version="opset1">
+			<data element_type="i64" shape="8" offset="160" size="64" />
+			<output>
+				<port id="0" precision="I64">
+					<dim>8</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="34" name="Reshape_74" type="Reshape" version="opset1">
+			<data special_zero="false" />
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>130560</dim>
+					<dim>64</dim>
+				</port>
+				<port id="1" precision="I64">
+					<dim>8</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="BF16">
+					<dim>1</dim>
+					<dim>4</dim>
+					<dim>136</dim>
+					<dim>240</dim>
+					<dim>1</dim>
+					<dim>2</dim>
+					<dim>2</dim>
+					<dim>16</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="35" name="Constant_76" type="Const" version="opset1">
+			<data element_type="i64" shape="8" offset="224" size="64" />
+			<output>
+				<port id="0" precision="I64">
+					<dim>8</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="36" name="Transpose_77" type="Transpose" version="opset1">
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>4</dim>
+					<dim>136</dim>
+					<dim>240</dim>
+					<dim>1</dim>
+					<dim>2</dim>
+					<dim>2</dim>
+					<dim>16</dim>
+				</port>
+				<port id="1" precision="I64">
+					<dim>8</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="BF16">
+					<dim>1</dim>
+					<dim>16</dim>
+					<dim>4</dim>
+					<dim>1</dim>
+					<dim>136</dim>
+					<dim>2</dim>
+					<dim>240</dim>
+					<dim>2</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="37" name="Constant_79" type="Const" version="opset1">
+			<data element_type="i64" shape="5" offset="288" size="40" />
+			<output>
+				<port id="0" precision="I64">
+					<dim>5</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="38" name="Reshape_80" type="Reshape" version="opset1">
+			<data special_zero="false" />
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>16</dim>
+					<dim>4</dim>
+					<dim>1</dim>
+					<dim>136</dim>
+					<dim>2</dim>
+					<dim>240</dim>
+					<dim>2</dim>
+				</port>
+				<port id="1" precision="I64">
+					<dim>5</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="BF16" names="plus_f4_3840x2176_out">
+					<dim>1</dim>
+					<dim>16</dim>
+					<dim>4</dim>
+					<dim>272</dim>
+					<dim>480</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="39" name="Result_81" type="Result" version="opset1" output_names="plus_f4_3840x2176_out">
+			<input>
+				<port id="0" precision="BF16">
+					<dim>1</dim>
+					<dim>16</dim>
+					<dim>4</dim>
+					<dim>272</dim>
+					<dim>480</dim>
+				</port>
+			</input>
+		</layer>
+	</layers>
+	<edges>
+		<edge from-layer="0" from-port="0" to-layer="5" to-port="0" />
+		<edge from-layer="1" from-port="0" to-layer="17" to-port="1" />
+		<edge from-layer="2" from-port="0" to-layer="17" to-port="0" />
+		<edge from-layer="3" from-port="0" to-layer="29" to-port="1" />
+		<edge from-layer="4" from-port="0" to-layer="31" to-port="0" />
+		<edge from-layer="5" from-port="1" to-layer="7" to-port="0" />
+		<edge from-layer="5" from-port="1" to-layer="8" to-port="0" />
+		<edge from-layer="6" from-port="0" to-layer="10" to-port="1" />
+		<edge from-layer="6" from-port="0" to-layer="7" to-port="1" />
+		<edge from-layer="7" from-port="2" to-layer="8" to-port="1" />
+		<edge from-layer="8" from-port="2" to-layer="9" to-port="1" />
+		<edge from-layer="8" from-port="2" to-layer="14" to-port="0" />
+		<edge from-layer="8" from-port="2" to-layer="9" to-port="0" />
+		<edge from-layer="9" from-port="2" to-layer="10" to-port="0" />
+		<edge from-layer="10" from-port="2" to-layer="12" to-port="0" />
+		<edge from-layer="11" from-port="0" to-layer="12" to-port="1" />
+		<edge from-layer="12" from-port="2" to-layer="13" to-port="0" />
+		<edge from-layer="13" from-port="1" to-layer="14" to-port="1" />
+		<edge from-layer="14" from-port="2" to-layer="15" to-port="0" />
+		<edge from-layer="15" from-port="1" to-layer="23" to-port="0" />
+		<edge from-layer="16" from-port="0" to-layer="22" to-port="0" />
+		<edge from-layer="17" from-port="2" to-layer="21" to-port="0" />
+		<edge from-layer="17" from-port="2" to-layer="27" to-port="0" />
+		<edge from-layer="18" from-port="0" to-layer="21" to-port="1" />
+		<edge from-layer="19" from-port="0" to-layer="21" to-port="2" />
+		<edge from-layer="20" from-port="0" to-layer="21" to-port="3" />
+		<edge from-layer="21" from-port="4" to-layer="22" to-port="1" />
+		<edge from-layer="22" from-port="2" to-layer="23" to-port="1" />
+		<edge from-layer="23" from-port="2" to-layer="28" to-port="0" />
+		<edge from-layer="24" from-port="0" to-layer="27" to-port="1" />
+		<edge from-layer="25" from-port="0" to-layer="27" to-port="2" />
+		<edge from-layer="26" from-port="0" to-layer="27" to-port="3" />
+		<edge from-layer="27" from-port="4" to-layer="28" to-port="1" />
+		<edge from-layer="28" from-port="2" to-layer="29" to-port="0" />
+		<edge from-layer="29" from-port="2" to-layer="32" to-port="0" />
+		<edge from-layer="30" from-port="0" to-layer="31" to-port="1" />
+		<edge from-layer="31" from-port="2" to-layer="32" to-port="1" />
+		<edge from-layer="32" from-port="2" to-layer="34" to-port="0" />
+		<edge from-layer="33" from-port="0" to-layer="34" to-port="1" />
+		<edge from-layer="34" from-port="2" to-layer="36" to-port="0" />
+		<edge from-layer="35" from-port="0" to-layer="36" to-port="1" />
+		<edge from-layer="36" from-port="2" to-layer="38" to-port="0" />
+		<edge from-layer="37" from-port="0" to-layer="38" to-port="1" />
+		<edge from-layer="38" from-port="2" to-layer="39" to-port="0" />
+	</edges>
+	<rt_info />
+</net>

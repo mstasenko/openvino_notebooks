@@ -1,0 +1,18 @@
+Flash TEXT native build-time pins
+modes=turbo,base
+graph_variant=result_ir_ordinary_results
+rows=512
+learned_schema=4 global text-embedding tensors
+storage_boundary=text_linear before GELU(tanh)
+source_commit=b548a2cc2c929d3d4676f2973abe27876ec4dee7
+model_repo_revision=46b79520946ac67dec94d1566490690953c7debc
+converter=otc-ai-enhance-bf16
+weights_root=external model root (set by the consuming packer)
+authenticated_sources=DIT+LQ; text learned spans use source 0
+fixed_xml=flash_text_bf16.xml bytes=4964 sha256=d4f3a191a52f6bd499300310b90b9cfb70cf5bf92455b892549a6f0a81d03e21
+fixed_bin=flash_text_bf16.bin bytes=0 sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+learned_payload=external; this output contains tables, not learned data
+[turbo]
+layer_00_bin=flash_text_bf16_turbo.bin bytes=17307648 sha256=76527ff736202ee6546469ac06c54ef1462d1f7d8b2ea1c3f4feb79fb5c8e5e3
+[base]
+layer_00_bin=flash_text_bf16_base.bin bytes=17307648 sha256=c9b412746a95358c5fc7ffc94c4fc5c38b875efc97efa32dc66bf1d1c212b109

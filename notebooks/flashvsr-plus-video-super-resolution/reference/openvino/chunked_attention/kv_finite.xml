@@ -1,0 +1,9 @@
+<CustomLayer name="OtcCompleteKvFinite" type="SimpleGPU" version="1">
+  <Kernel entry="otc_complete_kv_finite"><Source filename="kv_finite.cl"/></Kernel>
+  <Buffers>
+    <Tensor arg-index="0" type="input" port-index="0" format="BFYX"/>
+    <Tensor arg-index="1" type="input" port-index="1" format="BFYX"/>
+    <Tensor arg-index="2" type="output" port-index="0" format="BFYX"/>
+  </Buffers>
+  <WorkSizes global="256,1,B" local="256,1,1"/>
+</CustomLayer>

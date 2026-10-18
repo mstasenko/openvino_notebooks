@@ -1,0 +1,586 @@
+{
+  "artifacts": {
+    "bin": {
+      "bytes": 768,
+      "path": "flash_pre_4096_bf16.bin",
+      "sha256": "b4ce6a73d4445949f43264f8334d57fcedf5b29504bc2222c110be3e7c60646e"
+    },
+    "xml": {
+      "bytes": 87093,
+      "path": "flash_pre_4096_bf16.xml",
+      "sha256": "a70c2bbb5fb0f65add9e93da461b9dee324a2fb5216c649ccf69edf84876087d"
+    }
+  },
+  "export_helper": {
+    "name": "flash_export.py",
+    "sha256": "87aecbacb8965a76a1e4d0605542e4c22aeda544a9c62b997b00199384f88edf"
+  },
+  "exporter_sha256": "d91bed17dcf5f1998e50fd9d306740f77cbeb841ffa5db951a94d18d289d8b79",
+  "geometry": {
+    "builder_geometry": [
+      4,
+      136,
+      240
+    ],
+    "precision": "bf16",
+    "rows": 4096,
+    "token_hw": [
+      136,
+      240
+    ],
+    "visible_hw": [
+      2160,
+      3840
+    ],
+    "working_hw": [
+      2176,
+      3840
+    ]
+  },
+  "graph": {
+    "constant_bytes": 1584,
+    "constant_names": [
+      "Constant_102",
+      "Constant_110",
+      "Constant_114",
+      "Constant_117",
+      "Constant_138",
+      "Constant_142",
+      "Constant_148",
+      "Constant_156",
+      "Constant_16",
+      "Constant_160",
+      "Constant_163",
+      "Constant_22",
+      "Constant_29",
+      "Constant_31",
+      "Constant_33",
+      "Constant_36",
+      "Constant_38",
+      "Constant_40",
+      "Constant_421",
+      "Constant_423",
+      "Constant_425",
+      "Constant_427",
+      "Constant_429",
+      "Constant_43",
+      "Constant_431",
+      "Constant_433",
+      "Constant_435",
+      "Constant_437",
+      "Constant_439",
+      "Constant_441",
+      "Constant_443",
+      "Constant_445",
+      "Constant_45",
+      "Constant_47",
+      "Constant_50",
+      "Constant_52",
+      "Constant_54",
+      "Constant_57",
+      "Constant_59",
+      "Constant_596",
+      "Constant_598",
+      "Constant_600",
+      "Constant_604",
+      "Constant_606",
+      "Constant_608",
+      "Constant_61",
+      "Constant_617",
+      "Constant_619",
+      "Constant_622",
+      "Constant_625",
+      "Constant_631",
+      "Constant_634",
+      "Constant_637",
+      "Constant_64",
+      "Constant_646",
+      "Constant_66",
+      "Constant_68",
+      "Constant_71",
+      "Constant_77",
+      "Constant_82",
+      "Constant_87",
+      "Constant_92",
+      "Constant_96"
+    ],
+    "constant_node_count": 63,
+    "friendly_name": "flashvsr_plus_pre_plus_f4_3840x2176_f16_bf16",
+    "inputs": [
+      {
+        "element_type": "f32",
+        "name": "rope_cos",
+        "names": [
+          "rope_cos"
+        ],
+        "shape": [
+          1,
+          4096,
+          1,
+          64
+        ]
+      },
+      {
+        "element_type": "f32",
+        "name": "rope_sin",
+        "names": [
+          "rope_sin"
+        ],
+        "shape": [
+          1,
+          4096,
+          1,
+          64
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "t_mod",
+        "names": [
+          "t_mod"
+        ],
+        "shape": [
+          1,
+          6,
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "weight__blocks_0_modulation",
+        "names": [
+          "weight__blocks_0_modulation"
+        ],
+        "shape": [
+          1,
+          6,
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "weight__blocks_0_self_attn_k_bias",
+        "names": [
+          "weight__blocks_0_self_attn_k_bias"
+        ],
+        "shape": [
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "weight__blocks_0_self_attn_k_weight",
+        "names": [
+          "weight__blocks_0_self_attn_k_weight"
+        ],
+        "shape": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "weight__blocks_0_self_attn_norm_k_weight",
+        "names": [
+          "weight__blocks_0_self_attn_norm_k_weight"
+        ],
+        "shape": [
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "weight__blocks_0_self_attn_norm_q_weight",
+        "names": [
+          "weight__blocks_0_self_attn_norm_q_weight"
+        ],
+        "shape": [
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "weight__blocks_0_self_attn_q_bias",
+        "names": [
+          "weight__blocks_0_self_attn_q_bias"
+        ],
+        "shape": [
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "weight__blocks_0_self_attn_q_weight",
+        "names": [
+          "weight__blocks_0_self_attn_q_weight"
+        ],
+        "shape": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "weight__blocks_0_self_attn_v_bias",
+        "names": [
+          "weight__blocks_0_self_attn_v_bias"
+        ],
+        "shape": [
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "weight__blocks_0_self_attn_v_weight",
+        "names": [
+          "weight__blocks_0_self_attn_v_weight"
+        ],
+        "shape": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "x",
+        "names": [
+          "x"
+        ],
+        "shape": [
+          1,
+          4096,
+          1536
+        ]
+      }
+    ],
+    "openvino_type_names": {
+      "bf16": "<Type: 'bfloat16'>",
+      "f32": "<Type: 'float32'>"
+    },
+    "outputs": [
+      {
+        "element_type": "bf16",
+        "name": "gate_mlp",
+        "names": [
+          "gate_mlp"
+        ],
+        "shape": [
+          1,
+          1,
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "gate_msa",
+        "names": [
+          "gate_msa"
+        ],
+        "shape": [
+          1,
+          1,
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "k_device",
+        "names": [
+          "k_device"
+        ],
+        "shape": [
+          32,
+          128,
+          12,
+          128
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "k_linear_storage",
+        "names": [
+          "k_linear_storage"
+        ],
+        "shape": [
+          1,
+          4096,
+          1536
+        ]
+      },
+      {
+        "element_type": "f32",
+        "name": "k_pooled",
+        "names": [
+          "k_pooled"
+        ],
+        "shape": [
+          12,
+          32,
+          128
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "k_rms_storage",
+        "names": [
+          "k_rms_storage"
+        ],
+        "shape": [
+          1,
+          4096,
+          1536
+        ]
+      },
+      {
+        "element_type": "f16",
+        "name": "kv_finite",
+        "names": [
+          "kv_finite"
+        ],
+        "shape": []
+      },
+      {
+        "element_type": "bf16",
+        "name": "modulation_product",
+        "names": [
+          "modulation_product"
+        ],
+        "shape": [
+          1,
+          4096,
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "norm1_storage",
+        "names": [
+          "norm1_storage"
+        ],
+        "shape": [
+          1,
+          4096,
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "q_device_0",
+        "names": [
+          "q_device_0"
+        ],
+        "shape": [
+          12,
+          16,
+          128,
+          128
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "q_device_1",
+        "names": [
+          "q_device_1"
+        ],
+        "shape": [
+          12,
+          16,
+          128,
+          128
+        ]
+      },
+      {
+        "element_type": "f16",
+        "name": "q_finite",
+        "names": [
+          "q_finite"
+        ],
+        "shape": []
+      },
+      {
+        "element_type": "bf16",
+        "name": "q_linear_storage",
+        "names": [
+          "q_linear_storage"
+        ],
+        "shape": [
+          1,
+          4096,
+          1536
+        ]
+      },
+      {
+        "element_type": "f32",
+        "name": "q_pooled",
+        "names": [
+          "q_pooled"
+        ],
+        "shape": [
+          12,
+          32,
+          128
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "q_rms_storage",
+        "names": [
+          "q_rms_storage"
+        ],
+        "shape": [
+          1,
+          4096,
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "scale_mlp",
+        "names": [
+          "scale_mlp"
+        ],
+        "shape": [
+          1,
+          1,
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "shift_mlp",
+        "names": [
+          "shift_mlp"
+        ],
+        "shape": [
+          1,
+          1,
+          1536
+        ]
+      },
+      {
+        "element_type": "bf16",
+        "name": "v_device",
+        "names": [
+          "v_device"
+        ],
+        "shape": [
+          32,
+          128,
+          12,
+          128
+        ]
+      }
+    ],
+    "parameter_input_names": [
+      "weight__blocks_0_modulation",
+      "weight__blocks_0_self_attn_k_bias",
+      "weight__blocks_0_self_attn_k_weight",
+      "weight__blocks_0_self_attn_norm_k_weight",
+      "weight__blocks_0_self_attn_norm_q_weight",
+      "weight__blocks_0_self_attn_q_bias",
+      "weight__blocks_0_self_attn_q_weight",
+      "weight__blocks_0_self_attn_v_bias",
+      "weight__blocks_0_self_attn_v_weight"
+    ],
+    "private_bf16_results": [
+      "modulation_product",
+      "q_linear_storage",
+      "k_linear_storage",
+      "norm1_storage",
+      "q_rms_storage",
+      "k_rms_storage"
+    ],
+    "sinks": [],
+    "variables": []
+  },
+  "openvino": {
+    "actual_version": "2026.5.0-23457-7d81aad55a5",
+    "compilation_performed": false,
+    "inference_performed": false,
+    "required_version": "2026.5.0-23457-7d81aad55a5"
+  },
+  "schema": 1,
+  "scope": "structural Flash PRE IR only; no learned constants, compilation, inference, weights, or quality qualification",
+  "source_files": [
+    {
+      "bytes": 10320,
+      "path": "openvino/block/contract.py",
+      "sha256": "df3c111cf3cf7708f5c76d2386c10793a51d4e300d26a9568ca5a225e894535c"
+    },
+    {
+      "bytes": 17647,
+      "path": "openvino/block/graph.py",
+      "sha256": "3b7e13aec261e1116ceb77a8e750a83a7aac12fcd17e7f3fef688c5a5afdf8bd"
+    },
+    {
+      "bytes": 18741,
+      "path": "openvino/full_model/contract.py",
+      "sha256": "a7368b22f168d6e2b87b0588acb946556e4e1b79bb5804581a7c59a112533a64"
+    },
+    {
+      "bytes": 4258,
+      "path": "openvino/full_runtime/device_query_graph.py",
+      "sha256": "f73a87eda6af4d864dba024cdbf1a4c604017bad6fac18a12d1423f74b1b1c45"
+    },
+    {
+      "bytes": 9134,
+      "path": "openvino/full_runtime/frame_geometry.py",
+      "sha256": "2c3d93227481e3a9653d786bfd8923df5746fb67f043105e52e676d28a56505f"
+    },
+    {
+      "bytes": 715,
+      "path": "openvino/full_runtime/half_storage.py",
+      "sha256": "b375aa6f2597088f054880b1600ff78d5a3340256cf1fdc1c7c675366b1c926b"
+    },
+    {
+      "bytes": 36268,
+      "path": "openvino/full_runtime/physical_modulation.py",
+      "sha256": "27c71748e9c654e3cc982e14ee9cf83234b5c558eb307929f4bb3fec339a73d3"
+    },
+    {
+      "bytes": 13323,
+      "path": "openvino/full_runtime/plus_graphs.py",
+      "sha256": "296a7a58ec2e64c4014194b6eb07d327aaea19134d85d11cf59e348e98aa9e11"
+    },
+    {
+      "bytes": 14045,
+      "path": "openvino/full_runtime/prepare_real.py",
+      "sha256": "625d1f3a7e2528551d79a835dd9befbcce9e9b3138b959f873dc3094110fa825"
+    },
+    {
+      "bytes": 2806,
+      "path": "openvino/full_runtime/real_inputs.py",
+      "sha256": "3b331ff7e5064bf0ee1f6aadf08f19700e6d50d037257b970460db4a3a08e201"
+    },
+    {
+      "bytes": 4411,
+      "path": "openvino/full_runtime/source_precision_check.py",
+      "sha256": "a0353cd32bc15dc001d3a9477ef779da6ad441ba3688ff990dfbda85c8057173"
+    },
+    {
+      "bytes": 19155,
+      "path": "openvino/full_runtime/window_pre.py",
+      "sha256": "3e8773136be80069ea444b6b27031a9636f6c2b15b8e1ed6f55e5cf145360978"
+    },
+    {
+      "bytes": 9522,
+      "path": "openvino/model_edges/convert.py",
+      "sha256": "d0b47cffe15bd1b1fc06a2ed49236c38f939263807a3a19b4ea5bcd58535d359"
+    },
+    {
+      "bytes": 12860,
+      "path": "openvino/parameter_layers/builders.py",
+      "sha256": "1c79aded2260be476a5b99a20ea1fe18feab667219a28743f43221925182261f"
+    },
+    {
+      "bytes": 4248,
+      "path": "openvino/parameter_layers/contract.py",
+      "sha256": "1050e4dc27557273d38c2f38e9380d34ca7b7d87664bc018cdee2cb582158575"
+    }
+  ],
+  "status": "pass",
+  "trust": {
+    "reference_root": "explicit curated executable source; not sandboxed",
+    "source_hashes_are_provenance_only": true
+  }
+}

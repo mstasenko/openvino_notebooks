@@ -1,0 +1,331 @@
+{
+  "artifacts": {
+    "prefix": {
+      "bin": {
+        "bytes": 664,
+        "path": "flash_edges_prefix_bf16.bin",
+        "sha256": "69bf6dce98cf98395030464b350ca048a648b7617ca864ced452b1db3d209bd1"
+      },
+      "xml": {
+        "bytes": 8874,
+        "path": "flash_edges_prefix_bf16.xml",
+        "sha256": "a1ab4509d9c4a1b67a1ec54e1d555ee1ceec30e2930c7600326dda9c396c1004"
+      }
+    },
+    "suffix": {
+      "bin": {
+        "bytes": 328,
+        "path": "flash_edges_suffix_bf16.bin",
+        "sha256": "9bec50f4ae9fa668adee56efac658baba7e6f2a73301bc24b6fb613238cb39bb"
+      },
+      "xml": {
+        "bytes": 17778,
+        "path": "flash_edges_suffix_bf16.xml",
+        "sha256": "20900cf95b1b32ab3b21d879a1f56210a4918b755acc34fb96b85e0c68f87fe5"
+      }
+    }
+  },
+  "conditioning": {
+    "one_time_preparation_required": true,
+    "performed_by_export": false,
+    "prefix_timestep_inputs": [
+      "t",
+      "t_mod"
+    ],
+    "source_f32_preparation": "fixed_conditioning(authenticated source-F32 weights, 'bf16')"
+  },
+  "export_helper": {
+    "name": "flash_export.py",
+    "sha256": "87aecbacb8965a76a1e4d0605542e4c22aeda544a9c62b997b00199384f88edf"
+  },
+  "exporter_sha256": "653deb3e22f0aff674b70f1e9655052be5ab537cae61285bbf0fe22b988269b1",
+  "geometry": {
+    "frames": 4,
+    "latent_hw": [
+      272,
+      480
+    ],
+    "token_hw": [
+      136,
+      240
+    ],
+    "tokens": 130560,
+    "visible_hw": [
+      2160,
+      3840
+    ],
+    "working_hw": [
+      2176,
+      3840
+    ]
+  },
+  "graph_role": "four-latent_prefix_and_suffix",
+  "graphs": {
+    "prefix": {
+      "conditioning": {
+        "one_time_preparation_required": true,
+        "performed_by_export": false,
+        "source_f32_preparation": "fixed_conditioning(..., 'bf16') first two results",
+        "timestep_inputs": [
+          "t",
+          "t_mod"
+        ]
+      },
+      "constant_bytes": 664,
+      "constant_names": [
+        "Constant_10",
+        "Constant_13",
+        "Constant_18",
+        "Constant_21",
+        "Constant_24",
+        "Constant_6"
+      ],
+      "constant_node_count": 6,
+      "friendly_name": "flashvsr_plus_plus_f4_3840x2176_prefix_bf16",
+      "inputs": [
+        {
+          "element_type": "bf16",
+          "name": "plus_f4_3840x2176_x",
+          "shape": [
+            1,
+            16,
+            4,
+            272,
+            480
+          ]
+        },
+        {
+          "element_type": "bf16",
+          "name": "t",
+          "shape": [
+            1,
+            1,
+            1536
+          ]
+        },
+        {
+          "element_type": "bf16",
+          "name": "t_mod",
+          "shape": [
+            1,
+            6,
+            1536
+          ]
+        },
+        {
+          "element_type": "bf16",
+          "name": "weight__patch_embedding_bias",
+          "shape": [
+            1536
+          ]
+        },
+        {
+          "element_type": "bf16",
+          "name": "weight__patch_embedding_weight",
+          "shape": [
+            1536,
+            16,
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "learned_parameter_names": [
+        "weight__patch_embedding_bias",
+        "weight__patch_embedding_weight"
+      ],
+      "openvino_types": {
+        "bf16": "<Type: 'bfloat16'>",
+        "f32": "<Type: 'float32'>"
+      },
+      "outputs": [
+        {
+          "element_type": "bf16",
+          "name": "plus_f4_3840x2176_embedding_out",
+          "shape": [
+            1,
+            256
+          ]
+        },
+        {
+          "element_type": "bf16",
+          "name": "plus_f4_3840x2176_t_mod_out",
+          "shape": [
+            1,
+            6,
+            1536
+          ]
+        },
+        {
+          "element_type": "bf16",
+          "name": "plus_f4_3840x2176_t_out",
+          "shape": [
+            1,
+            1,
+            1536
+          ]
+        },
+        {
+          "element_type": "bf16",
+          "name": "plus_f4_3840x2176_tokens_out",
+          "shape": [
+            1,
+            130560,
+            1536
+          ]
+        }
+      ],
+      "role": "prefix",
+      "sinks": [],
+      "state_variables": []
+    },
+    "suffix": {
+      "conditioning": null,
+      "constant_bytes": 350,
+      "constant_names": [
+        "Constant_36",
+        "Constant_38",
+        "Constant_40",
+        "Constant_43",
+        "Constant_45",
+        "Constant_47",
+        "Constant_51",
+        "Constant_57",
+        "Constant_63",
+        "Constant_69",
+        "Constant_73",
+        "Constant_76",
+        "Constant_79"
+      ],
+      "constant_node_count": 13,
+      "friendly_name": "flashvsr_plus_plus_f4_3840x2176_suffix_bf16",
+      "inputs": [
+        {
+          "element_type": "bf16",
+          "name": "plus_f4_3840x2176_t_in",
+          "shape": [
+            1,
+            1,
+            1536
+          ]
+        },
+        {
+          "element_type": "bf16",
+          "name": "plus_f4_3840x2176_tokens_in",
+          "shape": [
+            1,
+            130560,
+            1536
+          ]
+        },
+        {
+          "element_type": "bf16",
+          "name": "weight__head_modulation",
+          "shape": [
+            1,
+            2,
+            1536
+          ]
+        },
+        {
+          "element_type": "bf16",
+          "name": "weight__head_proj_bias",
+          "shape": [
+            64
+          ]
+        },
+        {
+          "element_type": "bf16",
+          "name": "weight__head_proj_weight",
+          "shape": [
+            64,
+            1536
+          ]
+        }
+      ],
+      "learned_parameter_names": [
+        "weight__head_modulation",
+        "weight__head_proj_bias",
+        "weight__head_proj_weight"
+      ],
+      "openvino_types": {
+        "bf16": "<Type: 'bfloat16'>",
+        "f32": "<Type: 'float32'>"
+      },
+      "outputs": [
+        {
+          "element_type": "bf16",
+          "name": "plus_f4_3840x2176_out",
+          "shape": [
+            1,
+            16,
+            4,
+            272,
+            480
+          ]
+        }
+      ],
+      "role": "suffix",
+      "sinks": [],
+      "state_variables": []
+    }
+  },
+  "openvino": {
+    "actual_version": "2026.5.0-23457-7d81aad55a5",
+    "compilation_performed": false,
+    "inference_performed": false,
+    "required_version": "2026.5.0-23457-7d81aad55a5"
+  },
+  "precision": "bf16",
+  "schema": 1,
+  "scope": "structural Flash edge IR; learned BF16 Parameters only",
+  "source_files": [
+    {
+      "bytes": 9134,
+      "path": "openvino/full_runtime/frame_geometry.py",
+      "sha256": "2c3d93227481e3a9653d786bfd8923df5746fb67f043105e52e676d28a56505f"
+    },
+    {
+      "bytes": 17964,
+      "path": "openvino/full_runtime/plus_edges.py",
+      "sha256": "83353b9b60d49952f4d1594a1d65338efb148f084d4e61642e346ecf38c0c917"
+    },
+    {
+      "bytes": 13323,
+      "path": "openvino/full_runtime/plus_graphs.py",
+      "sha256": "296a7a58ec2e64c4014194b6eb07d327aaea19134d85d11cf59e348e98aa9e11"
+    },
+    {
+      "bytes": 4832,
+      "path": "openvino/full_runtime/plus_modes.py",
+      "sha256": "1e2fe526b1dfa639783c3f1b664422963dd089509cc986428b89a9c44d7a4427"
+    },
+    {
+      "bytes": 2659,
+      "path": "openvino/full_runtime/plus_storage.py",
+      "sha256": "d1d8da6265e7aade177d99b4e0ac3e8fc76e6f88a9319654c998be0ed1a1037d"
+    },
+    {
+      "bytes": 14045,
+      "path": "openvino/full_runtime/prepare_real.py",
+      "sha256": "625d1f3a7e2528551d79a835dd9befbcce9e9b3138b959f873dc3094110fa825"
+    },
+    {
+      "bytes": 2806,
+      "path": "openvino/full_runtime/real_inputs.py",
+      "sha256": "3b331ff7e5064bf0ee1f6aadf08f19700e6d50d037257b970460db4a3a08e201"
+    },
+    {
+      "bytes": 4411,
+      "path": "openvino/full_runtime/source_precision_check.py",
+      "sha256": "a0353cd32bc15dc001d3a9477ef779da6ad441ba3688ff990dfbda85c8057173"
+    }
+  ],
+  "status": "pass",
+  "trust": {
+    "learned_payloads_loaded": false,
+    "reference_root": "explicit curated executable source; not sandboxed",
+    "source_hashes_are_provenance_only": true
+  }
+}

@@ -1,0 +1,3197 @@
+{
+  "algorithm": "sha256(sorted relative_path NUL sha256 newline)",
+  "hash_policy": {
+    "origin_sha256": "SHA-256 of the authenticated source file when available; null marks a new extraction file or generated import marker",
+    "sanitized_sha256": "SHA-256 of the file shipped in this extraction",
+    "sha256": "backward-compatible alias of sanitized_sha256; tree hashes use this field"
+  },
+  "file_count": 317,
+  "files": [
+    {
+      "bytes": 1182,
+      "origin": "research_evidence",
+      "path": "reference/evidence/attention_splitkey_20261017.xml",
+      "sha256": "364d6856031f0c8e5691ad51fd2764de87cc7736285ecab0aaff83fb5fcf1740",
+      "source_relative": "evidence/attention_splitkey_20261017.xml",
+      "origin_sha256": "364d6856031f0c8e5691ad51fd2764de87cc7736285ecab0aaff83fb5fcf1740",
+      "sanitized_sha256": "364d6856031f0c8e5691ad51fd2764de87cc7736285ecab0aaff83fb5fcf1740",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/evidence/attention_splitkey_20261017.xml"
+    },
+    {
+      "bytes": 1202,
+      "origin": "research_evidence",
+      "path": "reference/evidence/attention_splitkey_binary_prefix_20261017.xml",
+      "sha256": "013b3c79f9999475b6de858c62485495a44bb44dbbdf2aed8c830a6c4c21c71c",
+      "source_relative": "evidence/attention_splitkey_binary_prefix_20261017.xml",
+      "origin_sha256": "013b3c79f9999475b6de858c62485495a44bb44dbbdf2aed8c830a6c4c21c71c",
+      "sanitized_sha256": "013b3c79f9999475b6de858c62485495a44bb44dbbdf2aed8c830a6c4c21c71c",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/evidence/attention_splitkey_binary_prefix_20261017.xml"
+    },
+    {
+      "bytes": 20264,
+      "origin": "research_evidence",
+      "path": "reference/evidence/bench_bf16_cross_b580_20261017.py",
+      "sha256": "339250d4338e353b0ab61924f4ff67f230ba5592281c3479bad31d22b709b88c",
+      "source_relative": "evidence/bench_bf16_cross_b580_20261017.py",
+      "origin_sha256": "339250d4338e353b0ab61924f4ff67f230ba5592281c3479bad31d22b709b88c",
+      "sanitized_sha256": "339250d4338e353b0ab61924f4ff67f230ba5592281c3479bad31d22b709b88c",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/evidence/bench_bf16_cross_b580_20261017.py"
+    },
+    {
+      "bytes": 5221,
+      "origin": "research_evidence",
+      "path": "reference/evidence/bf16_cross_bridge_20261017.cl",
+      "sha256": "cc16f1801411f833fc447fd11e28531512e59e5223aecc28ebc36b6b50ca7395",
+      "source_relative": "evidence/bf16_cross_bridge_20261017.cl",
+      "origin_sha256": "cc16f1801411f833fc447fd11e28531512e59e5223aecc28ebc36b6b50ca7395",
+      "sanitized_sha256": "cc16f1801411f833fc447fd11e28531512e59e5223aecc28ebc36b6b50ca7395",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/evidence/bf16_cross_bridge_20261017.cl"
+    },
+    {
+      "bytes": 10557,
+      "origin": "research_evidence",
+      "path": "reference/evidence/bf16_cross_bridge_20261017.py",
+      "sha256": "e13a3414fa5f6dee1a24a3f422f941cb77153b53162ced61395517974564b0da",
+      "source_relative": "evidence/bf16_cross_bridge_20261017.py",
+      "origin_sha256": "e13a3414fa5f6dee1a24a3f422f941cb77153b53162ced61395517974564b0da",
+      "sanitized_sha256": "e13a3414fa5f6dee1a24a3f422f941cb77153b53162ced61395517974564b0da",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/evidence/bf16_cross_bridge_20261017.py"
+    },
+    {
+      "bytes": 1437,
+      "origin": "research_evidence",
+      "path": "reference/evidence/bf16_cross_bridge_20261017.xml",
+      "sha256": "4c6c118b6c0f44ee503c2416ab1c195967bec93e3b15c4066e2ce84ad7d846cd",
+      "source_relative": "evidence/bf16_cross_bridge_20261017.xml",
+      "origin_sha256": "4c6c118b6c0f44ee503c2416ab1c195967bec93e3b15c4066e2ce84ad7d846cd",
+      "sanitized_sha256": "4c6c118b6c0f44ee503c2416ab1c195967bec93e3b15c4066e2ce84ad7d846cd",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/evidence/bf16_cross_bridge_20261017.xml"
+    },
+    {
+      "bytes": 35618,
+      "origin": "research_evidence",
+      "path": "reference/evidence/check_bf16_cross_bridge_b580_20261017.py",
+      "sha256": "2f7c4ebe9ac8c7e32c267d22ce539cae4c5fbb37258e37ee81ee0bcf3f1453a0",
+      "source_relative": "evidence/check_bf16_cross_bridge_b580_20261017.py",
+      "origin_sha256": "2f7c4ebe9ac8c7e32c267d22ce539cae4c5fbb37258e37ee81ee0bcf3f1453a0",
+      "sanitized_sha256": "2f7c4ebe9ac8c7e32c267d22ce539cae4c5fbb37258e37ee81ee0bcf3f1453a0",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/evidence/check_bf16_cross_bridge_b580_20261017.py"
+    },
+    {
+      "bytes": 18658,
+      "origin": "research_evidence",
+      "path": "reference/evidence/check_native_cross_bridge_b580_20261017.py",
+      "sha256": "a64e943fee2e504df3bf32008e05b009c16e5b759caa58525b242ce7ff626e39",
+      "source_relative": "evidence/check_native_cross_bridge_b580_20261017.py",
+      "origin_sha256": "a64e943fee2e504df3bf32008e05b009c16e5b759caa58525b242ce7ff626e39",
+      "sanitized_sha256": "a64e943fee2e504df3bf32008e05b009c16e5b759caa58525b242ce7ff626e39",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/evidence/check_native_cross_bridge_b580_20261017.py"
+    },
+    {
+      "bytes": 61560,
+      "origin": "research_evidence",
+      "path": "reference/evidence/check_native_post_bridge_b580_20261017.py",
+      "sha256": "5341b382dc11fbdd28c8dcb177378466157a3d502ece08896fd4f1ff2c452831",
+      "source_relative": "evidence/check_native_post_bridge_b580_20261017.py",
+      "origin_sha256": "6fdd9ea53b30101deb110836372ad1f2f48f0a1ee1cec6c2dd3eda13c7f96ba9",
+      "sanitized_sha256": "5341b382dc11fbdd28c8dcb177378466157a3d502ece08896fd4f1ff2c452831",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/evidence/check_native_post_bridge_b580_20261017.py"
+    },
+    {
+      "bytes": 4917,
+      "origin": "research_evidence",
+      "path": "reference/evidence/cross_precise_20261017.py",
+      "sha256": "e3ad62e4ad62b1e5cc0028edca83da0cb6f470d79d4975c9366935b98784dcf8",
+      "source_relative": "evidence/cross_precise_20261017.py",
+      "origin_sha256": "bddf3ce874d491d23df682919761aa0d4183e8a9fd79cf77ba867d22cdb85eda",
+      "sanitized_sha256": "e3ad62e4ad62b1e5cc0028edca83da0cb6f470d79d4975c9366935b98784dcf8",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/evidence/cross_precise_20261017.py"
+    },
+    {
+      "bytes": 7038,
+      "origin": "research_evidence",
+      "path": "reference/evidence/post_cross_bridge_20261017.py",
+      "sha256": "47ae3cf00aae6ab9c903a4e956ea97a843e4275cc4f2cf811bdb5db416b6bedd",
+      "source_relative": "evidence/post_cross_bridge_20261017.py",
+      "origin_sha256": "47ae3cf00aae6ab9c903a4e956ea97a843e4275cc4f2cf811bdb5db416b6bedd",
+      "sanitized_sha256": "47ae3cf00aae6ab9c903a4e956ea97a843e4275cc4f2cf811bdb5db416b6bedd",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/evidence/post_cross_bridge_20261017.py"
+    },
+    {
+      "bytes": 6133,
+      "origin": "research_evidence",
+      "path": "reference/evidence/post_ffn2_state_20261017.py",
+      "sha256": "c891355bc7c0eb5afd8a21447edb9abfc3bcec84c654f22aa0f331ff9fb52ca2",
+      "source_relative": "evidence/post_ffn2_state_20261017.py",
+      "origin_sha256": "c891355bc7c0eb5afd8a21447edb9abfc3bcec84c654f22aa0f331ff9fb52ca2",
+      "sanitized_sha256": "c891355bc7c0eb5afd8a21447edb9abfc3bcec84c654f22aa0f331ff9fb52ca2",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/evidence/post_ffn2_state_20261017.py"
+    },
+    {
+      "bytes": 6451,
+      "origin": "research_evidence",
+      "path": "reference/evidence/rope_rank4_pre_20261017.py",
+      "sha256": "1a8c7d341865d4e2da824e65921e6b32eff77d3f46fdcf0c3d4683f75e315f3b",
+      "source_relative": "evidence/rope_rank4_pre_20261017.py",
+      "origin_sha256": "1a8c7d341865d4e2da824e65921e6b32eff77d3f46fdcf0c3d4683f75e315f3b",
+      "sanitized_sha256": "1a8c7d341865d4e2da824e65921e6b32eff77d3f46fdcf0c3d4683f75e315f3b",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/evidence/rope_rank4_pre_20261017.py"
+    },
+    {
+      "bytes": 25254,
+      "origin": "research_closure",
+      "path": "reference/experiment_memory.py",
+      "sha256": "cad937fb3ab29d9382a3317c1f5ee0255bea508121950a1b91daaeb2be177f46",
+      "source_relative": "experiment_memory.py",
+      "origin_sha256": "ca0bf8c98950693d67c3da19b5a741b2dca04b34bba2c1cc883b93caca87cbe2",
+      "sanitized_sha256": "cad937fb3ab29d9382a3317c1f5ee0255bea508121950a1b91daaeb2be177f46",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/experiment_memory.py"
+    },
+    {
+      "bytes": 21804,
+      "origin": "research_closure",
+      "path": "reference/matched_benchmark/disk_kv.py",
+      "sha256": "3bc2478677a5508d70e7feb7e0d47b2db6efd69cdf63140356edc60174885be0",
+      "source_relative": "matched_benchmark/disk_kv.py",
+      "origin_sha256": "ac590672b0318f0b09a2aab9f30b3eae7a239fbffb6247a0147e0db1fd59a20c",
+      "sanitized_sha256": "3bc2478677a5508d70e7feb7e0d47b2db6efd69cdf63140356edc60174885be0",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/matched_benchmark/disk_kv.py"
+    },
+    {
+      "bytes": 14430,
+      "origin": "extraction_build_support",
+      "origin_path": null,
+      "bytes": 16689,
+      "path": "native/CMakeLists.txt",
+      "sanitized_sha256": "0f2f1ff1d73803ed64c14d0d7818fac7ebd0dfceb914cc24e0e08a62fd419940",
+      "sha256": "0f2f1ff1d73803ed64c14d0d7818fac7ebd0dfceb914cc24e0e08a62fd419940",
+      "source_relative": null,
+      "origin_sha256": null
+    },
+    {
+      "bytes": 30885,
+      "origin": "extraction_build_support",
+      "origin_path": null,
+      "path": "native/README.md",
+      "sanitized_sha256": "1960ec16724658c250721e3b5f8edbe3cf6a081aa25bed92f24158168cca7452",
+      "sha256": "1960ec16724658c250721e3b5f8edbe3cf6a081aa25bed92f24158168cca7452",
+      "source_relative": null,
+      "origin_sha256": null
+    },
+    {
+      "bytes": 1873,
+      "origin": "otc_native_wip",
+      "path": "native/bf16_convert.cpp",
+      "sha256": "ba4f717315ef295bd822508ce6301de5dc03bf28bea114ed8f7d9c4ee7d1a070",
+      "source_relative": "bf16_convert.cpp",
+      "origin_sha256": "ba4f717315ef295bd822508ce6301de5dc03bf28bea114ed8f7d9c4ee7d1a070",
+      "sanitized_sha256": "ba4f717315ef295bd822508ce6301de5dc03bf28bea114ed8f7d9c4ee7d1a070",
+      "origin_path": "otc-native-ai-enhance/bf16_convert.cpp"
+    },
+    {
+      "path": "assets/flash-assets/README.md",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/README.md",
+      "origin_path": "otc-native-ai-enhance/flash-assets/README.md",
+      "origin_sha256": "27080f49ea6e2b90fbbb76b7212f248c8875e986b40b75aea03e3b587bdf2df6",
+      "bytes": 11013,
+      "sha256": "ae4824e6f21ce27c5ca834f7891a87f066f65b8c8eb65f70e10d5a0e1a5da5a8",
+      "sanitized_sha256": "ae4824e6f21ce27c5ca834f7891a87f066f65b8c8eb65f70e10d5a0e1a5da5a8",
+      "adaptation": "intentional public-extraction documentation adaptation; source facts retained and private worklog paths omitted"
+    },
+    {
+      "bytes": 5221,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/bf16_cross_bridge_20261017.cl",
+      "sha256": "cc16f1801411f833fc447fd11e28531512e59e5223aecc28ebc36b6b50ca7395",
+      "source_relative": "flash-assets/bf16_cross_bridge_20261017.cl",
+      "origin_sha256": "cc16f1801411f833fc447fd11e28531512e59e5223aecc28ebc36b6b50ca7395",
+      "sanitized_sha256": "cc16f1801411f833fc447fd11e28531512e59e5223aecc28ebc36b6b50ca7395",
+      "origin_path": "otc-native-ai-enhance/flash-assets/bf16_cross_bridge_20261017.cl"
+    },
+    {
+      "bytes": 2118,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/bf16_cross_bridge_custom_layers.xml",
+      "sha256": "7c00d36f62fe9e5e3e7d3b152ac9c543bc0df00aba5fd2ead6b47e4ef8d6e9f6",
+      "source_relative": "flash-assets/bf16_cross_bridge_custom_layers.xml",
+      "origin_sha256": "7c00d36f62fe9e5e3e7d3b152ac9c543bc0df00aba5fd2ead6b47e4ef8d6e9f6",
+      "sanitized_sha256": "7c00d36f62fe9e5e3e7d3b152ac9c543bc0df00aba5fd2ead6b47e4ef8d6e9f6",
+      "origin_path": "otc-native-ai-enhance/flash-assets/bf16_cross_bridge_custom_layers.xml"
+    },
+    {
+      "bytes": 722,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_attention_assets.hpp",
+      "sha256": "250d99e8b867aec9a9774c7d4266556803657c2f7fa72f5825a812a5b8b72fc0",
+      "source_relative": "flash-assets/flash_attention_assets.hpp",
+      "origin_sha256": "250d99e8b867aec9a9774c7d4266556803657c2f7fa72f5825a812a5b8b72fc0",
+      "sanitized_sha256": "250d99e8b867aec9a9774c7d4266556803657c2f7fa72f5825a812a5b8b72fc0",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_attention_assets.hpp"
+    },
+    {
+      "bytes": 5274,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_attention_provenance.json",
+      "sha256": "5a688f0fbe2773e37aa588580baca7dc847d56c026237fca1dd7e1fad4e2f411",
+      "source_relative": "flash-assets/flash_attention_provenance.json",
+      "origin_sha256": "5a688f0fbe2773e37aa588580baca7dc847d56c026237fca1dd7e1fad4e2f411",
+      "sanitized_sha256": "5a688f0fbe2773e37aa588580baca7dc847d56c026237fca1dd7e1fad4e2f411",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_attention_provenance.json"
+    },
+    {
+      "path": "assets/flash-assets/flash_cross_assets.hpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/flash_cross_assets.hpp",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_cross_assets.hpp",
+      "origin_sha256": "73cbd2f7de0b5038a755b2fb786647ce1334d947ce15bba9330aeb89cb873709",
+      "bytes": 132797,
+      "sha256": "73cbd2f7de0b5038a755b2fb786647ce1334d947ce15bba9330aeb89cb873709",
+      "sanitized_sha256": "73cbd2f7de0b5038a755b2fb786647ce1334d947ce15bba9330aeb89cb873709"
+    },
+    {
+      "path": "assets/flash-assets/flash_cross_kv_bf16.bin",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/flash_cross_kv_bf16.bin",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_cross_kv_bf16.bin",
+      "origin_sha256": "862ca08291ff0bf5f96f630f2f8e3a42384ddc458dde33057ed473fe26612aa5",
+      "bytes": 12,
+      "sha256": "862ca08291ff0bf5f96f630f2f8e3a42384ddc458dde33057ed473fe26612aa5",
+      "sanitized_sha256": "862ca08291ff0bf5f96f630f2f8e3a42384ddc458dde33057ed473fe26612aa5"
+    },
+    {
+      "path": "assets/flash-assets/flash_cross_kv_bf16.xml",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/flash_cross_kv_bf16.xml",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_cross_kv_bf16.xml",
+      "origin_sha256": "e57aee54756cd34d775371b8137358fff7ddfb4680ee680dd1c93dc1f299a82d",
+      "bytes": 9493,
+      "sha256": "e57aee54756cd34d775371b8137358fff7ddfb4680ee680dd1c93dc1f299a82d",
+      "sanitized_sha256": "e57aee54756cd34d775371b8137358fff7ddfb4680ee680dd1c93dc1f299a82d"
+    },
+    {
+      "path": "assets/flash-assets/flash_cross_provenance.json",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/flash_cross_provenance.json",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_cross_provenance.json",
+      "origin_sha256": "e2ff5e05920876d212e3fe2bce41ee26c0e00a52d473b2f947a50a8968bd4dd8",
+      "bytes": 4279,
+      "sha256": "e2ff5e05920876d212e3fe2bce41ee26c0e00a52d473b2f947a50a8968bd4dd8",
+      "sanitized_sha256": "e2ff5e05920876d212e3fe2bce41ee26c0e00a52d473b2f947a50a8968bd4dd8",
+      "adaptation": "asset provenance is byte-identical to the current OTC metadata; referenced Python sources retain public reference_paths adaptations"
+    },
+    {
+      "bytes": 34065,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_decoder_assets.hpp",
+      "origin_sha256": "2a2f3c703e4b6a48adb967afae1d1a388a14c022e4ce388ca07fdff9e5b722f3",
+      "path": "assets/flash-assets/flash_decoder_assets.hpp",
+      "sanitized_sha256": "2a2f3c703e4b6a48adb967afae1d1a388a14c022e4ce388ca07fdff9e5b722f3",
+      "sha256": "2a2f3c703e4b6a48adb967afae1d1a388a14c022e4ce388ca07fdff9e5b722f3",
+      "source_relative": "flash-assets/flash_decoder_assets.hpp"
+    },
+    {
+      "bytes": 104,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_decoder_phased_front_bf16.bin",
+      "origin_sha256": "7d6436e4d2c465b8bf268ec4d21bb3bc633942e4467b61b16867f1c6fa3b3ee1",
+      "path": "assets/flash-assets/flash_decoder_phased_front_bf16.bin",
+      "sanitized_sha256": "7d6436e4d2c465b8bf268ec4d21bb3bc633942e4467b61b16867f1c6fa3b3ee1",
+      "sha256": "7d6436e4d2c465b8bf268ec4d21bb3bc633942e4467b61b16867f1c6fa3b3ee1",
+      "source_relative": "flash-assets/flash_decoder_phased_front_bf16.bin"
+    },
+    {
+      "bytes": 84854,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_decoder_phased_front_bf16.xml",
+      "origin_sha256": "939770c583753c61bffff06df2ab89506570d9c297f6215e8c9e41e46b03d1b2",
+      "path": "assets/flash-assets/flash_decoder_phased_front_bf16.xml",
+      "sanitized_sha256": "939770c583753c61bffff06df2ab89506570d9c297f6215e8c9e41e46b03d1b2",
+      "sha256": "939770c583753c61bffff06df2ab89506570d9c297f6215e8c9e41e46b03d1b2",
+      "source_relative": "flash-assets/flash_decoder_phased_front_bf16.xml"
+    },
+    {
+      "bytes": 64,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_decoder_phased_grow_memory_bf16.bin",
+      "origin_sha256": "bc67bbd892021822bb1bf0b354f573ce6b3b2e2ce09f215c51565b0a35e00d13",
+      "path": "assets/flash-assets/flash_decoder_phased_grow_memory_bf16.bin",
+      "sanitized_sha256": "bc67bbd892021822bb1bf0b354f573ce6b3b2e2ce09f215c51565b0a35e00d13",
+      "sha256": "bc67bbd892021822bb1bf0b354f573ce6b3b2e2ce09f215c51565b0a35e00d13",
+      "source_relative": "flash-assets/flash_decoder_phased_grow_memory_bf16.bin"
+    },
+    {
+      "bytes": 40588,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_decoder_phased_grow_memory_bf16.xml",
+      "origin_sha256": "fdd6b9bbd49e1e8c9eb0613895b1af17908b844dd1bd09cb41478788020baebf",
+      "path": "assets/flash-assets/flash_decoder_phased_grow_memory_bf16.xml",
+      "sanitized_sha256": "fdd6b9bbd49e1e8c9eb0613895b1af17908b844dd1bd09cb41478788020baebf",
+      "sha256": "fdd6b9bbd49e1e8c9eb0613895b1af17908b844dd1bd09cb41478788020baebf",
+      "source_relative": "flash-assets/flash_decoder_phased_grow_memory_bf16.xml"
+    },
+    {
+      "bytes": 24,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_decoder_phased_remote_frame_child_bf16.bin",
+      "origin_sha256": "517ce884675b6af0fcb51d7679faeb686ccd9690ba8c23551560cc590d98389b",
+      "path": "assets/flash-assets/flash_decoder_phased_remote_frame_child_bf16.bin",
+      "sanitized_sha256": "517ce884675b6af0fcb51d7679faeb686ccd9690ba8c23551560cc590d98389b",
+      "sha256": "517ce884675b6af0fcb51d7679faeb686ccd9690ba8c23551560cc590d98389b",
+      "source_relative": "flash-assets/flash_decoder_phased_remote_frame_child_bf16.bin"
+    },
+    {
+      "bytes": 8400,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_decoder_phased_remote_frame_child_bf16.xml",
+      "origin_sha256": "3fd0fe7b41a57728001f99d7cb26e5a2e72160bc0ac85cd9f15b5a5c6421e63e",
+      "path": "assets/flash-assets/flash_decoder_phased_remote_frame_child_bf16.xml",
+      "sanitized_sha256": "3fd0fe7b41a57728001f99d7cb26e5a2e72160bc0ac85cd9f15b5a5c6421e63e",
+      "sha256": "3fd0fe7b41a57728001f99d7cb26e5a2e72160bc0ac85cd9f15b5a5c6421e63e",
+      "source_relative": "flash-assets/flash_decoder_phased_remote_frame_child_bf16.xml"
+    },
+    {
+      "bytes": 6172,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_edges_prefix_assets.hpp",
+      "sha256": "4e2a62e61454b40e779dc332ff1c036247c945eb6b8e38e9387ec8d24c62a8e3",
+      "source_relative": "flash-assets/flash_edges_prefix_assets.hpp",
+      "origin_sha256": "4e2a62e61454b40e779dc332ff1c036247c945eb6b8e38e9387ec8d24c62a8e3",
+      "sanitized_sha256": "4e2a62e61454b40e779dc332ff1c036247c945eb6b8e38e9387ec8d24c62a8e3",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_edges_prefix_assets.hpp"
+    },
+    {
+      "bytes": 664,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_edges_prefix_bf16.bin",
+      "sha256": "69bf6dce98cf98395030464b350ca048a648b7617ca864ced452b1db3d209bd1",
+      "source_relative": "flash-assets/flash_edges_prefix_bf16.bin",
+      "origin_sha256": "69bf6dce98cf98395030464b350ca048a648b7617ca864ced452b1db3d209bd1",
+      "sanitized_sha256": "69bf6dce98cf98395030464b350ca048a648b7617ca864ced452b1db3d209bd1",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_edges_prefix_bf16.bin"
+    },
+    {
+      "bytes": 8874,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_edges_prefix_bf16.xml",
+      "sha256": "a1ab4509d9c4a1b67a1ec54e1d555ee1ceec30e2930c7600326dda9c396c1004",
+      "source_relative": "flash-assets/flash_edges_prefix_bf16.xml",
+      "origin_sha256": "a1ab4509d9c4a1b67a1ec54e1d555ee1ceec30e2930c7600326dda9c396c1004",
+      "sanitized_sha256": "a1ab4509d9c4a1b67a1ec54e1d555ee1ceec30e2930c7600326dda9c396c1004",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_edges_prefix_bf16.xml"
+    },
+    {
+      "bytes": 8051,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_edges_provenance.json",
+      "sha256": "7382dbaa2e2b1e29537aeb03b4de106f4bfb790fdb83c3183ad9faa336181856",
+      "source_relative": "flash-assets/flash_edges_provenance.json",
+      "origin_sha256": "7382dbaa2e2b1e29537aeb03b4de106f4bfb790fdb83c3183ad9faa336181856",
+      "sanitized_sha256": "7382dbaa2e2b1e29537aeb03b4de106f4bfb790fdb83c3183ad9faa336181856",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_edges_provenance.json",
+      "adaptation": "asset provenance is byte-identical to the current OTC metadata; referenced Python sources retain public reference_paths adaptations"
+    },
+    {
+      "bytes": 6843,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_edges_suffix_assets.hpp",
+      "sha256": "578b0e72aefe26e77d2aa574c1faf67f46a50a9b06f565c78e2a884025bb9a08",
+      "source_relative": "flash-assets/flash_edges_suffix_assets.hpp",
+      "origin_sha256": "578b0e72aefe26e77d2aa574c1faf67f46a50a9b06f565c78e2a884025bb9a08",
+      "sanitized_sha256": "578b0e72aefe26e77d2aa574c1faf67f46a50a9b06f565c78e2a884025bb9a08",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_edges_suffix_assets.hpp"
+    },
+    {
+      "bytes": 328,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_edges_suffix_bf16.bin",
+      "sha256": "9bec50f4ae9fa668adee56efac658baba7e6f2a73301bc24b6fb613238cb39bb",
+      "source_relative": "flash-assets/flash_edges_suffix_bf16.bin",
+      "origin_sha256": "9bec50f4ae9fa668adee56efac658baba7e6f2a73301bc24b6fb613238cb39bb",
+      "sanitized_sha256": "9bec50f4ae9fa668adee56efac658baba7e6f2a73301bc24b6fb613238cb39bb",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_edges_suffix_bf16.bin"
+    },
+    {
+      "bytes": 17778,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_edges_suffix_bf16.xml",
+      "sha256": "20900cf95b1b32ab3b21d879a1f56210a4918b755acc34fb96b85e0c68f87fe5",
+      "source_relative": "flash-assets/flash_edges_suffix_bf16.xml",
+      "origin_sha256": "20900cf95b1b32ab3b21d879a1f56210a4918b755acc34fb96b85e0c68f87fe5",
+      "sanitized_sha256": "20900cf95b1b32ab3b21d879a1f56210a4918b755acc34fb96b85e0c68f87fe5",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_edges_suffix_bf16.xml"
+    },
+    {
+      "bytes": 2414,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_fixed_assets.hpp",
+      "sha256": "7ee0bef59493cac27af09ba9057d5e2a32e11af7639682e31de90ad00d8ab93e",
+      "source_relative": "flash-assets/flash_fixed_assets.hpp",
+      "origin_sha256": "7ee0bef59493cac27af09ba9057d5e2a32e11af7639682e31de90ad00d8ab93e",
+      "sanitized_sha256": "7ee0bef59493cac27af09ba9057d5e2a32e11af7639682e31de90ad00d8ab93e",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_fixed_assets.hpp"
+    },
+    {
+      "bytes": 11822,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_fixed_provenance.json",
+      "sha256": "78d086ea5ff8324cd56997a0d7c5654f181ce1946141cc4ebcfdb8f9acee21e8",
+      "source_relative": "flash-assets/flash_fixed_provenance.json",
+      "origin_sha256": "78d086ea5ff8324cd56997a0d7c5654f181ce1946141cc4ebcfdb8f9acee21e8",
+      "sanitized_sha256": "78d086ea5ff8324cd56997a0d7c5654f181ce1946141cc4ebcfdb8f9acee21e8",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_fixed_provenance.json"
+    },
+    {
+      "path": "assets/flash-assets/flash_lq_assets.hpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/flash_lq_assets.hpp",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_lq_assets.hpp",
+      "origin_sha256": "b132cac1d9c2dc465b6832e62f3dc2b06c056cdd2faa68e5c3ece3f47c29e9e0",
+      "bytes": 16371,
+      "sha256": "b132cac1d9c2dc465b6832e62f3dc2b06c056cdd2faa68e5c3ece3f47c29e9e0",
+      "sanitized_sha256": "b132cac1d9c2dc465b6832e62f3dc2b06c056cdd2faa68e5c3ece3f47c29e9e0"
+    },
+    {
+      "path": "assets/flash-assets/flash_lq_projection_stage1_bf16.bin",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/flash_lq_projection_stage1_bf16.bin",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_lq_projection_stage1_bf16.bin",
+      "origin_sha256": "8f79ea44054cc236f34c6836981475f280e1851193e5e9bf10c1f3a6853ceaf0",
+      "bytes": 336,
+      "sha256": "8f79ea44054cc236f34c6836981475f280e1851193e5e9bf10c1f3a6853ceaf0",
+      "sanitized_sha256": "8f79ea44054cc236f34c6836981475f280e1851193e5e9bf10c1f3a6853ceaf0"
+    },
+    {
+      "path": "assets/flash-assets/flash_lq_projection_stage1_bf16.xml",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/flash_lq_projection_stage1_bf16.xml",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_lq_projection_stage1_bf16.xml",
+      "origin_sha256": "376a58a703181e6acb619c0052b51139e7a0c15478080a25ca139d69e25460d1",
+      "bytes": 19096,
+      "sha256": "376a58a703181e6acb619c0052b51139e7a0c15478080a25ca139d69e25460d1",
+      "sanitized_sha256": "376a58a703181e6acb619c0052b51139e7a0c15478080a25ca139d69e25460d1"
+    },
+    {
+      "path": "assets/flash-assets/flash_lq_projection_stage2_bf16.bin",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/flash_lq_projection_stage2_bf16.bin",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_lq_projection_stage2_bf16.bin",
+      "origin_sha256": "99d49b0a03c208ba2067ce955fdc3b30bef5a4af7a65f8f55f7291fee3244b76",
+      "bytes": 168,
+      "sha256": "99d49b0a03c208ba2067ce955fdc3b30bef5a4af7a65f8f55f7291fee3244b76",
+      "sanitized_sha256": "99d49b0a03c208ba2067ce955fdc3b30bef5a4af7a65f8f55f7291fee3244b76"
+    },
+    {
+      "path": "assets/flash-assets/flash_lq_projection_stage2_bf16.xml",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/flash_lq_projection_stage2_bf16.xml",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_lq_projection_stage2_bf16.xml",
+      "origin_sha256": "2496660b73fd26240a80a7f88acf5947f2d2f48e75082e8d099301292a94f8eb",
+      "bytes": 17783,
+      "sha256": "2496660b73fd26240a80a7f88acf5947f2d2f48e75082e8d099301292a94f8eb",
+      "sanitized_sha256": "2496660b73fd26240a80a7f88acf5947f2d2f48e75082e8d099301292a94f8eb"
+    },
+    {
+      "path": "assets/flash-assets/flash_lq_projection_startup_bf16.bin",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/flash_lq_projection_startup_bf16.bin",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_lq_projection_startup_bf16.bin",
+      "origin_sha256": "34eac0b87a2297e790754b0fc3e9647a973ee1ba97dbe375243172fc96c970f8",
+      "bytes": 416,
+      "sha256": "34eac0b87a2297e790754b0fc3e9647a973ee1ba97dbe375243172fc96c970f8",
+      "sanitized_sha256": "34eac0b87a2297e790754b0fc3e9647a973ee1ba97dbe375243172fc96c970f8"
+    },
+    {
+      "path": "assets/flash-assets/flash_lq_projection_startup_bf16.xml",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/flash_lq_projection_startup_bf16.xml",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_lq_projection_startup_bf16.xml",
+      "origin_sha256": "0f7ac5a5908eeccfc811e323ef37824d09102ac1e653e0b812b3f9a59addf3e9",
+      "bytes": 19580,
+      "sha256": "0f7ac5a5908eeccfc811e323ef37824d09102ac1e653e0b812b3f9a59addf3e9",
+      "sanitized_sha256": "0f7ac5a5908eeccfc811e323ef37824d09102ac1e653e0b812b3f9a59addf3e9"
+    },
+    {
+      "path": "assets/flash-assets/flash_lq_provenance.json",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/flash_lq_provenance.json",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_lq_provenance.json",
+      "origin_sha256": "d5f98a52b32e466e0d9a8616a4ca9996b91626c31b43393be2aa6da8dab36951",
+      "bytes": 8876,
+      "sha256": "d5f98a52b32e466e0d9a8616a4ca9996b91626c31b43393be2aa6da8dab36951",
+      "sanitized_sha256": "d5f98a52b32e466e0d9a8616a4ca9996b91626c31b43393be2aa6da8dab36951"
+    },
+    {
+      "bytes": 3474,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_post_4096_bf16.bin",
+      "sha256": "4fbc48e7bdaf2e07ba701b43367a4b573e5aef6cdad16b75219395aedad4ab5a",
+      "source_relative": "flash-assets/flash_post_4096_bf16.bin",
+      "origin_sha256": "4fbc48e7bdaf2e07ba701b43367a4b573e5aef6cdad16b75219395aedad4ab5a",
+      "sanitized_sha256": "4fbc48e7bdaf2e07ba701b43367a4b573e5aef6cdad16b75219395aedad4ab5a",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_post_4096_bf16.bin"
+    },
+    {
+      "bytes": 69969,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_post_4096_bf16.xml",
+      "sha256": "1de0453729011b0d6e61f43a993e04b559fe27c3aa0e4894c69cf42f3afc3d37",
+      "source_relative": "flash-assets/flash_post_4096_bf16.xml",
+      "origin_sha256": "1de0453729011b0d6e61f43a993e04b559fe27c3aa0e4894c69cf42f3afc3d37",
+      "sanitized_sha256": "1de0453729011b0d6e61f43a993e04b559fe27c3aa0e4894c69cf42f3afc3d37",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_post_4096_bf16.xml"
+    },
+    {
+      "bytes": 277263,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_post_assets.hpp",
+      "sha256": "931cb6da8b8d1603d326d9e46d29a072fdf484de3dbd8d6de311d9c306260636",
+      "source_relative": "flash-assets/flash_post_assets.hpp",
+      "origin_sha256": "931cb6da8b8d1603d326d9e46d29a072fdf484de3dbd8d6de311d9c306260636",
+      "sanitized_sha256": "931cb6da8b8d1603d326d9e46d29a072fdf484de3dbd8d6de311d9c306260636",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_post_assets.hpp"
+    },
+    {
+      "path": "assets/flash-assets/flash_pre_4096_bf16.bin",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/flash_pre_4096_bf16.bin",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_pre_4096_bf16.bin",
+      "origin_sha256": "b4ce6a73d4445949f43264f8334d57fcedf5b29504bc2222c110be3e7c60646e",
+      "bytes": 768,
+      "sha256": "b4ce6a73d4445949f43264f8334d57fcedf5b29504bc2222c110be3e7c60646e",
+      "sanitized_sha256": "b4ce6a73d4445949f43264f8334d57fcedf5b29504bc2222c110be3e7c60646e"
+    },
+    {
+      "path": "assets/flash-assets/flash_pre_4096_bf16.xml",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/flash_pre_4096_bf16.xml",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_pre_4096_bf16.xml",
+      "origin_sha256": "a70c2bbb5fb0f65add9e93da461b9dee324a2fb5216c649ccf69edf84876087d",
+      "bytes": 87093,
+      "sha256": "a70c2bbb5fb0f65add9e93da461b9dee324a2fb5216c649ccf69edf84876087d",
+      "sanitized_sha256": "a70c2bbb5fb0f65add9e93da461b9dee324a2fb5216c649ccf69edf84876087d"
+    },
+    {
+      "path": "assets/flash-assets/flash_pre_assets.hpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/flash_pre_assets.hpp",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_pre_assets.hpp",
+      "origin_sha256": "fe35e3adea136c46b60df69a7b2eda402f71ce33eb194875e5cd036c24f671b5",
+      "bytes": 203778,
+      "sha256": "fe35e3adea136c46b60df69a7b2eda402f71ce33eb194875e5cd036c24f671b5",
+      "sanitized_sha256": "fe35e3adea136c46b60df69a7b2eda402f71ce33eb194875e5cd036c24f671b5"
+    },
+    {
+      "path": "assets/flash-assets/flash_pre_provenance.json",
+      "origin": "otc_native_wip",
+      "source_relative": "flash-assets/flash_pre_provenance.json",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_pre_provenance.json",
+      "origin_sha256": "ef78926d76f100d1a8dc3430394e7401e619f6623f80b17b0734e5ce912bffb6",
+      "bytes": 12829,
+      "sha256": "ef78926d76f100d1a8dc3430394e7401e619f6623f80b17b0734e5ce912bffb6",
+      "sanitized_sha256": "ef78926d76f100d1a8dc3430394e7401e619f6623f80b17b0734e5ce912bffb6"
+    },
+    {
+      "bytes": 6835,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_text_assets.hpp",
+      "sha256": "0119234f258bfe32c31bb1d8a209e141bbfa6b7d93b799b8f239eb67b119e233",
+      "source_relative": "flash-assets/flash_text_assets.hpp",
+      "origin_sha256": "0119234f258bfe32c31bb1d8a209e141bbfa6b7d93b799b8f239eb67b119e233",
+      "sanitized_sha256": "0119234f258bfe32c31bb1d8a209e141bbfa6b7d93b799b8f239eb67b119e233",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_text_assets.hpp"
+    },
+    {
+      "bytes": 0,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_text_bf16.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_relative": "flash-assets/flash_text_bf16.bin",
+      "origin_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sanitized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_text_bf16.bin"
+    },
+    {
+      "bytes": 4964,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_text_bf16.xml",
+      "sha256": "d4f3a191a52f6bd499300310b90b9cfb70cf5bf92455b892549a6f0a81d03e21",
+      "source_relative": "flash-assets/flash_text_bf16.xml",
+      "origin_sha256": "d4f3a191a52f6bd499300310b90b9cfb70cf5bf92455b892549a6f0a81d03e21",
+      "sanitized_sha256": "d4f3a191a52f6bd499300310b90b9cfb70cf5bf92455b892549a6f0a81d03e21",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_text_bf16.xml"
+    },
+    {
+      "bytes": 1027,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/flash_text_provenance.txt",
+      "sha256": "2cb26e3f80f9d717b25b8a83e6188137e0f64145cbb13adcc047c7ac8f196ab4",
+      "source_relative": "flash-assets/flash_text_provenance.txt",
+      "origin_sha256": "2cb26e3f80f9d717b25b8a83e6188137e0f64145cbb13adcc047c7ac8f196ab4",
+      "sanitized_sha256": "2cb26e3f80f9d717b25b8a83e6188137e0f64145cbb13adcc047c7ac8f196ab4",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_text_provenance.txt"
+    },
+    {
+      "bytes": 25101,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/plus_sparse_xmx.cl",
+      "sha256": "eef7a585e37c4277d764fbe5f62110a012d68b02db0be4e852c722edc75738c2",
+      "source_relative": "flash-assets/plus_sparse_xmx.cl",
+      "origin_sha256": "eef7a585e37c4277d764fbe5f62110a012d68b02db0be4e852c722edc75738c2",
+      "sanitized_sha256": "eef7a585e37c4277d764fbe5f62110a012d68b02db0be4e852c722edc75738c2",
+      "origin_path": "otc-native-ai-enhance/flash-assets/plus_sparse_xmx.cl"
+    },
+    {
+      "bytes": 1196,
+      "origin": "otc_native_wip",
+      "path": "assets/flash-assets/plus_split_key.xml",
+      "sha256": "47d707b6b4918d649607e5aa989fdd658f39ae438960376e01e48bbe7ed7930d",
+      "source_relative": "flash-assets/plus_split_key.xml",
+      "origin_sha256": "47d707b6b4918d649607e5aa989fdd658f39ae438960376e01e48bbe7ed7930d",
+      "sanitized_sha256": "47d707b6b4918d649607e5aa989fdd658f39ae438960376e01e48bbe7ed7930d",
+      "origin_path": "otc-native-ai-enhance/flash-assets/plus_split_key.xml"
+    },
+    {
+      "path": "native/flash_attention_session.cpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_attention_session.cpp",
+      "origin_path": "otc-native-ai-enhance/flash_attention_session.cpp",
+      "origin_sha256": "37ec99e106684842de20a6b58e988c642c63038cbe85f94d4dbde14bf92822f5",
+      "bytes": 13403,
+      "sha256": "37ec99e106684842de20a6b58e988c642c63038cbe85f94d4dbde14bf92822f5",
+      "sanitized_sha256": "37ec99e106684842de20a6b58e988c642c63038cbe85f94d4dbde14bf92822f5"
+    },
+    {
+      "path": "native/flash_attention_session.hpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_attention_session.hpp",
+      "origin_path": "otc-native-ai-enhance/flash_attention_session.hpp",
+      "origin_sha256": "1a52c3b4adcdf74749d1ec87e6278989a599dd1c0dc1cdb6193aaa3427134eec",
+      "bytes": 2655,
+      "sha256": "1a52c3b4adcdf74749d1ec87e6278989a599dd1c0dc1cdb6193aaa3427134eec",
+      "sanitized_sha256": "1a52c3b4adcdf74749d1ec87e6278989a599dd1c0dc1cdb6193aaa3427134eec"
+    },
+    {
+      "bytes": 1159,
+      "origin": "otc_native_wip",
+      "path": "native/flash_cross_model.cpp",
+      "source_relative": "flash_cross_model.cpp",
+      "origin_sha256": "30cee305130f2d0e386900222816b14790a26f583a89b843bbe7a284c40c59c5",
+      "sanitized_sha256": "30cee305130f2d0e386900222816b14790a26f583a89b843bbe7a284c40c59c5",
+      "origin_path": "otc-native-ai-enhance/flash_cross_model.cpp",
+      "sha256": "30cee305130f2d0e386900222816b14790a26f583a89b843bbe7a284c40c59c5"
+    },
+    {
+      "bytes": 353,
+      "origin": "otc_native_wip",
+      "path": "native/flash_cross_model.hpp",
+      "source_relative": "flash_cross_model.hpp",
+      "origin_sha256": "e903381b0f10da71860fac0f04033c2379cabe69f8bb1cf7d6fba6e9abbc82f6",
+      "sanitized_sha256": "e903381b0f10da71860fac0f04033c2379cabe69f8bb1cf7d6fba6e9abbc82f6",
+      "origin_path": "otc-native-ai-enhance/flash_cross_model.hpp",
+      "sha256": "e903381b0f10da71860fac0f04033c2379cabe69f8bb1cf7d6fba6e9abbc82f6"
+    },
+    {
+      "bytes": 9139,
+      "origin": "otc_native_wip",
+      "path": "native/flash_cross_model_tests.cpp",
+      "source_relative": "flash_cross_model_tests.cpp",
+      "origin_sha256": "721b719afededd9649ff830a3a2f86faf3b34d2655e02263ab6323028e62229a",
+      "sanitized_sha256": "721b719afededd9649ff830a3a2f86faf3b34d2655e02263ab6323028e62229a",
+      "origin_path": "otc-native-ai-enhance/flash_cross_model_tests.cpp",
+      "sha256": "721b719afededd9649ff830a3a2f86faf3b34d2655e02263ab6323028e62229a"
+    },
+    {
+      "bytes": 2856,
+      "origin": "otc_native_wip",
+      "path": "native/flash_cross_session.cpp",
+      "sha256": "e691d934f0bba762a70bbf768c260e0406288395335e6bee2b15b06a26843176",
+      "source_relative": "flash_cross_session.cpp",
+      "origin_sha256": "e691d934f0bba762a70bbf768c260e0406288395335e6bee2b15b06a26843176",
+      "sanitized_sha256": "e691d934f0bba762a70bbf768c260e0406288395335e6bee2b15b06a26843176",
+      "origin_path": "otc-native-ai-enhance/flash_cross_session.cpp"
+    },
+    {
+      "bytes": 1005,
+      "origin": "otc_native_wip",
+      "path": "native/flash_cross_session.hpp",
+      "sha256": "e3d4d896dc3346d5e9388b9a0dec67c1f213f80f124819269a6ea55fa65c637b",
+      "source_relative": "flash_cross_session.hpp",
+      "origin_sha256": "e3d4d896dc3346d5e9388b9a0dec67c1f213f80f124819269a6ea55fa65c637b",
+      "sanitized_sha256": "e3d4d896dc3346d5e9388b9a0dec67c1f213f80f124819269a6ea55fa65c637b",
+      "origin_path": "otc-native-ai-enhance/flash_cross_session.hpp"
+    },
+    {
+      "bytes": 13102,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_decoder_frame.cpp",
+      "path": "native/flash_decoder_frame.cpp",
+      "sanitized_sha256": "1013f73ea1c9c3ff6980f9d95ba33dcae9a0b40b57d64d69a7fa20989746c3ba",
+      "sha256": "1013f73ea1c9c3ff6980f9d95ba33dcae9a0b40b57d64d69a7fa20989746c3ba",
+      "source_relative": "flash_decoder_frame.cpp",
+      "origin_sha256": "1013f73ea1c9c3ff6980f9d95ba33dcae9a0b40b57d64d69a7fa20989746c3ba"
+    },
+    {
+      "bytes": 4091,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_decoder_frame.hpp",
+      "path": "native/flash_decoder_frame.hpp",
+      "sanitized_sha256": "04371df93a04bfb8a1e5ac9e019324a97e724b8ddc1f2ab5d57e1865bba39bf8",
+      "sha256": "04371df93a04bfb8a1e5ac9e019324a97e724b8ddc1f2ab5d57e1865bba39bf8",
+      "source_relative": "flash_decoder_frame.hpp",
+      "origin_sha256": "04371df93a04bfb8a1e5ac9e019324a97e724b8ddc1f2ab5d57e1865bba39bf8"
+    },
+    {
+      "bytes": 17688,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_decoder_frame_tests.cpp",
+      "path": "native/flash_decoder_frame_tests.cpp",
+      "sanitized_sha256": "54ade138d2dfd9e38f25a507462168fe828f71687ceb55a1073a555aaa04a210",
+      "sha256": "54ade138d2dfd9e38f25a507462168fe828f71687ceb55a1073a555aaa04a210",
+      "source_relative": "flash_decoder_frame_tests.cpp",
+      "origin_sha256": "54ade138d2dfd9e38f25a507462168fe828f71687ceb55a1073a555aaa04a210"
+    },
+    {
+      "bytes": 3222,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_decoder_model.cpp",
+      "origin_sha256": "b7ac4ec159bc0a3e3a0aa346922b553e0b2a4c6279e7ddd5aa376d09aae7d4ff",
+      "path": "native/flash_decoder_model.cpp",
+      "sanitized_sha256": "b7ac4ec159bc0a3e3a0aa346922b553e0b2a4c6279e7ddd5aa376d09aae7d4ff",
+      "sha256": "b7ac4ec159bc0a3e3a0aa346922b553e0b2a4c6279e7ddd5aa376d09aae7d4ff",
+      "source_relative": "flash_decoder_model.cpp"
+    },
+    {
+      "bytes": 572,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_decoder_model.hpp",
+      "origin_sha256": "4bad4b08081d6073c4e6ff98ec2df6c882f4414ad46dc8d1581a470be8524c4e",
+      "path": "native/flash_decoder_model.hpp",
+      "sanitized_sha256": "4bad4b08081d6073c4e6ff98ec2df6c882f4414ad46dc8d1581a470be8524c4e",
+      "sha256": "4bad4b08081d6073c4e6ff98ec2df6c882f4414ad46dc8d1581a470be8524c4e",
+      "source_relative": "flash_decoder_model.hpp"
+    },
+    {
+      "bytes": 7419,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_decoder_model_tests.cpp",
+      "origin_sha256": "5e66a040b5296ad8dcbd7dd69cb1262715cb419dadb306673de2c193882336af",
+      "path": "native/flash_decoder_model_tests.cpp",
+      "sanitized_sha256": "5e66a040b5296ad8dcbd7dd69cb1262715cb419dadb306673de2c193882336af",
+      "sha256": "5e66a040b5296ad8dcbd7dd69cb1262715cb419dadb306673de2c193882336af",
+      "source_relative": "flash_decoder_model_tests.cpp"
+    },
+    {
+      "bytes": 14252,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_decoder_session.cpp",
+      "path": "native/flash_decoder_session.cpp",
+      "sanitized_sha256": "e9c7a22f97847bdf6940373f2b1ebda75fe43f5d5f42b7143f4788ec6b6cf65c",
+      "sha256": "e9c7a22f97847bdf6940373f2b1ebda75fe43f5d5f42b7143f4788ec6b6cf65c",
+      "source_relative": "flash_decoder_session.cpp",
+      "origin_sha256": "e9c7a22f97847bdf6940373f2b1ebda75fe43f5d5f42b7143f4788ec6b6cf65c"
+    },
+    {
+      "bytes": 2492,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_decoder_session.hpp",
+      "path": "native/flash_decoder_session.hpp",
+      "sanitized_sha256": "8505c2a98b958eb721e2bf0b1c0906cd7ff75c2ab5e377975cdf6ca7dee3a635",
+      "sha256": "8505c2a98b958eb721e2bf0b1c0906cd7ff75c2ab5e377975cdf6ca7dee3a635",
+      "source_relative": "flash_decoder_session.hpp",
+      "origin_sha256": "8505c2a98b958eb721e2bf0b1c0906cd7ff75c2ab5e377975cdf6ca7dee3a635"
+    },
+    {
+      "path": "native/flash_denoiser.cpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_denoiser.cpp",
+      "origin_path": "otc-native-ai-enhance/flash_denoiser.cpp",
+      "origin_sha256": "cd064c6277532e4673564fcdee02b8b84f67bf30121d65476b9890a22f29e1cb",
+      "bytes": 16696,
+      "sha256": "cd064c6277532e4673564fcdee02b8b84f67bf30121d65476b9890a22f29e1cb",
+      "sanitized_sha256": "cd064c6277532e4673564fcdee02b8b84f67bf30121d65476b9890a22f29e1cb"
+    },
+    {
+      "path": "native/flash_denoiser.hpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_denoiser.hpp",
+      "origin_path": "otc-native-ai-enhance/flash_denoiser.hpp",
+      "origin_sha256": "e13d7ef99b527371e144c3be754738a7a6b1e5901062eb090af0641f15f28e26",
+      "bytes": 2087,
+      "sha256": "e13d7ef99b527371e144c3be754738a7a6b1e5901062eb090af0641f15f28e26",
+      "sanitized_sha256": "e13d7ef99b527371e144c3be754738a7a6b1e5901062eb090af0641f15f28e26"
+    },
+    {
+      "bytes": 3185,
+      "origin": "otc_native_wip",
+      "path": "native/flash_edges_model.cpp",
+      "sha256": "f19e39445ff243d5b6e5d11fb6e0a2fec5c5a9e99eab354100ef44e58e2e25f9",
+      "source_relative": "flash_edges_model.cpp",
+      "origin_sha256": "f19e39445ff243d5b6e5d11fb6e0a2fec5c5a9e99eab354100ef44e58e2e25f9",
+      "sanitized_sha256": "f19e39445ff243d5b6e5d11fb6e0a2fec5c5a9e99eab354100ef44e58e2e25f9",
+      "origin_path": "otc-native-ai-enhance/flash_edges_model.cpp"
+    },
+    {
+      "bytes": 524,
+      "origin": "otc_native_wip",
+      "path": "native/flash_edges_model.hpp",
+      "sha256": "65259590b58f9f23c0efd26a23163c86a640c777b250d0f7c14946188e2b4689",
+      "source_relative": "flash_edges_model.hpp",
+      "origin_sha256": "65259590b58f9f23c0efd26a23163c86a640c777b250d0f7c14946188e2b4689",
+      "sanitized_sha256": "65259590b58f9f23c0efd26a23163c86a640c777b250d0f7c14946188e2b4689",
+      "origin_path": "otc-native-ai-enhance/flash_edges_model.hpp"
+    },
+    {
+      "bytes": 8577,
+      "origin": "otc_native_wip",
+      "path": "native/flash_edges_model_tests.cpp",
+      "sha256": "8d6aface25ba760b4d434a74536ebbec14766fc8394e89b410dbdc9826ca0a92",
+      "source_relative": "flash_edges_model_tests.cpp",
+      "origin_sha256": "8d6aface25ba760b4d434a74536ebbec14766fc8394e89b410dbdc9826ca0a92",
+      "sanitized_sha256": "8d6aface25ba760b4d434a74536ebbec14766fc8394e89b410dbdc9826ca0a92",
+      "origin_path": "otc-native-ai-enhance/flash_edges_model_tests.cpp"
+    },
+    {
+      "bytes": 4939,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_edges_session.cpp",
+      "path": "native/flash_edges_session.cpp",
+      "sanitized_sha256": "c6f7ce37e016ab09da9fd5e99a4a01ebed6e7f7930fb98ce90e8e25d92db8ce5",
+      "sha256": "c6f7ce37e016ab09da9fd5e99a4a01ebed6e7f7930fb98ce90e8e25d92db8ce5",
+      "source_relative": "flash_edges_session.cpp",
+      "origin_sha256": "c6f7ce37e016ab09da9fd5e99a4a01ebed6e7f7930fb98ce90e8e25d92db8ce5"
+    },
+    {
+      "bytes": 1587,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_edges_session.hpp",
+      "path": "native/flash_edges_session.hpp",
+      "sanitized_sha256": "1e3d687e04d887e86e284b4bae11a6003861ec5de4e40ab193275ea01263bf74",
+      "sha256": "1e3d687e04d887e86e284b4bae11a6003861ec5de4e40ab193275ea01263bf74",
+      "source_relative": "flash_edges_session.hpp",
+      "origin_sha256": "1e3d687e04d887e86e284b4bae11a6003861ec5de4e40ab193275ea01263bf74"
+    },
+    {
+      "bytes": 4347,
+      "origin": "otc_native_wip",
+      "path": "native/flash_geometry.cpp",
+      "sha256": "feb340fc0f3c09a887a10ea4186aa95422d9508f0a02f6ee128d7617e5b96903",
+      "source_relative": "flash_geometry.cpp",
+      "origin_sha256": "feb340fc0f3c09a887a10ea4186aa95422d9508f0a02f6ee128d7617e5b96903",
+      "sanitized_sha256": "feb340fc0f3c09a887a10ea4186aa95422d9508f0a02f6ee128d7617e5b96903",
+      "origin_path": "otc-native-ai-enhance/flash_geometry.cpp"
+    },
+    {
+      "bytes": 2248,
+      "origin": "otc_native_wip",
+      "path": "native/flash_geometry.hpp",
+      "sha256": "03c0e06cd807386458f7e1770fa53757fcdbe6eb092ef36ddf6083b6f860f36e",
+      "source_relative": "flash_geometry.hpp",
+      "origin_sha256": "03c0e06cd807386458f7e1770fa53757fcdbe6eb092ef36ddf6083b6f860f36e",
+      "sanitized_sha256": "03c0e06cd807386458f7e1770fa53757fcdbe6eb092ef36ddf6083b6f860f36e",
+      "origin_path": "otc-native-ai-enhance/flash_geometry.hpp"
+    },
+    {
+      "bytes": 5308,
+      "origin": "otc_native_wip",
+      "path": "native/flash_geometry_tests.cpp",
+      "sha256": "940e1cd59bc04f220250b1453920adb229cca74bf61cb7066ae6fd1a4967eff8",
+      "source_relative": "flash_geometry_tests.cpp",
+      "origin_sha256": "940e1cd59bc04f220250b1453920adb229cca74bf61cb7066ae6fd1a4967eff8",
+      "sanitized_sha256": "940e1cd59bc04f220250b1453920adb229cca74bf61cb7066ae6fd1a4967eff8",
+      "origin_path": "otc-native-ai-enhance/flash_geometry_tests.cpp"
+    },
+    {
+      "bytes": 34324,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_history.cpp",
+      "path": "native/flash_history.cpp",
+      "sanitized_sha256": "dd9b2903cc0923210bb4f7d538e57479d9223669223aa3b9403b765e696ab9d7",
+      "sha256": "dd9b2903cc0923210bb4f7d538e57479d9223669223aa3b9403b765e696ab9d7",
+      "source_relative": "flash_history.cpp",
+      "origin_sha256": "dd9b2903cc0923210bb4f7d538e57479d9223669223aa3b9403b765e696ab9d7"
+    },
+    {
+      "bytes": 8011,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_history.hpp",
+      "path": "native/flash_history.hpp",
+      "sanitized_sha256": "135e0a654df67a8ab8f7c129ae0a314f7656b9492554e320b18b190b6d12abb3",
+      "sha256": "135e0a654df67a8ab8f7c129ae0a314f7656b9492554e320b18b190b6d12abb3",
+      "source_relative": "flash_history.hpp",
+      "origin_sha256": "135e0a654df67a8ab8f7c129ae0a314f7656b9492554e320b18b190b6d12abb3"
+    },
+    {
+      "bytes": 20295,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_history_tests.cpp",
+      "path": "native/flash_history_tests.cpp",
+      "sanitized_sha256": "ac5dbf667ae467bb552acc0d06291000862df0b0f595d7e2985a6c6ef44bdcae",
+      "sha256": "ac5dbf667ae467bb552acc0d06291000862df0b0f595d7e2985a6c6ef44bdcae",
+      "source_relative": "flash_history_tests.cpp",
+      "origin_sha256": "ac5dbf667ae467bb552acc0d06291000862df0b0f595d7e2985a6c6ef44bdcae"
+    },
+    {
+      "path": "native/flash_lq_model.cpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_lq_model.cpp",
+      "origin_path": "otc-native-ai-enhance/flash_lq_model.cpp",
+      "origin_sha256": "d8d15babe95cbb0289e9e44df2b211087e5f6a55d82e02f584682bff8746c7f7",
+      "bytes": 2368,
+      "sha256": "d8d15babe95cbb0289e9e44df2b211087e5f6a55d82e02f584682bff8746c7f7",
+      "sanitized_sha256": "d8d15babe95cbb0289e9e44df2b211087e5f6a55d82e02f584682bff8746c7f7"
+    },
+    {
+      "path": "native/flash_lq_model.hpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_lq_model.hpp",
+      "origin_path": "otc-native-ai-enhance/flash_lq_model.hpp",
+      "origin_sha256": "6a3e1120c8214d798ee672874b35a97026e5871097f78c88fe89b3d3a22cf81d",
+      "bytes": 516,
+      "sha256": "6a3e1120c8214d798ee672874b35a97026e5871097f78c88fe89b3d3a22cf81d",
+      "sanitized_sha256": "6a3e1120c8214d798ee672874b35a97026e5871097f78c88fe89b3d3a22cf81d"
+    },
+    {
+      "path": "native/flash_lq_model_tests.cpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_lq_model_tests.cpp",
+      "origin_path": "otc-native-ai-enhance/flash_lq_model_tests.cpp",
+      "origin_sha256": "08796983f1b0e05258d2d425ce4bfbc6902989fa6082a67f0b9c400ee8776dda",
+      "bytes": 6640,
+      "sha256": "08796983f1b0e05258d2d425ce4bfbc6902989fa6082a67f0b9c400ee8776dda",
+      "sanitized_sha256": "08796983f1b0e05258d2d425ce4bfbc6902989fa6082a67f0b9c400ee8776dda"
+    },
+    {
+      "path": "native/flash_lq_session.cpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_lq_session.cpp",
+      "origin_path": "otc-native-ai-enhance/flash_lq_session.cpp",
+      "origin_sha256": "ef0134a0fccb02e1225d7089f9a4458c356436040d109f0f1194a95a48d0bf4f",
+      "bytes": 5249,
+      "sha256": "ef0134a0fccb02e1225d7089f9a4458c356436040d109f0f1194a95a48d0bf4f",
+      "sanitized_sha256": "ef0134a0fccb02e1225d7089f9a4458c356436040d109f0f1194a95a48d0bf4f"
+    },
+    {
+      "path": "native/flash_lq_session.hpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_lq_session.hpp",
+      "origin_path": "otc-native-ai-enhance/flash_lq_session.hpp",
+      "origin_sha256": "9691c3e0911a6021299447313a34a7c1de663b7f9672b2ac4cf58402b416cdd0",
+      "bytes": 1587,
+      "sha256": "9691c3e0911a6021299447313a34a7c1de663b7f9672b2ac4cf58402b416cdd0",
+      "sanitized_sha256": "9691c3e0911a6021299447313a34a7c1de663b7f9672b2ac4cf58402b416cdd0"
+    },
+    {
+      "bytes": 17843,
+      "origin": "otc_native_wip",
+      "path": "native/flash_mask.cpp",
+      "sha256": "90fde344f16705513b5e5ead0c62d303fe771b565ebecd56b98c799e4cd8ba6e",
+      "source_relative": "flash_mask.cpp",
+      "origin_sha256": "90fde344f16705513b5e5ead0c62d303fe771b565ebecd56b98c799e4cd8ba6e",
+      "sanitized_sha256": "90fde344f16705513b5e5ead0c62d303fe771b565ebecd56b98c799e4cd8ba6e",
+      "origin_path": "otc-native-ai-enhance/flash_mask.cpp"
+    },
+    {
+      "bytes": 2065,
+      "origin": "otc_native_wip",
+      "path": "native/flash_mask.hpp",
+      "sha256": "198bbd47b30cc7e2bebfaf0fa2efacf74544ce2a4602af263312fad3379077da",
+      "source_relative": "flash_mask.hpp",
+      "origin_sha256": "198bbd47b30cc7e2bebfaf0fa2efacf74544ce2a4602af263312fad3379077da",
+      "sanitized_sha256": "198bbd47b30cc7e2bebfaf0fa2efacf74544ce2a4602af263312fad3379077da",
+      "origin_path": "otc-native-ai-enhance/flash_mask.hpp"
+    },
+    {
+      "bytes": 8212,
+      "origin": "otc_native_wip",
+      "path": "native/flash_mask_tests.cpp",
+      "sha256": "386477ca2c30667e78c355968da45ed2d98e75ae271351b1702f0331ed804190",
+      "source_relative": "flash_mask_tests.cpp",
+      "origin_sha256": "386477ca2c30667e78c355968da45ed2d98e75ae271351b1702f0331ed804190",
+      "sanitized_sha256": "386477ca2c30667e78c355968da45ed2d98e75ae271351b1702f0331ed804190",
+      "origin_path": "otc-native-ai-enhance/flash_mask_tests.cpp"
+    },
+    {
+      "bytes": 250,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_mode.hpp",
+      "path": "native/flash_mode.hpp",
+      "sanitized_sha256": "c1febe4cf1fb65b7be76fbacc11cdbc5a2e76cb89ff0defd529f2b6c98a854d9",
+      "sha256": "c1febe4cf1fb65b7be76fbacc11cdbc5a2e76cb89ff0defd529f2b6c98a854d9",
+      "source_relative": "flash_mode.hpp",
+      "origin_sha256": "c1febe4cf1fb65b7be76fbacc11cdbc5a2e76cb89ff0defd529f2b6c98a854d9"
+    },
+    {
+      "bytes": 6933,
+      "origin": "otc_native_wip",
+      "path": "native/flash_model.cpp",
+      "sha256": "7d98b63f38008a4c2a151c78e7f5173ef72a79d5003239f2b516a9b6e011f50b",
+      "source_relative": "flash_model.cpp",
+      "origin_sha256": "7d98b63f38008a4c2a151c78e7f5173ef72a79d5003239f2b516a9b6e011f50b",
+      "sanitized_sha256": "7d98b63f38008a4c2a151c78e7f5173ef72a79d5003239f2b516a9b6e011f50b",
+      "origin_path": "otc-native-ai-enhance/flash_model.cpp"
+    },
+    {
+      "bytes": 1216,
+      "origin": "otc_native_wip",
+      "path": "native/flash_model.hpp",
+      "sha256": "45e896f74f68b7f6d8191c097fa3586ca0bd76ce6886f8c9fcaca4f370dca81b",
+      "source_relative": "flash_model.hpp",
+      "origin_sha256": "45e896f74f68b7f6d8191c097fa3586ca0bd76ce6886f8c9fcaca4f370dca81b",
+      "sanitized_sha256": "45e896f74f68b7f6d8191c097fa3586ca0bd76ce6886f8c9fcaca4f370dca81b",
+      "origin_path": "otc-native-ai-enhance/flash_model.hpp"
+    },
+    {
+      "bytes": 14310,
+      "origin": "otc_native_wip",
+      "path": "native/flash_model_tests.cpp",
+      "sha256": "8c6a009bc7f3e22237c9f28a4105f23f136f70aa7d48e74675fdfab4732f4555",
+      "source_relative": "flash_model_tests.cpp",
+      "origin_sha256": "8c6a009bc7f3e22237c9f28a4105f23f136f70aa7d48e74675fdfab4732f4555",
+      "sanitized_sha256": "8c6a009bc7f3e22237c9f28a4105f23f136f70aa7d48e74675fdfab4732f4555",
+      "origin_path": "otc-native-ai-enhance/flash_model_tests.cpp"
+    },
+    {
+      "bytes": 13260,
+      "origin": "otc_native_wip",
+      "path": "native/flash_ops.cpp",
+      "sha256": "aa11d58c1a8a75f59e89a76cbf2648890b6aa6de5db59c8839721a7e11f74f61",
+      "source_relative": "flash_ops.cpp",
+      "origin_sha256": "aa11d58c1a8a75f59e89a76cbf2648890b6aa6de5db59c8839721a7e11f74f61",
+      "sanitized_sha256": "aa11d58c1a8a75f59e89a76cbf2648890b6aa6de5db59c8839721a7e11f74f61",
+      "origin_path": "otc-native-ai-enhance/flash_ops.cpp"
+    },
+    {
+      "bytes": 738,
+      "origin": "otc_native_wip",
+      "path": "native/flash_ops.hpp",
+      "sha256": "536878ae7a07c849ff027fa627bddf22986cc3e8c8a739620aab5abd78d1cb82",
+      "source_relative": "flash_ops.hpp",
+      "origin_sha256": "536878ae7a07c849ff027fa627bddf22986cc3e8c8a739620aab5abd78d1cb82",
+      "sanitized_sha256": "536878ae7a07c849ff027fa627bddf22986cc3e8c8a739620aab5abd78d1cb82",
+      "origin_path": "otc-native-ai-enhance/flash_ops.hpp"
+    },
+    {
+      "bytes": 17325,
+      "origin": "otc_native_wip",
+      "path": "native/flash_ops_tests.cpp",
+      "sha256": "4aee8570be0f86c165584041504cdac3c3dc55cb25fc1458a493c04259f04233",
+      "source_relative": "flash_ops_tests.cpp",
+      "origin_sha256": "4aee8570be0f86c165584041504cdac3c3dc55cb25fc1458a493c04259f04233",
+      "sanitized_sha256": "4aee8570be0f86c165584041504cdac3c3dc55cb25fc1458a493c04259f04233",
+      "origin_path": "otc-native-ai-enhance/flash_ops_tests.cpp"
+    },
+    {
+      "bytes": 9383,
+      "origin": "otc_native_wip",
+      "path": "native/flash_post_session.cpp",
+      "sha256": "c02578792969e9f881433818b6a1011a230070d6779d873b9412b266e8ef68ae",
+      "source_relative": "flash_post_session.cpp",
+      "origin_sha256": "c02578792969e9f881433818b6a1011a230070d6779d873b9412b266e8ef68ae",
+      "sanitized_sha256": "c02578792969e9f881433818b6a1011a230070d6779d873b9412b266e8ef68ae",
+      "origin_path": "otc-native-ai-enhance/flash_post_session.cpp"
+    },
+    {
+      "bytes": 2019,
+      "origin": "otc_native_wip",
+      "path": "native/flash_post_session.hpp",
+      "sha256": "15bef310a082450820f91f5133edba49b120a4dc100b27a741060e30f9e23846",
+      "source_relative": "flash_post_session.hpp",
+      "origin_sha256": "15bef310a082450820f91f5133edba49b120a4dc100b27a741060e30f9e23846",
+      "sanitized_sha256": "15bef310a082450820f91f5133edba49b120a4dc100b27a741060e30f9e23846",
+      "origin_path": "otc-native-ai-enhance/flash_post_session.hpp"
+    },
+    {
+      "bytes": 13694,
+      "origin": "otc_native_wip",
+      "path": "native/flash_post_session_tests.cpp",
+      "sha256": "23a5f5caa0f442b7763183ce529d09e22f0975e9db9c51458630a1ee005c261d",
+      "source_relative": "flash_post_session_tests.cpp",
+      "origin_sha256": "3a16a4c257a25ba6bc5ecc29cc952f1923621881120d4bc61137fafd2667e8b9",
+      "sanitized_sha256": "23a5f5caa0f442b7763183ce529d09e22f0975e9db9c51458630a1ee005c261d",
+      "origin_path": "otc-native-ai-enhance/flash_post_session_tests.cpp",
+      "adaptation": "public layout: default test assets resolve under assets/flash-assets; model assertions and execution are unchanged"
+    },
+    {
+      "path": "native/flash_pre_model.cpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_pre_model.cpp",
+      "origin_path": "otc-native-ai-enhance/flash_pre_model.cpp",
+      "origin_sha256": "d08b59531596b74bceb6c831c11ec0e525dfb523dd644cfaadad173157e676ed",
+      "bytes": 12171,
+      "sha256": "d08b59531596b74bceb6c831c11ec0e525dfb523dd644cfaadad173157e676ed",
+      "sanitized_sha256": "d08b59531596b74bceb6c831c11ec0e525dfb523dd644cfaadad173157e676ed"
+    },
+    {
+      "path": "native/flash_pre_model.hpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_pre_model.hpp",
+      "origin_path": "otc-native-ai-enhance/flash_pre_model.hpp",
+      "origin_sha256": "e97c41b8ddcb2f395a2356f679c3d7b0a4dd40a2ce5652b5efbc49187421b602",
+      "bytes": 611,
+      "sha256": "e97c41b8ddcb2f395a2356f679c3d7b0a4dd40a2ce5652b5efbc49187421b602",
+      "sanitized_sha256": "e97c41b8ddcb2f395a2356f679c3d7b0a4dd40a2ce5652b5efbc49187421b602"
+    },
+    {
+      "path": "native/flash_pre_model_tests.cpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_pre_model_tests.cpp",
+      "origin_path": "otc-native-ai-enhance/flash_pre_model_tests.cpp",
+      "origin_sha256": "b444b5e6bae4d874ec078d93a7f4780f4b7565922b10c9e8d49b61062c63d830",
+      "bytes": 5188,
+      "sha256": "9c5dfbc33b6f391c8b48ad1b35d6abe8a21326058c77377cfd16b52d3888cf30",
+      "sanitized_sha256": "9c5dfbc33b6f391c8b48ad1b35d6abe8a21326058c77377cfd16b52d3888cf30",
+      "adaptation": "public layout: default test assets resolve under assets/flash-assets; model assertions and execution are unchanged"
+    },
+    {
+      "path": "native/flash_pre_session.cpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_pre_session.cpp",
+      "origin_path": "otc-native-ai-enhance/flash_pre_session.cpp",
+      "origin_sha256": "27d293b9b50d0a88a77d859da4997c3b663c98d90665c20152145c8340328790",
+      "bytes": 2998,
+      "sha256": "27d293b9b50d0a88a77d859da4997c3b663c98d90665c20152145c8340328790",
+      "sanitized_sha256": "27d293b9b50d0a88a77d859da4997c3b663c98d90665c20152145c8340328790"
+    },
+    {
+      "path": "native/flash_pre_session.hpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_pre_session.hpp",
+      "origin_path": "otc-native-ai-enhance/flash_pre_session.hpp",
+      "origin_sha256": "32d9560ea192599db00a3411f02ad08897eb6ecaac7ae1ac2ce5effff6588602",
+      "bytes": 1324,
+      "sha256": "32d9560ea192599db00a3411f02ad08897eb6ecaac7ae1ac2ce5effff6588602",
+      "sanitized_sha256": "32d9560ea192599db00a3411f02ad08897eb6ecaac7ae1ac2ce5effff6588602"
+    },
+    {
+      "bytes": 20855,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_prepare.cpp",
+      "path": "native/flash_prepare.cpp",
+      "sanitized_sha256": "191da99a03ecbf6dc9e195487fbb795ba95df8cebcd2939ae1299d7682391b17",
+      "sha256": "191da99a03ecbf6dc9e195487fbb795ba95df8cebcd2939ae1299d7682391b17",
+      "source_relative": "flash_prepare.cpp",
+      "origin_sha256": "191da99a03ecbf6dc9e195487fbb795ba95df8cebcd2939ae1299d7682391b17"
+    },
+    {
+      "bytes": 2978,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_prepare.hpp",
+      "path": "native/flash_prepare.hpp",
+      "sanitized_sha256": "da49536045e971d0b85e3da378ac70aed60218f2794c74ac8d0a86305d5d129f",
+      "sha256": "da49536045e971d0b85e3da378ac70aed60218f2794c74ac8d0a86305d5d129f",
+      "source_relative": "flash_prepare.hpp",
+      "origin_sha256": "da49536045e971d0b85e3da378ac70aed60218f2794c74ac8d0a86305d5d129f"
+    },
+    {
+      "bytes": 9222,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_prepare_cli.cpp",
+      "path": "native/flash_prepare_cli.cpp",
+      "sanitized_sha256": "2187d64d93b30831314749a8434ff11a2862b92625176a4bf7d15686df9a5136",
+      "sha256": "2187d64d93b30831314749a8434ff11a2862b92625176a4bf7d15686df9a5136",
+      "source_relative": "flash_prepare_cli.cpp",
+      "origin_sha256": "2187d64d93b30831314749a8434ff11a2862b92625176a4bf7d15686df9a5136"
+    },
+    {
+      "bytes": 495,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_prepare_cli.hpp",
+      "path": "native/flash_prepare_cli.hpp",
+      "sanitized_sha256": "b684f9b30921f2cc5223467cc0b005f23b1a9a90915be3f0ee3bce2e1c23ac07",
+      "sha256": "b684f9b30921f2cc5223467cc0b005f23b1a9a90915be3f0ee3bce2e1c23ac07",
+      "source_relative": "flash_prepare_cli.hpp",
+      "origin_sha256": "b684f9b30921f2cc5223467cc0b005f23b1a9a90915be3f0ee3bce2e1c23ac07"
+    },
+    {
+      "bytes": 2402,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_prepare_cli_tests.cpp",
+      "path": "native/flash_prepare_cli_tests.cpp",
+      "sanitized_sha256": "e0ec5c6ddf57340aaa6d20361cc1385600fecec5715c89ab8429a023d75e01ff",
+      "sha256": "e0ec5c6ddf57340aaa6d20361cc1385600fecec5715c89ab8429a023d75e01ff",
+      "source_relative": "flash_prepare_cli_tests.cpp",
+      "origin_sha256": "e0ec5c6ddf57340aaa6d20361cc1385600fecec5715c89ab8429a023d75e01ff"
+    },
+    {
+      "bytes": 6017,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_prepare_tests.cpp",
+      "path": "native/flash_prepare_tests.cpp",
+      "sanitized_sha256": "ff4d51170667f65ecc284d69bb288d53c4f7bea0b68a307cfaab0d282100454d",
+      "sha256": "ff4d51170667f65ecc284d69bb288d53c4f7bea0b68a307cfaab0d282100454d",
+      "source_relative": "flash_prepare_tests.cpp",
+      "origin_sha256": "ff4d51170667f65ecc284d69bb288d53c4f7bea0b68a307cfaab0d282100454d"
+    },
+    {
+      "bytes": 8164,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_rope.cpp",
+      "path": "native/flash_rope.cpp",
+      "sanitized_sha256": "011e7561a08c84f908a65611f7e60447c908fb21c5561d8a6d5317f5e0b5163a",
+      "sha256": "011e7561a08c84f908a65611f7e60447c908fb21c5561d8a6d5317f5e0b5163a",
+      "source_relative": "flash_rope.cpp",
+      "origin_sha256": "011e7561a08c84f908a65611f7e60447c908fb21c5561d8a6d5317f5e0b5163a"
+    },
+    {
+      "bytes": 1587,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_rope.hpp",
+      "path": "native/flash_rope.hpp",
+      "sanitized_sha256": "bfd9c6dd469df73fa757bef13319c2aacecb9ce917740cc057b2ed20050907c9",
+      "sha256": "bfd9c6dd469df73fa757bef13319c2aacecb9ce917740cc057b2ed20050907c9",
+      "source_relative": "flash_rope.hpp",
+      "origin_sha256": "bfd9c6dd469df73fa757bef13319c2aacecb9ce917740cc057b2ed20050907c9"
+    },
+    {
+      "bytes": 5897,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_rope_tests.cpp",
+      "path": "native/flash_rope_tests.cpp",
+      "sanitized_sha256": "ab0bba8df187f07aef99945cbf772c887cd9f12d409053d41ceb67570133791e",
+      "sha256": "ab0bba8df187f07aef99945cbf772c887cd9f12d409053d41ceb67570133791e",
+      "source_relative": "flash_rope_tests.cpp",
+      "origin_sha256": "ab0bba8df187f07aef99945cbf772c887cd9f12d409053d41ceb67570133791e"
+    },
+    {
+      "bytes": 4420,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_setup_tests.cpp",
+      "path": "native/flash_setup_tests.cpp",
+      "sanitized_sha256": "4e1479776a1f873b27dc41d1c37bb4b384543e84ca5325a1b5b2ab8bb516183b",
+      "sha256": "4e1479776a1f873b27dc41d1c37bb4b384543e84ca5325a1b5b2ab8bb516183b",
+      "source_relative": "flash_setup_tests.cpp",
+      "origin_sha256": "4e1479776a1f873b27dc41d1c37bb4b384543e84ca5325a1b5b2ab8bb516183b"
+    },
+    {
+      "bytes": 3740,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_source.cpp",
+      "path": "native/flash_source.cpp",
+      "sanitized_sha256": "98a92fee1753dfa797fd8ceb4cf3a3dfc2c367787ecd79b76469c811b8b3ef8f",
+      "sha256": "98a92fee1753dfa797fd8ceb4cf3a3dfc2c367787ecd79b76469c811b8b3ef8f",
+      "source_relative": "flash_source.cpp",
+      "origin_sha256": "98a92fee1753dfa797fd8ceb4cf3a3dfc2c367787ecd79b76469c811b8b3ef8f"
+    },
+    {
+      "bytes": 2278,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_source.hpp",
+      "path": "native/flash_source.hpp",
+      "sanitized_sha256": "81bce73abc2ff32b5874b4d53644287c6164a5eaee1af205afe26ecfa0a0e28a",
+      "sha256": "81bce73abc2ff32b5874b4d53644287c6164a5eaee1af205afe26ecfa0a0e28a",
+      "source_relative": "flash_source.hpp",
+      "origin_sha256": "81bce73abc2ff32b5874b4d53644287c6164a5eaee1af205afe26ecfa0a0e28a"
+    },
+    {
+      "bytes": 6754,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_source_test.cpp",
+      "path": "native/flash_source_test.cpp",
+      "sanitized_sha256": "9b73affaa8c53bd717ab174e1f5636ecba969a96c806abe7525a82fb4dd9b71c",
+      "sha256": "9b73affaa8c53bd717ab174e1f5636ecba969a96c806abe7525a82fb4dd9b71c",
+      "source_relative": "flash_source_test.cpp",
+      "origin_sha256": "9b73affaa8c53bd717ab174e1f5636ecba969a96c806abe7525a82fb4dd9b71c"
+    },
+    {
+      "bytes": 14550,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_stage.cpp",
+      "path": "native/flash_stage.cpp",
+      "sanitized_sha256": "2e4008258d8881e19e39235939b45b94c47dcb6eb5048d7b15b2d2c3fe1b15f4",
+      "sha256": "2e4008258d8881e19e39235939b45b94c47dcb6eb5048d7b15b2d2c3fe1b15f4",
+      "source_relative": "flash_stage.cpp",
+      "origin_sha256": "2e4008258d8881e19e39235939b45b94c47dcb6eb5048d7b15b2d2c3fe1b15f4"
+    },
+    {
+      "bytes": 6567,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_stage.hpp",
+      "path": "native/flash_stage.hpp",
+      "sanitized_sha256": "fce52f37244f918a7084a4ae0a926c2ebc74a4dbfdcd977584049e29b93ee24d",
+      "sha256": "fce52f37244f918a7084a4ae0a926c2ebc74a4dbfdcd977584049e29b93ee24d",
+      "source_relative": "flash_stage.hpp",
+      "origin_sha256": "fce52f37244f918a7084a4ae0a926c2ebc74a4dbfdcd977584049e29b93ee24d"
+    },
+    {
+      "path": "native/flash_stage_tests.cpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_stage_tests.cpp",
+      "origin_path": "otc-native-ai-enhance/flash_stage_tests.cpp",
+      "origin_sha256": "6b02c84c83df0e2a6e8a81758b9568c259284c173670fe39bc84a935d71ffaa1",
+      "bytes": 4744,
+      "sha256": "6b02c84c83df0e2a6e8a81758b9568c259284c173670fe39bc84a935d71ffaa1",
+      "sanitized_sha256": "6b02c84c83df0e2a6e8a81758b9568c259284c173670fe39bc84a935d71ffaa1"
+    },
+    {
+      "path": "native/flash_stream.hpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_stream.hpp",
+      "origin_path": "otc-native-ai-enhance/flash_stream.hpp",
+      "origin_sha256": "8cc342ee39af1b5b1d464e12b5b60455d2d6e219ae503376eb4d6c27919f69b3",
+      "bytes": 6682,
+      "sha256": "8cc342ee39af1b5b1d464e12b5b60455d2d6e219ae503376eb4d6c27919f69b3",
+      "sanitized_sha256": "8cc342ee39af1b5b1d464e12b5b60455d2d6e219ae503376eb4d6c27919f69b3"
+    },
+    {
+      "path": "native/flash_stream_tests.cpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_stream_tests.cpp",
+      "origin_path": "otc-native-ai-enhance/flash_stream_tests.cpp",
+      "origin_sha256": "935f96efa76c5b0bf6a7b84c425b2558ff1eba2324fcb1d6fadecdfca97be7d8",
+      "bytes": 8432,
+      "sha256": "935f96efa76c5b0bf6a7b84c425b2558ff1eba2324fcb1d6fadecdfca97be7d8",
+      "sanitized_sha256": "935f96efa76c5b0bf6a7b84c425b2558ff1eba2324fcb1d6fadecdfca97be7d8"
+    },
+    {
+      "bytes": 2117,
+      "origin": "otc_native_wip",
+      "path": "native/flash_text_model.cpp",
+      "sha256": "62c0c3679801bb0a9c14eed912396b299e060c7b11cd6f0fc40b8b8cc780228a",
+      "source_relative": "flash_text_model.cpp",
+      "origin_sha256": "62c0c3679801bb0a9c14eed912396b299e060c7b11cd6f0fc40b8b8cc780228a",
+      "sanitized_sha256": "62c0c3679801bb0a9c14eed912396b299e060c7b11cd6f0fc40b8b8cc780228a",
+      "origin_path": "otc-native-ai-enhance/flash_text_model.cpp"
+    },
+    {
+      "bytes": 351,
+      "origin": "otc_native_wip",
+      "path": "native/flash_text_model.hpp",
+      "sha256": "47adb7c2598bcfff4dd2750ada014d817dc0d80a73720d9ac207e20d99ebd1c0",
+      "source_relative": "flash_text_model.hpp",
+      "origin_sha256": "47adb7c2598bcfff4dd2750ada014d817dc0d80a73720d9ac207e20d99ebd1c0",
+      "sanitized_sha256": "47adb7c2598bcfff4dd2750ada014d817dc0d80a73720d9ac207e20d99ebd1c0",
+      "origin_path": "otc-native-ai-enhance/flash_text_model.hpp"
+    },
+    {
+      "bytes": 5400,
+      "origin": "otc_native_wip",
+      "path": "native/flash_text_model_tests.cpp",
+      "sha256": "16cd9318f9a4e28b051fc3b50af7323d7b2291336ffb7ccbbc67360877043757",
+      "source_relative": "flash_text_model_tests.cpp",
+      "origin_sha256": "16cd9318f9a4e28b051fc3b50af7323d7b2291336ffb7ccbbc67360877043757",
+      "sanitized_sha256": "16cd9318f9a4e28b051fc3b50af7323d7b2291336ffb7ccbbc67360877043757",
+      "origin_path": "otc-native-ai-enhance/flash_text_model_tests.cpp"
+    },
+    {
+      "bytes": 2182,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_text_session.cpp",
+      "path": "native/flash_text_session.cpp",
+      "sanitized_sha256": "89847d57e05c6adf7915dde9efa714d7b97eb94fb48c09650594e18715eea84a",
+      "sha256": "89847d57e05c6adf7915dde9efa714d7b97eb94fb48c09650594e18715eea84a",
+      "source_relative": "flash_text_session.cpp",
+      "origin_sha256": "89847d57e05c6adf7915dde9efa714d7b97eb94fb48c09650594e18715eea84a"
+    },
+    {
+      "bytes": 1026,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_text_session.hpp",
+      "path": "native/flash_text_session.hpp",
+      "sanitized_sha256": "65d26655a5c16f250bc600bb8f7fed1e4d86420665dfbed8a947c5c1b84dd8c0",
+      "sha256": "65d26655a5c16f250bc600bb8f7fed1e4d86420665dfbed8a947c5c1b84dd8c0",
+      "source_relative": "flash_text_session.hpp",
+      "origin_sha256": "65d26655a5c16f250bc600bb8f7fed1e4d86420665dfbed8a947c5c1b84dd8c0"
+    },
+    {
+      "path": "native/flash_token_session.cpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_token_session.cpp",
+      "origin_path": "otc-native-ai-enhance/flash_token_session.cpp",
+      "origin_sha256": "665185eac3a9f20c7e91ad76bb384c0d58c948ee5a72325f3b6a42c579a98ea3",
+      "bytes": 9120,
+      "sha256": "665185eac3a9f20c7e91ad76bb384c0d58c948ee5a72325f3b6a42c579a98ea3",
+      "sanitized_sha256": "665185eac3a9f20c7e91ad76bb384c0d58c948ee5a72325f3b6a42c579a98ea3"
+    },
+    {
+      "path": "native/flash_token_session.hpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_token_session.hpp",
+      "origin_path": "otc-native-ai-enhance/flash_token_session.hpp",
+      "origin_sha256": "dffb5d3a1bea8af921e69f48b3d18dc50abf48f350cc70c4224b236b578a1606",
+      "bytes": 2773,
+      "sha256": "dffb5d3a1bea8af921e69f48b3d18dc50abf48f350cc70c4224b236b578a1606",
+      "sanitized_sha256": "dffb5d3a1bea8af921e69f48b3d18dc50abf48f350cc70c4224b236b578a1606"
+    },
+    {
+      "path": "native/flash_tokens.cpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_tokens.cpp",
+      "origin_path": "otc-native-ai-enhance/flash_tokens.cpp",
+      "origin_sha256": "b66192daa928aa05eff1604dd0f812ddea96397d8b92b7100962d4464daafaf5",
+      "bytes": 14649,
+      "sha256": "b66192daa928aa05eff1604dd0f812ddea96397d8b92b7100962d4464daafaf5",
+      "sanitized_sha256": "b66192daa928aa05eff1604dd0f812ddea96397d8b92b7100962d4464daafaf5"
+    },
+    {
+      "path": "native/flash_tokens.hpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_tokens.hpp",
+      "origin_path": "otc-native-ai-enhance/flash_tokens.hpp",
+      "origin_sha256": "60cae29eeca79d251b29137910f4d0f7124f13217883c102728676bb408db0f4",
+      "bytes": 3712,
+      "sha256": "60cae29eeca79d251b29137910f4d0f7124f13217883c102728676bb408db0f4",
+      "sanitized_sha256": "60cae29eeca79d251b29137910f4d0f7124f13217883c102728676bb408db0f4"
+    },
+    {
+      "path": "native/flash_tokens_tests.cpp",
+      "origin": "otc_native_wip",
+      "source_relative": "flash_tokens_tests.cpp",
+      "origin_path": "otc-native-ai-enhance/flash_tokens_tests.cpp",
+      "origin_sha256": "eddadf9f197063f273080555f4e8f1c2ce3e0c38b824e43cc16d20c5988072bc",
+      "bytes": 9250,
+      "sha256": "eddadf9f197063f273080555f4e8f1c2ce3e0c38b824e43cc16d20c5988072bc",
+      "sanitized_sha256": "eddadf9f197063f273080555f4e8f1c2ce3e0c38b824e43cc16d20c5988072bc"
+    },
+    {
+      "bytes": 18195,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_video.cpp",
+      "path": "native/flash_video.cpp",
+      "sanitized_sha256": "87352482bb58d8a94b55e9d4d86c78ff84b6dbb7cf8248e17da97db5f873455c",
+      "sha256": "87352482bb58d8a94b55e9d4d86c78ff84b6dbb7cf8248e17da97db5f873455c",
+      "source_relative": "flash_video.cpp",
+      "origin_sha256": "87352482bb58d8a94b55e9d4d86c78ff84b6dbb7cf8248e17da97db5f873455c"
+    },
+    {
+      "bytes": 2077,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash_video.hpp",
+      "path": "native/flash_video.hpp",
+      "sanitized_sha256": "c16c5ccd163b32c98c9f385574ebce2c59e0d48d9fb38335b76ba9fa33cd7c7a",
+      "sha256": "c16c5ccd163b32c98c9f385574ebce2c59e0d48d9fb38335b76ba9fa33cd7c7a",
+      "source_relative": "flash_video.hpp",
+      "origin_sha256": "c16c5ccd163b32c98c9f385574ebce2c59e0d48d9fb38335b76ba9fa33cd7c7a"
+    },
+    {
+      "bytes": 15584,
+      "origin": "otc_build_support",
+      "path": "scripts/export-flash-conditioning.py",
+      "sha256": "c460e4ebfbb0891f8dfe70c1517bba8f760aeafcf197464f94feca2fb47e085e",
+      "source_relative": "export-flash-conditioning.py",
+      "origin_sha256": "c460e4ebfbb0891f8dfe70c1517bba8f760aeafcf197464f94feca2fb47e085e",
+      "sanitized_sha256": "c460e4ebfbb0891f8dfe70c1517bba8f760aeafcf197464f94feca2fb47e085e",
+      "origin_path": "otc-repo-scripts/export-flash-conditioning.py"
+    },
+    {
+      "path": "scripts/export-flash-cross.py",
+      "origin": "otc_build_support",
+      "source_relative": "export-flash-cross.py",
+      "origin_path": "otc-repo-scripts/export-flash-cross.py",
+      "origin_sha256": "3c68d845c5195786c029a8963c086a429d472d535e8c5f45f4dd8b2185e0c358",
+      "bytes": 7022,
+      "sha256": "3c68d845c5195786c029a8963c086a429d472d535e8c5f45f4dd8b2185e0c358",
+      "sanitized_sha256": "3c68d845c5195786c029a8963c086a429d472d535e8c5f45f4dd8b2185e0c358"
+    },
+    {
+      "bytes": 34157,
+      "origin": "otc_build_support",
+      "origin_path": "otc-repo-scripts/export-flash-decoder.py",
+      "origin_sha256": "b4f9de4c02627f733418aaffc45862c8e195112e186b7f91c133af995118999b",
+      "path": "scripts/export-flash-decoder.py",
+      "sanitized_sha256": "b4f9de4c02627f733418aaffc45862c8e195112e186b7f91c133af995118999b",
+      "sha256": "b4f9de4c02627f733418aaffc45862c8e195112e186b7f91c133af995118999b",
+      "source_relative": "export-flash-decoder.py"
+    },
+    {
+      "bytes": 11298,
+      "origin": "otc_build_support",
+      "path": "scripts/export-flash-edges.py",
+      "sha256": "653deb3e22f0aff674b70f1e9655052be5ab537cae61285bbf0fe22b988269b1",
+      "source_relative": "export-flash-edges.py",
+      "origin_sha256": "653deb3e22f0aff674b70f1e9655052be5ab537cae61285bbf0fe22b988269b1",
+      "sanitized_sha256": "653deb3e22f0aff674b70f1e9655052be5ab537cae61285bbf0fe22b988269b1",
+      "origin_path": "otc-repo-scripts/export-flash-edges.py"
+    },
+    {
+      "path": "scripts/export-flash-projection.py",
+      "origin": "otc_build_support",
+      "source_relative": "export-flash-projection.py",
+      "origin_path": "otc-repo-scripts/export-flash-projection.py",
+      "origin_sha256": "1b363fb8323753787efc600d9d6b3a9d67de204d4317e6bbd4fbc29dee30a217",
+      "bytes": 12266,
+      "sha256": "1b363fb8323753787efc600d9d6b3a9d67de204d4317e6bbd4fbc29dee30a217",
+      "sanitized_sha256": "1b363fb8323753787efc600d9d6b3a9d67de204d4317e6bbd4fbc29dee30a217"
+    },
+    {
+      "path": "scripts/export-flash-structure.py",
+      "origin": "otc_build_support",
+      "source_relative": "export-flash-structure.py",
+      "origin_path": "otc-repo-scripts/export-flash-structure.py",
+      "origin_sha256": "fe7a3218b6b9c1ce123c4eb26d65b7867b786ce448b8b21b036af85ac1fc5de5",
+      "bytes": 10666,
+      "sha256": "fe7a3218b6b9c1ce123c4eb26d65b7867b786ce448b8b21b036af85ac1fc5de5",
+      "sanitized_sha256": "fe7a3218b6b9c1ce123c4eb26d65b7867b786ce448b8b21b036af85ac1fc5de5"
+    },
+    {
+      "bytes": 6009,
+      "origin": "otc_build_support",
+      "path": "scripts/export-flash-text.py",
+      "sha256": "673a44840eec55843e0b7b9dc1c073ce482a55844ff54a81088ac493252b3a42",
+      "source_relative": "export-flash-text.py",
+      "origin_sha256": "673a44840eec55843e0b7b9dc1c073ce482a55844ff54a81088ac493252b3a42",
+      "sanitized_sha256": "673a44840eec55843e0b7b9dc1c073ce482a55844ff54a81088ac493252b3a42",
+      "origin_path": "otc-repo-scripts/export-flash-text.py"
+    },
+    {
+      "bytes": 13808,
+      "origin": "otc_build_support",
+      "origin_path": "otc-repo-scripts/flash_export.py",
+      "path": "scripts/flash_export.py",
+      "sanitized_sha256": "4d5b40c6d27e45cfd1231860d40ef05bed972efb66804802d95b6733adcbc6cf",
+      "sha256": "4d5b40c6d27e45cfd1231860d40ef05bed972efb66804802d95b6733adcbc6cf",
+      "source_relative": "flash_export.py",
+      "origin_sha256": "4d5b40c6d27e45cfd1231860d40ef05bed972efb66804802d95b6733adcbc6cf"
+    },
+    {
+      "bytes": 31963,
+      "origin": "otc_build_support",
+      "origin_path": "otc-repo-scripts/prepare-flash-decoder.py",
+      "path": "scripts/prepare-flash-decoder.py",
+      "sanitized_sha256": "066f87952c65585f4554a7fa3b802613bebf7955bff9889a2dc616517123e409",
+      "sha256": "066f87952c65585f4554a7fa3b802613bebf7955bff9889a2dc616517123e409",
+      "source_relative": "prepare-flash-decoder.py",
+      "origin_sha256": "066f87952c65585f4554a7fa3b802613bebf7955bff9889a2dc616517123e409"
+    },
+    {
+      "bytes": 53889,
+      "origin": "otc_build_support",
+      "origin_path": "otc-repo-scripts/prepare-flash-post.py",
+      "path": "scripts/prepare-flash-post.py",
+      "sanitized_sha256": "eb03e59f1d3a3b1103d1c32c97f3bbc3fc007973990a559a2d7b7371d3b3d661",
+      "sha256": "eb03e59f1d3a3b1103d1c32c97f3bbc3fc007973990a559a2d7b7371d3b3d661",
+      "source_relative": "prepare-flash-post.py",
+      "origin_sha256": "803e88ba2a49d8e896d2ecc9638e5ea00993213a8094ee3d4715f0a279a5e519",
+      "adaptation": "public asset-root adaptation: ROOT / assets / flash-assets replaces the OTC native/ai-enhance/flash-assets layout"
+    },
+    {
+      "bytes": 4786,
+      "origin": "otc_build_support",
+      "path": "scripts/test_bf16_convert.py",
+      "sha256": "159a7023467d855854ba28b67564cc4f8733003b875b2a2f59126c8e6f1bc9cd",
+      "source_relative": "test_bf16_convert.py",
+      "origin_sha256": "159a7023467d855854ba28b67564cc4f8733003b875b2a2f59126c8e6f1bc9cd",
+      "sanitized_sha256": "159a7023467d855854ba28b67564cc4f8733003b875b2a2f59126c8e6f1bc9cd",
+      "origin_path": "otc-repo-scripts/test_bf16_convert.py"
+    },
+    {
+      "bytes": 8624,
+      "origin": "otc_build_support",
+      "path": "scripts/test_export_flash_conditioning.py",
+      "sha256": "9a0453e3b69db015e3aa09f9db41ff591833faf5bd60dfa7622f9e3bdfec940f",
+      "source_relative": "test_export_flash_conditioning.py",
+      "origin_sha256": "9a0453e3b69db015e3aa09f9db41ff591833faf5bd60dfa7622f9e3bdfec940f",
+      "sanitized_sha256": "9a0453e3b69db015e3aa09f9db41ff591833faf5bd60dfa7622f9e3bdfec940f",
+      "origin_path": "otc-repo-scripts/test_export_flash_conditioning.py"
+    },
+    {
+      "path": "scripts/test_export_flash_cross.py",
+      "origin": "otc_build_support",
+      "source_relative": "test_export_flash_cross.py",
+      "origin_path": "otc-repo-scripts/test_export_flash_cross.py",
+      "origin_sha256": "5c5f0bb704243755f8e602512778778bb75c5b6574411d5d11d87eef0050e005",
+      "bytes": 6681,
+      "sha256": "d9804c064db52d8d7e6095215b02dc86690d4cb8279da18891c05a511f1b787e",
+      "sanitized_sha256": "d9804c064db52d8d7e6095215b02dc86690d4cb8279da18891c05a511f1b787e",
+      "adaptation": "portable-closure-only private-cache-prefix literal split; test behavior is unchanged"
+    },
+    {
+      "bytes": 18008,
+      "origin": "otc_build_support",
+      "origin_path": "otc-repo-scripts/test_export_flash_decoder.py",
+      "origin_sha256": "9719520859c1f22a243ba8a56132646f036ca694752d9613f5e8fb36df22eb22",
+      "path": "scripts/test_export_flash_decoder.py",
+      "sanitized_sha256": "9719520859c1f22a243ba8a56132646f036ca694752d9613f5e8fb36df22eb22",
+      "sha256": "9719520859c1f22a243ba8a56132646f036ca694752d9613f5e8fb36df22eb22",
+      "source_relative": "test_export_flash_decoder.py"
+    },
+    {
+      "bytes": 6520,
+      "origin": "otc_build_support",
+      "path": "scripts/test_export_flash_edges.py",
+      "sha256": "40e1d9d0dc943ace428c41302e440963115fa89f0aabd8f5835d405db3a69059",
+      "source_relative": "test_export_flash_edges.py",
+      "origin_sha256": "adda84afb9c0a060b397fe8c1342f1b98f0254c4ddb4116a703a462cf1510e4f",
+      "sanitized_sha256": "40e1d9d0dc943ace428c41302e440963115fa89f0aabd8f5835d405db3a69059",
+      "origin_path": "otc-repo-scripts/test_export_flash_edges.py",
+      "adaptation": "portable-closure-only private-cache-prefix literal split; test behavior is unchanged"
+    },
+    {
+      "path": "scripts/test_export_flash_projection.py",
+      "origin": "otc_build_support",
+      "source_relative": "test_export_flash_projection.py",
+      "origin_path": "otc-repo-scripts/test_export_flash_projection.py",
+      "origin_sha256": "56f2a4847e735bca3ab5c0739bb97bb342a0d1634f4d8dd3c26d42f750b02c85",
+      "bytes": 10260,
+      "sha256": "56f2a4847e735bca3ab5c0739bb97bb342a0d1634f4d8dd3c26d42f750b02c85",
+      "sanitized_sha256": "56f2a4847e735bca3ab5c0739bb97bb342a0d1634f4d8dd3c26d42f750b02c85"
+    },
+    {
+      "path": "scripts/test_export_flash_structure.py",
+      "origin": "otc_build_support",
+      "source_relative": "test_export_flash_structure.py",
+      "origin_path": "otc-repo-scripts/test_export_flash_structure.py",
+      "origin_sha256": "bc08c2c9b818a8284e7257889c6168bf7646af89a4bd3f97595eaa00233a775f",
+      "bytes": 11208,
+      "sha256": "bc08c2c9b818a8284e7257889c6168bf7646af89a4bd3f97595eaa00233a775f",
+      "sanitized_sha256": "bc08c2c9b818a8284e7257889c6168bf7646af89a4bd3f97595eaa00233a775f"
+    },
+    {
+      "bytes": 5990,
+      "origin": "otc_build_support",
+      "path": "scripts/test_export_flash_text.py",
+      "sha256": "20fcf3c9ab3b4b9851abcff3865361686bd9ed07f41a8ccb590aababd147a8c3",
+      "source_relative": "test_export_flash_text.py",
+      "origin_sha256": "673b80b8781568ae2f0dfcc4988b64f08058a3d6e3b083a2a3a1276093e2cb48",
+      "sanitized_sha256": "20fcf3c9ab3b4b9851abcff3865361686bd9ed07f41a8ccb590aababd147a8c3",
+      "origin_path": "otc-repo-scripts/test_export_flash_text.py",
+      "adaptation": "portable-closure-only private-cache-prefix literal split; test behavior is unchanged"
+    },
+    {
+      "bytes": 31265,
+      "origin": "otc_build_support",
+      "origin_path": "otc-repo-scripts/test_flash_attention_gpu.py",
+      "path": "scripts/test_flash_attention_gpu.py",
+      "sanitized_sha256": "a80fa0f557e2e9d6cdb99e5baee3df988efea8c8607675e51ff4e943bb1254ca",
+      "sha256": "a80fa0f557e2e9d6cdb99e5baee3df988efea8c8607675e51ff4e943bb1254ca",
+      "source_relative": "test_flash_attention_gpu.py",
+      "origin_sha256": "a80fa0f557e2e9d6cdb99e5baee3df988efea8c8607675e51ff4e943bb1254ca",
+      "adaptation": "Byte-identical optional manual OpenCL gate; default is CPU self-check and --run is an explicit device action."
+    },
+    {
+      "bytes": 13707,
+      "origin": "otc_build_support",
+      "origin_path": "otc-repo-scripts/test_prepare_flash_decoder.py",
+      "path": "scripts/test_prepare_flash_decoder.py",
+      "sanitized_sha256": "3d5b3112cd1eeaf499ab7807ce7461f5ddb54405fafea037a471910fcc64b1d1",
+      "sha256": "3d5b3112cd1eeaf499ab7807ce7461f5ddb54405fafea037a471910fcc64b1d1",
+      "source_relative": "test_prepare_flash_decoder.py",
+      "origin_sha256": "3d5b3112cd1eeaf499ab7807ce7461f5ddb54405fafea037a471910fcc64b1d1"
+    },
+    {
+      "bytes": 36866,
+      "origin": "otc_build_support",
+      "origin_path": "otc-repo-scripts/test_prepare_flash_post.py",
+      "path": "scripts/test_prepare_flash_post.py",
+      "sanitized_sha256": "59af411709b1ce30c1926704bca4ec75985ee6c229746876afee9b0242cdc0b0",
+      "sha256": "59af411709b1ce30c1926704bca4ec75985ee6c229746876afee9b0242cdc0b0",
+      "source_relative": "test_prepare_flash_post.py",
+      "origin_sha256": "59af411709b1ce30c1926704bca4ec75985ee6c229746876afee9b0242cdc0b0"
+    },
+    {
+      "bytes": 7404,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/seedvr_assets.cpp",
+      "path": "native/seedvr_assets.cpp",
+      "sanitized_sha256": "c182ad4764bd35a2568ef6486eb68895dcfc655ba8c44b32284cc9b42332c3b2",
+      "sha256": "c182ad4764bd35a2568ef6486eb68895dcfc655ba8c44b32284cc9b42332c3b2",
+      "source_relative": "seedvr_assets.cpp",
+      "origin_sha256": "c182ad4764bd35a2568ef6486eb68895dcfc655ba8c44b32284cc9b42332c3b2"
+    },
+    {
+      "bytes": 2332,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/seedvr_assets.hpp",
+      "path": "native/seedvr_assets.hpp",
+      "sanitized_sha256": "78375d72afb47472429f302a2513874e33b5be288aa05cab2b2faa7f49bde3bc",
+      "sha256": "78375d72afb47472429f302a2513874e33b5be288aa05cab2b2faa7f49bde3bc",
+      "source_relative": "seedvr_assets.hpp",
+      "origin_sha256": "78375d72afb47472429f302a2513874e33b5be288aa05cab2b2faa7f49bde3bc"
+    },
+    {
+      "bytes": 8772,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/seedvr_assets_tests.cpp",
+      "path": "native/seedvr_assets_tests.cpp",
+      "sanitized_sha256": "e8a514555b65e42065d929336d64393c80e83476cc42f274671594be55707d20",
+      "sha256": "e8a514555b65e42065d929336d64393c80e83476cc42f274671594be55707d20",
+      "source_relative": "seedvr_assets_tests.cpp",
+      "origin_sha256": "e8a514555b65e42065d929336d64393c80e83476cc42f274671594be55707d20"
+    },
+    {
+      "bytes": 17131,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/seedvr_prepare.cpp",
+      "path": "native/seedvr_prepare.cpp",
+      "sanitized_sha256": "e77c8cd1cd0e57fb76b9bceb26a6fb40946dc1d5b33f375832e268141ad3b25a",
+      "sha256": "e77c8cd1cd0e57fb76b9bceb26a6fb40946dc1d5b33f375832e268141ad3b25a",
+      "source_relative": "seedvr_prepare.cpp",
+      "origin_sha256": "e77c8cd1cd0e57fb76b9bceb26a6fb40946dc1d5b33f375832e268141ad3b25a"
+    },
+    {
+      "bytes": 745,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/seedvr_prepare.hpp",
+      "path": "native/seedvr_prepare.hpp",
+      "sanitized_sha256": "66da6a4d19b363c3a360e716380035922e74f20db638b37341d9deac529ce9a8",
+      "sha256": "66da6a4d19b363c3a360e716380035922e74f20db638b37341d9deac529ce9a8",
+      "source_relative": "seedvr_prepare.hpp",
+      "origin_sha256": "66da6a4d19b363c3a360e716380035922e74f20db638b37341d9deac529ce9a8"
+    },
+    {
+      "bytes": 3171,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/seedvr_prepare_detail.hpp",
+      "path": "native/seedvr_prepare_detail.hpp",
+      "sanitized_sha256": "c928519a47ddb44fa7ed646bc791a7594185fb213663266cc64d506e293f132c",
+      "sha256": "c928519a47ddb44fa7ed646bc791a7594185fb213663266cc64d506e293f132c",
+      "source_relative": "seedvr_prepare_detail.hpp",
+      "origin_sha256": "c928519a47ddb44fa7ed646bc791a7594185fb213663266cc64d506e293f132c"
+    },
+    {
+      "bytes": 27401,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/seedvr_prepare_tests.cpp",
+      "path": "native/seedvr_prepare_tests.cpp",
+      "sanitized_sha256": "b41521a204bdaa0910b141e610a75c27b6c5307e6ac7edcd5869626ca4ec9603",
+      "sha256": "b41521a204bdaa0910b141e610a75c27b6c5307e6ac7edcd5869626ca4ec9603",
+      "source_relative": "seedvr_prepare_tests.cpp",
+      "origin_sha256": "b41521a204bdaa0910b141e610a75c27b6c5307e6ac7edcd5869626ca4ec9603"
+    },
+    {
+      "bytes": 11570,
+      "origin": "otc_native_wip",
+      "path": "native/verified_kernel_files.cpp",
+      "sha256": "fded52e35f8afb0ecc6a8801e9150674b74bb9717ac974f9e3096366b23d2705",
+      "source_relative": "verified_kernel_files.cpp",
+      "origin_sha256": "fded52e35f8afb0ecc6a8801e9150674b74bb9717ac974f9e3096366b23d2705",
+      "sanitized_sha256": "fded52e35f8afb0ecc6a8801e9150674b74bb9717ac974f9e3096366b23d2705",
+      "origin_path": "otc-native-ai-enhance/verified_kernel_files.cpp"
+    },
+    {
+      "bytes": 1581,
+      "origin": "otc_native_wip",
+      "path": "native/verified_kernel_files.hpp",
+      "sha256": "bc89f6f24e9f06e73dd91b7cd07e2b8e7df59bad59dcfc02ebafcb9112146009",
+      "source_relative": "verified_kernel_files.hpp",
+      "origin_sha256": "bc89f6f24e9f06e73dd91b7cd07e2b8e7df59bad59dcfc02ebafcb9112146009",
+      "sanitized_sha256": "bc89f6f24e9f06e73dd91b7cd07e2b8e7df59bad59dcfc02ebafcb9112146009",
+      "origin_path": "otc-native-ai-enhance/verified_kernel_files.hpp"
+    },
+    {
+      "bytes": 10486,
+      "origin": "otc_native_wip",
+      "path": "native/verified_kernel_files_tests.cpp",
+      "sha256": "e3917ba56bd54ed41a720f6e617bcba6c537300f731ceb725c86a8745ed5963a",
+      "source_relative": "verified_kernel_files_tests.cpp",
+      "origin_sha256": "e3917ba56bd54ed41a720f6e617bcba6c537300f731ceb725c86a8745ed5963a",
+      "sanitized_sha256": "e3917ba56bd54ed41a720f6e617bcba6c537300f731ceb725c86a8745ed5963a",
+      "origin_path": "otc-native-ai-enhance/verified_kernel_files_tests.cpp"
+    },
+    {
+      "bytes": 286,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/video_frame.hpp",
+      "path": "native/video_frame.hpp",
+      "sanitized_sha256": "8087adda1f488838c7edafcea7e91601d30fbcd1e8e85e3a17c6b3b9e9fd7123",
+      "sha256": "8087adda1f488838c7edafcea7e91601d30fbcd1e8e85e3a17c6b3b9e9fd7123",
+      "source_relative": "video_frame.hpp",
+      "origin_sha256": "8087adda1f488838c7edafcea7e91601d30fbcd1e8e85e3a17c6b3b9e9fd7123"
+    },
+    {
+      "bytes": 11080,
+      "origin": "research_closure",
+      "path": "reference/openvino/attention_from_cuda.py",
+      "sha256": "f6b9d4f3f39dde21d9ac08591b4f314af518536d43e2c17233e11fbcb9be8f34",
+      "source_relative": "openvino/attention_from_cuda.py",
+      "origin_sha256": "f6b9d4f3f39dde21d9ac08591b4f314af518536d43e2c17233e11fbcb9be8f34",
+      "sanitized_sha256": "f6b9d4f3f39dde21d9ac08591b4f314af518536d43e2c17233e11fbcb9be8f34",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/attention_from_cuda.py"
+    },
+    {
+      "bytes": 10320,
+      "origin": "research_closure",
+      "path": "reference/openvino/block/contract.py",
+      "sha256": "df3c111cf3cf7708f5c76d2386c10793a51d4e300d26a9568ca5a225e894535c",
+      "source_relative": "openvino/block/contract.py",
+      "origin_sha256": "df3c111cf3cf7708f5c76d2386c10793a51d4e300d26a9568ca5a225e894535c",
+      "sanitized_sha256": "df3c111cf3cf7708f5c76d2386c10793a51d4e300d26a9568ca5a225e894535c",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/block/contract.py"
+    },
+    {
+      "bytes": 17647,
+      "origin": "research_closure",
+      "path": "reference/openvino/block/graph.py",
+      "sha256": "3b7e13aec261e1116ceb77a8e750a83a7aac12fcd17e7f3fef688c5a5afdf8bd",
+      "source_relative": "openvino/block/graph.py",
+      "origin_sha256": "3b7e13aec261e1116ceb77a8e750a83a7aac12fcd17e7f3fef688c5a5afdf8bd",
+      "sanitized_sha256": "3b7e13aec261e1116ceb77a8e750a83a7aac12fcd17e7f3fef688c5a5afdf8bd",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/block/graph.py"
+    },
+    {
+      "bytes": 15583,
+      "origin": "research_closure",
+      "path": "reference/openvino/chunked_attention/builder.py",
+      "sha256": "6b83f2df7dd96f786afc8612e3e7e75c463998decc03f67d1eb0d3ce21b37aac",
+      "source_relative": "openvino/chunked_attention/builder.py",
+      "origin_sha256": "6b83f2df7dd96f786afc8612e3e7e75c463998decc03f67d1eb0d3ce21b37aac",
+      "sanitized_sha256": "6b83f2df7dd96f786afc8612e3e7e75c463998decc03f67d1eb0d3ce21b37aac",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/chunked_attention/builder.py"
+    },
+    {
+      "bytes": 4145,
+      "origin": "research_closure",
+      "path": "reference/openvino/chunked_attention/kv_finite.cl",
+      "sha256": "8a74c587e040dd7a5e3f3cd6386e382b219af61595e4e6bcce23f5c64189a970",
+      "source_relative": "openvino/chunked_attention/kv_finite.cl",
+      "origin_sha256": "8a74c587e040dd7a5e3f3cd6386e382b219af61595e4e6bcce23f5c64189a970",
+      "sanitized_sha256": "8a74c587e040dd7a5e3f3cd6386e382b219af61595e4e6bcce23f5c64189a970",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/chunked_attention/kv_finite.cl"
+    },
+    {
+      "bytes": 9318,
+      "origin": "research_closure",
+      "path": "reference/openvino/chunked_attention/kv_finite.py",
+      "sha256": "33a98460d9dcc5553813c3be9dd7ef93bc1974ae23bb5b3507233046af98a8f3",
+      "source_relative": "openvino/chunked_attention/kv_finite.py",
+      "origin_sha256": "33a98460d9dcc5553813c3be9dd7ef93bc1974ae23bb5b3507233046af98a8f3",
+      "sanitized_sha256": "33a98460d9dcc5553813c3be9dd7ef93bc1974ae23bb5b3507233046af98a8f3",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/chunked_attention/kv_finite.py"
+    },
+    {
+      "bytes": 453,
+      "origin": "research_closure",
+      "path": "reference/openvino/chunked_attention/kv_finite.xml",
+      "sha256": "a3bb7b98dc3a82ead1b63d01c9e8c4524d35ca5fe019f5604e4d987ad14ade6d",
+      "source_relative": "openvino/chunked_attention/kv_finite.xml",
+      "origin_sha256": "a3bb7b98dc3a82ead1b63d01c9e8c4524d35ca5fe019f5604e4d987ad14ade6d",
+      "sanitized_sha256": "a3bb7b98dc3a82ead1b63d01c9e8c4524d35ca5fe019f5604e4d987ad14ade6d",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/chunked_attention/kv_finite.xml"
+    },
+    {
+      "bytes": 9321,
+      "origin": "research_closure",
+      "path": "reference/openvino/chunked_attention/plus_sparse_xmx.cl",
+      "sha256": "673888384e27499e4037706385a9c10c37dc83999ac456b4ce1ed4a23acfd334",
+      "source_relative": "openvino/chunked_attention/plus_sparse_xmx.cl",
+      "origin_sha256": "673888384e27499e4037706385a9c10c37dc83999ac456b4ce1ed4a23acfd334",
+      "sanitized_sha256": "673888384e27499e4037706385a9c10c37dc83999ac456b4ce1ed4a23acfd334",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/chunked_attention/plus_sparse_xmx.cl"
+    },
+    {
+      "bytes": 9157,
+      "origin": "research_closure",
+      "path": "reference/openvino/chunked_attention/plus_sparse_xmx.py",
+      "sha256": "79c6620e686e66aa9bd8b7ce8b540b17cbcb21e505d998fa68363c09c01ebfab",
+      "source_relative": "openvino/chunked_attention/plus_sparse_xmx.py",
+      "origin_sha256": "79c6620e686e66aa9bd8b7ce8b540b17cbcb21e505d998fa68363c09c01ebfab",
+      "sanitized_sha256": "79c6620e686e66aa9bd8b7ce8b540b17cbcb21e505d998fa68363c09c01ebfab",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/chunked_attention/plus_sparse_xmx.py"
+    },
+    {
+      "bytes": 655,
+      "origin": "research_closure",
+      "path": "reference/openvino/chunked_attention/plus_sparse_xmx.xml",
+      "sha256": "50ec4beb5809a1b61513b29586dd990e1f42d37db3b77b7cc4a8c36120285d3c",
+      "source_relative": "openvino/chunked_attention/plus_sparse_xmx.xml",
+      "origin_sha256": "50ec4beb5809a1b61513b29586dd990e1f42d37db3b77b7cc4a8c36120285d3c",
+      "sanitized_sha256": "50ec4beb5809a1b61513b29586dd990e1f42d37db3b77b7cc4a8c36120285d3c",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/chunked_attention/plus_sparse_xmx.xml"
+    },
+    {
+      "bytes": 8174,
+      "origin": "research_closure",
+      "path": "reference/openvino/chunked_attention/query_axis.py",
+      "sha256": "fb70f9f8b5d289ca88ecb20f04057a5097ae55076f1b92c0a85b11536171e879",
+      "source_relative": "openvino/chunked_attention/query_axis.py",
+      "origin_sha256": "fb70f9f8b5d289ca88ecb20f04057a5097ae55076f1b92c0a85b11536171e879",
+      "sanitized_sha256": "fb70f9f8b5d289ca88ecb20f04057a5097ae55076f1b92c0a85b11536171e879",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/chunked_attention/query_axis.py"
+    },
+    {
+      "bytes": 7298,
+      "origin": "research_closure",
+      "path": "reference/openvino/chunked_attention/sparse_xmx.cl",
+      "sha256": "5f33df735987c8fa4006126ab80db9997d7c7461ba86995553df871a0fda9374",
+      "source_relative": "openvino/chunked_attention/sparse_xmx.cl",
+      "origin_sha256": "5f33df735987c8fa4006126ab80db9997d7c7461ba86995553df871a0fda9374",
+      "sanitized_sha256": "5f33df735987c8fa4006126ab80db9997d7c7461ba86995553df871a0fda9374",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/chunked_attention/sparse_xmx.cl"
+    },
+    {
+      "bytes": 6089,
+      "origin": "research_closure",
+      "path": "reference/openvino/chunked_attention/sparse_xmx.py",
+      "sha256": "9657304f8d90a076ae1e5094ccd1305d80fd62bcdfb414759fabf208000c341f",
+      "source_relative": "openvino/chunked_attention/sparse_xmx.py",
+      "origin_sha256": "9657304f8d90a076ae1e5094ccd1305d80fd62bcdfb414759fabf208000c341f",
+      "sanitized_sha256": "9657304f8d90a076ae1e5094ccd1305d80fd62bcdfb414759fabf208000c341f",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/chunked_attention/sparse_xmx.py"
+    },
+    {
+      "bytes": 641,
+      "origin": "research_closure",
+      "path": "reference/openvino/chunked_attention/sparse_xmx.xml",
+      "sha256": "de391833eb569e23cab38c07e6025c0678d69a3965aef6feb726e447d2f40b55",
+      "source_relative": "openvino/chunked_attention/sparse_xmx.xml",
+      "origin_sha256": "de391833eb569e23cab38c07e6025c0678d69a3965aef6feb726e447d2f40b55",
+      "sanitized_sha256": "de391833eb569e23cab38c07e6025c0678d69a3965aef6feb726e447d2f40b55",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/chunked_attention/sparse_xmx.xml"
+    },
+    {
+      "bytes": 5093,
+      "origin": "research_closure",
+      "path": "reference/openvino/chunked_attention/union_attention.py",
+      "sha256": "d3c270453be1cf5950a50aa3182cfaafb7b5c21c446d79400590d429979f2a5b",
+      "source_relative": "openvino/chunked_attention/union_attention.py",
+      "origin_sha256": "d3c270453be1cf5950a50aa3182cfaafb7b5c21c446d79400590d429979f2a5b",
+      "sanitized_sha256": "d3c270453be1cf5950a50aa3182cfaafb7b5c21c446d79400590d429979f2a5b",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/chunked_attention/union_attention.py"
+    },
+    {
+      "bytes": 24447,
+      "origin": "research_closure",
+      "path": "reference/openvino/decoder/convert_decoder.py",
+      "sha256": "d10b78b83f4616ab03066a282f877656a2f127cf9f648e3c8a5646b2ca1bfe62",
+      "source_relative": "openvino/decoder/convert_decoder.py",
+      "origin_sha256": "d10b78b83f4616ab03066a282f877656a2f127cf9f648e3c8a5646b2ca1bfe62",
+      "sanitized_sha256": "d10b78b83f4616ab03066a282f877656a2f127cf9f648e3c8a5646b2ca1bfe62",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/decoder/convert_decoder.py"
+    },
+    {
+      "bytes": 15449,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_model/builders.py",
+      "sha256": "fcb5c7200d00d28706a4e1e0bf83943551e684504430e14baac8b86852972de0",
+      "source_relative": "openvino/full_model/builders.py",
+      "origin_sha256": "fcb5c7200d00d28706a4e1e0bf83943551e684504430e14baac8b86852972de0",
+      "sanitized_sha256": "fcb5c7200d00d28706a4e1e0bf83943551e684504430e14baac8b86852972de0",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_model/builders.py"
+    },
+    {
+      "bytes": 18741,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_model/contract.py",
+      "sha256": "a7368b22f168d6e2b87b0588acb946556e4e1b79bb5804581a7c59a112533a64",
+      "source_relative": "openvino/full_model/contract.py",
+      "origin_sha256": "a7368b22f168d6e2b87b0588acb946556e4e1b79bb5804581a7c59a112533a64",
+      "sanitized_sha256": "a7368b22f168d6e2b87b0588acb946556e4e1b79bb5804581a7c59a112533a64",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_model/contract.py"
+    },
+    {
+      "bytes": 31371,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/capture_plus_video_cpu.py",
+      "sha256": "05debb9744f87b566cf4fef607ef785eec763f016981a38f6eb3b6b8aa35497d",
+      "source_relative": "openvino/full_runtime/capture_plus_video_cpu.py",
+      "origin_sha256": "3b132a9e80fa9ff2c884f5149fa8a057d72b21b710e48f0a9e4d4f0cf83a33df",
+      "sanitized_sha256": "05debb9744f87b566cf4fef607ef785eec763f016981a38f6eb3b6b8aa35497d",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/capture_plus_video_cpu.py"
+    },
+    {
+      "bytes": 29301,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/check_plus_block_cpu.py",
+      "sha256": "1a1b8a0bb7350f778379702b94a3ce48b301e7c526e0a0f01ed27cd920ec2a65",
+      "source_relative": "openvino/full_runtime/check_plus_block_cpu.py",
+      "origin_sha256": "48873a43f1124dbb1da338be8cd2817d8abf30b1c1c5cf3d3cd28add329e5b11",
+      "sanitized_sha256": "1a1b8a0bb7350f778379702b94a3ce48b301e7c526e0a0f01ed27cd920ec2a65",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/check_plus_block_cpu.py"
+    },
+    {
+      "bytes": 74535,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/check_plus_phased_decoder_b580.py",
+      "sha256": "58514d06dcf5d73c30c47a806dbd7e28cc1c06ed2cdcb4a45e908c3e57f1c173",
+      "source_relative": "openvino/full_runtime/check_plus_phased_decoder_b580.py",
+      "origin_sha256": "58514d06dcf5d73c30c47a806dbd7e28cc1c06ed2cdcb4a45e908c3e57f1c173",
+      "sanitized_sha256": "58514d06dcf5d73c30c47a806dbd7e28cc1c06ed2cdcb4a45e908c3e57f1c173",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/check_plus_phased_decoder_b580.py"
+    },
+    {
+      "bytes": 23911,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/check_plus_video_b580.py",
+      "sha256": "527e9e8851153f6ba81f5fab76506563e1281526cdf1ff9a6afeb9fcf94d8e6e",
+      "source_relative": "openvino/full_runtime/check_plus_video_b580.py",
+      "origin_sha256": "036b6bd06543b7e0a65af715270e0f192c705f18d2bda81b595c4f32590fb677",
+      "sanitized_sha256": "527e9e8851153f6ba81f5fab76506563e1281526cdf1ff9a6afeb9fcf94d8e6e",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/check_plus_video_b580.py"
+    },
+    {
+      "bytes": 63955,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/compare_plus_resident.py",
+      "sha256": "8180af1f07e9652395e730eedf08f7da403fd849c41d0411050f1b0b08225a4b",
+      "source_relative": "openvino/full_runtime/compare_plus_resident.py",
+      "origin_sha256": "ef3629db41d0b457b4573d32d37a80853c8405f3702f609943d150473b5489ab",
+      "sanitized_sha256": "8180af1f07e9652395e730eedf08f7da403fd849c41d0411050f1b0b08225a4b",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/compare_plus_resident.py"
+    },
+    {
+      "bytes": 32025,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/decode_plus_video_cpu.py",
+      "sha256": "c9e1f3e97f99251c69564bd1dfd01190cb7b7628b3318dd8ae85b919b440df36",
+      "source_relative": "openvino/full_runtime/decode_plus_video_cpu.py",
+      "origin_sha256": "639aa7fec622ed7f2534a42587e7778e50c61e5de69731f69ddd2a2d87bc5cac",
+      "sanitized_sha256": "c9e1f3e97f99251c69564bd1dfd01190cb7b7628b3318dd8ae85b919b440df36",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/decode_plus_video_cpu.py"
+    },
+    {
+      "bytes": 4258,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/device_query_graph.py",
+      "sha256": "f73a87eda6af4d864dba024cdbf1a4c604017bad6fac18a12d1423f74b1b1c45",
+      "source_relative": "openvino/full_runtime/device_query_graph.py",
+      "origin_sha256": "f73a87eda6af4d864dba024cdbf1a4c604017bad6fac18a12d1423f74b1b1c45",
+      "sanitized_sha256": "f73a87eda6af4d864dba024cdbf1a4c604017bad6fac18a12d1423f74b1b1c45",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/device_query_graph.py"
+    },
+    {
+      "bytes": 1511,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/flat_output_views.py",
+      "sha256": "49bcf3cefcf7a1fa1d5bdb7549f8a5e67e4b91f8188029114fb3b9b247951358",
+      "source_relative": "openvino/full_runtime/flat_output_views.py",
+      "origin_sha256": "49bcf3cefcf7a1fa1d5bdb7549f8a5e67e4b91f8188029114fb3b9b247951358",
+      "sanitized_sha256": "49bcf3cefcf7a1fa1d5bdb7549f8a5e67e4b91f8188029114fb3b9b247951358",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/flat_output_views.py"
+    },
+    {
+      "bytes": 9134,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/frame_geometry.py",
+      "sha256": "2c3d93227481e3a9653d786bfd8923df5746fb67f043105e52e676d28a56505f",
+      "source_relative": "openvino/full_runtime/frame_geometry.py",
+      "origin_sha256": "2c3d93227481e3a9653d786bfd8923df5746fb67f043105e52e676d28a56505f",
+      "sanitized_sha256": "2c3d93227481e3a9653d786bfd8923df5746fb67f043105e52e676d28a56505f",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/frame_geometry.py"
+    },
+    {
+      "bytes": 14490,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/fused_post_cross.py",
+      "sha256": "7db996a75349591f78ca400418db69f3615324f63f6d328d5fb239cfa0d93bfd",
+      "source_relative": "openvino/full_runtime/fused_post_cross.py",
+      "origin_sha256": "7db996a75349591f78ca400418db69f3615324f63f6d328d5fb239cfa0d93bfd",
+      "sanitized_sha256": "7db996a75349591f78ca400418db69f3615324f63f6d328d5fb239cfa0d93bfd",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/fused_post_cross.py"
+    },
+    {
+      "bytes": 3940,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/gate_products.py",
+      "sha256": "34ed50298067bb9c08c136f9879e44f990acf6c2959d36db6cd1671e82d20a88",
+      "source_relative": "openvino/full_runtime/gate_products.py",
+      "origin_sha256": "34ed50298067bb9c08c136f9879e44f990acf6c2959d36db6cd1671e82d20a88",
+      "sanitized_sha256": "34ed50298067bb9c08c136f9879e44f990acf6c2959d36db6cd1671e82d20a88",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/gate_products.py"
+    },
+    {
+      "bytes": 715,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/half_storage.py",
+      "sha256": "b375aa6f2597088f054880b1600ff78d5a3340256cf1fdc1c7c675366b1c926b",
+      "source_relative": "openvino/full_runtime/half_storage.py",
+      "origin_sha256": "b375aa6f2597088f054880b1600ff78d5a3340256cf1fdc1c7c675366b1c926b",
+      "sanitized_sha256": "b375aa6f2597088f054880b1600ff78d5a3340256cf1fdc1c7c675366b1c926b",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/half_storage.py"
+    },
+    {
+      "bytes": 36268,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/physical_modulation.py",
+      "sha256": "27c71748e9c654e3cc982e14ee9cf83234b5c558eb307929f4bb3fec339a73d3",
+      "source_relative": "openvino/full_runtime/physical_modulation.py",
+      "origin_sha256": "27c71748e9c654e3cc982e14ee9cf83234b5c558eb307929f4bb3fec339a73d3",
+      "sanitized_sha256": "27c71748e9c654e3cc982e14ee9cf83234b5c558eb307929f4bb3fec339a73d3",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/physical_modulation.py"
+    },
+    {
+      "bytes": 13693,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_bounded.py",
+      "sha256": "b1954e0980ee3c7ef4019a60b57ab39c08be9aaa2b77109628e3ca4b36b6f065",
+      "source_relative": "openvino/full_runtime/plus_bounded.py",
+      "origin_sha256": "b1954e0980ee3c7ef4019a60b57ab39c08be9aaa2b77109628e3ca4b36b6f065",
+      "sanitized_sha256": "b1954e0980ee3c7ef4019a60b57ab39c08be9aaa2b77109628e3ca4b36b6f065",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_bounded.py"
+    },
+    {
+      "bytes": 22902,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_decoder.py",
+      "sha256": "39e99bdecfe2b4ad2fa9aa7f43a6447fa242651733100877fc5d5f57a996c512",
+      "source_relative": "openvino/full_runtime/plus_decoder.py",
+      "origin_sha256": "990191858a5c9272c87bc6e3b7a82db17b9a3ded8bf52a10cb47345182667b37",
+      "sanitized_sha256": "39e99bdecfe2b4ad2fa9aa7f43a6447fa242651733100877fc5d5f57a996c512",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_decoder.py"
+    },
+    {
+      "bytes": 17950,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_edges.py",
+      "sha256": "cc1f705f123382f825f7d613c38bf06587314c5af3ef08c52901de31b39ad574",
+      "source_relative": "openvino/full_runtime/plus_edges.py",
+      "origin_sha256": "83353b9b60d49952f4d1594a1d65338efb148f084d4e61642e346ecf38c0c917",
+      "sanitized_sha256": "cc1f705f123382f825f7d613c38bf06587314c5af3ef08c52901de31b39ad574",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_edges.py",
+      "adaptation": "public reference_paths adaptation for external model roots; graph/build logic matches the current OTC source"
+    },
+    {
+      "bytes": 13323,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_graphs.py",
+      "sha256": "296a7a58ec2e64c4014194b6eb07d327aaea19134d85d11cf59e348e98aa9e11",
+      "source_relative": "openvino/full_runtime/plus_graphs.py",
+      "origin_sha256": "296a7a58ec2e64c4014194b6eb07d327aaea19134d85d11cf59e348e98aa9e11",
+      "sanitized_sha256": "296a7a58ec2e64c4014194b6eb07d327aaea19134d85d11cf59e348e98aa9e11",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_graphs.py"
+    },
+    {
+      "bytes": 21832,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_history_ring.py",
+      "sha256": "763b7864532d714318591de76acc12fbee771adb02123c49423afad912087827",
+      "source_relative": "openvino/full_runtime/plus_history_ring.py",
+      "origin_sha256": "763b7864532d714318591de76acc12fbee771adb02123c49423afad912087827",
+      "sanitized_sha256": "763b7864532d714318591de76acc12fbee771adb02123c49423afad912087827",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_history_ring.py"
+    },
+    {
+      "bytes": 12026,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_masks.py",
+      "sha256": "42fb0a790832e4856ecda5601fe1be744b0bc7c776976585e12df85dc7bde99d",
+      "source_relative": "openvino/full_runtime/plus_masks.py",
+      "origin_sha256": "42fb0a790832e4856ecda5601fe1be744b0bc7c776976585e12df85dc7bde99d",
+      "sanitized_sha256": "42fb0a790832e4856ecda5601fe1be744b0bc7c776976585e12df85dc7bde99d",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_masks.py"
+    },
+    {
+      "bytes": 114533,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_memory.py",
+      "sha256": "9cfa4c08447712c9b916869beea885c0ba5438b946262bc0669ac8fc213a9aeb",
+      "source_relative": "openvino/full_runtime/plus_memory.py",
+      "origin_sha256": "9cfa4c08447712c9b916869beea885c0ba5438b946262bc0669ac8fc213a9aeb",
+      "sanitized_sha256": "9cfa4c08447712c9b916869beea885c0ba5438b946262bc0669ac8fc213a9aeb",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_memory.py"
+    },
+    {
+      "bytes": 4832,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_modes.py",
+      "sha256": "1e2fe526b1dfa639783c3f1b664422963dd089509cc986428b89a9c44d7a4427",
+      "source_relative": "openvino/full_runtime/plus_modes.py",
+      "origin_sha256": "1e2fe526b1dfa639783c3f1b664422963dd089509cc986428b89a9c44d7a4427",
+      "sanitized_sha256": "1e2fe526b1dfa639783c3f1b664422963dd089509cc986428b89a9c44d7a4427",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_modes.py"
+    },
+    {
+      "bytes": 21081,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_native_cuda_decoder.py",
+      "sha256": "215cf7cfc4a1d0e7b147654a46a88041aa00d71179ce2387063ea9fe4657a7a9",
+      "source_relative": "openvino/full_runtime/plus_native_cuda_decoder.py",
+      "origin_sha256": "215cf7cfc4a1d0e7b147654a46a88041aa00d71179ce2387063ea9fe4657a7a9",
+      "sanitized_sha256": "215cf7cfc4a1d0e7b147654a46a88041aa00d71179ce2387063ea9fe4657a7a9",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_native_cuda_decoder.py"
+    },
+    {
+      "bytes": 10655,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_parent_store.py",
+      "sha256": "58d6c850085060638e33935b7e3e513bdefe3b814d25a0d5a166bfc11e30f2a6",
+      "source_relative": "openvino/full_runtime/plus_parent_store.py",
+      "origin_sha256": "d4e655bba92cfe4daff804d591830a336eb83548dcd67757e6fffb470ec3b903",
+      "sanitized_sha256": "58d6c850085060638e33935b7e3e513bdefe3b814d25a0d5a166bfc11e30f2a6",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_parent_store.py"
+    },
+    {
+      "bytes": 44524,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_phased_decoder.py",
+      "sha256": "e6c3d53cea1268525b4ed7074aac23bfccb5b915ed0e192719b098e09ebec6e0",
+      "source_relative": "openvino/full_runtime/plus_phased_decoder.py",
+      "origin_sha256": "e6c3d53cea1268525b4ed7074aac23bfccb5b915ed0e192719b098e09ebec6e0",
+      "sanitized_sha256": "e6c3d53cea1268525b4ed7074aac23bfccb5b915ed0e192719b098e09ebec6e0",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_phased_decoder.py"
+    },
+    {
+      "bytes": 14667,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_pipeline.py",
+      "sha256": "f9ec1610bc01280c65744ef5cf26c971eb449cfca757748464cd7147bc36b01c",
+      "source_relative": "openvino/full_runtime/plus_pipeline.py",
+      "origin_sha256": "f9ec1610bc01280c65744ef5cf26c971eb449cfca757748464cd7147bc36b01c",
+      "sanitized_sha256": "f9ec1610bc01280c65744ef5cf26c971eb449cfca757748464cd7147bc36b01c",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_pipeline.py"
+    },
+    {
+      "bytes": 29250,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_projection.py",
+      "sha256": "92b3248175aefeb468566a0daeade65ab91ffbaca068495a61e0d9baf16b16e6",
+      "source_relative": "openvino/full_runtime/plus_projection.py",
+      "origin_sha256": "2dbea3687664393449e122a0c24f7b833ff346f96135fdd7142a0d30bc9bd730",
+      "sanitized_sha256": "92b3248175aefeb468566a0daeade65ab91ffbaca068495a61e0d9baf16b16e6",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_projection.py"
+    },
+    {
+      "bytes": 9843,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_remote_history.py",
+      "sha256": "7a06991e49726cb6aacf1f0c58bbf12e8c2912b53df9ed240f76875e3228f48c",
+      "source_relative": "openvino/full_runtime/plus_remote_history.py",
+      "origin_sha256": "7a06991e49726cb6aacf1f0c58bbf12e8c2912b53df9ed240f76875e3228f48c",
+      "sanitized_sha256": "7a06991e49726cb6aacf1f0c58bbf12e8c2912b53df9ed240f76875e3228f48c",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_remote_history.py"
+    },
+    {
+      "bytes": 40476,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_resident.py",
+      "sha256": "71b65f2814454433dd95e4f3e4fe8933cb97db32b8c144f5ac5a52d8cbf6918b",
+      "source_relative": "openvino/full_runtime/plus_resident.py",
+      "origin_sha256": "71b65f2814454433dd95e4f3e4fe8933cb97db32b8c144f5ac5a52d8cbf6918b",
+      "sanitized_sha256": "71b65f2814454433dd95e4f3e4fe8933cb97db32b8c144f5ac5a52d8cbf6918b",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_resident.py"
+    },
+    {
+      "bytes": 16679,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_rgb_source.py",
+      "sha256": "c3409f156cf2b309888ee5e8b2d69e63c401533bbd9784542324384b56186473",
+      "source_relative": "openvino/full_runtime/plus_rgb_source.py",
+      "origin_sha256": "538497984a34ee2e6e6d37dd8b6c710e86fa913e1fa8b3400d2d333a65b0b72c",
+      "sanitized_sha256": "c3409f156cf2b309888ee5e8b2d69e63c401533bbd9784542324384b56186473",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_rgb_source.py"
+    },
+    {
+      "bytes": 6537,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_static_layout.py",
+      "sha256": "98c7465dd8d00cc0cf4cc8b8c4f72e93825bb3d3181409496c581c2a83665b4d",
+      "source_relative": "openvino/full_runtime/plus_static_layout.py",
+      "origin_sha256": "98c7465dd8d00cc0cf4cc8b8c4f72e93825bb3d3181409496c581c2a83665b4d",
+      "sanitized_sha256": "98c7465dd8d00cc0cf4cc8b8c4f72e93825bb3d3181409496c581c2a83665b4d",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_static_layout.py"
+    },
+    {
+      "bytes": 2659,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_storage.py",
+      "sha256": "d1d8da6265e7aade177d99b4e0ac3e8fc76e6f88a9319654c998be0ed1a1037d",
+      "source_relative": "openvino/full_runtime/plus_storage.py",
+      "origin_sha256": "d1d8da6265e7aade177d99b4e0ac3e8fc76e6f88a9319654c998be0ed1a1037d",
+      "sanitized_sha256": "d1d8da6265e7aade177d99b4e0ac3e8fc76e6f88a9319654c998be0ed1a1037d",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_storage.py"
+    },
+    {
+      "bytes": 7861,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_stream.py",
+      "sha256": "7838812f722e530b6b7421981417b6ea119dbf5b22448ddc82215686cbc8dce3",
+      "source_relative": "openvino/full_runtime/plus_stream.py",
+      "origin_sha256": "7838812f722e530b6b7421981417b6ea119dbf5b22448ddc82215686cbc8dce3",
+      "sanitized_sha256": "7838812f722e530b6b7421981417b6ea119dbf5b22448ddc82215686cbc8dce3",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_stream.py"
+    },
+    {
+      "bytes": 10663,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_text.py",
+      "sha256": "5827cae11f77e45ff2a3db49175fcebe399f346cd62930abb3ca7736832ba762",
+      "source_relative": "openvino/full_runtime/plus_text.py",
+      "origin_sha256": "62c08d24fa69192a9848dd82c8da6139dc910c64d343782486c68242a8399473",
+      "sanitized_sha256": "5827cae11f77e45ff2a3db49175fcebe399f346cd62930abb3ca7736832ba762",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_text.py",
+      "adaptation": "public reference_paths adaptation for external model roots; graph/build logic matches the current OTC source"
+    },
+    {
+      "bytes": 8734,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_tokens.py",
+      "sha256": "ebe838f88469d126184f1348bdfb93deddc299e267bed7440bba70fcfe2b02de",
+      "source_relative": "openvino/full_runtime/plus_tokens.py",
+      "origin_sha256": "ebe838f88469d126184f1348bdfb93deddc299e267bed7440bba70fcfe2b02de",
+      "sanitized_sha256": "ebe838f88469d126184f1348bdfb93deddc299e267bed7440bba70fcfe2b02de",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_tokens.py"
+    },
+    {
+      "bytes": 4639,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_weight_banks.py",
+      "sha256": "60054e2f7726a1eced8420549622149d7e1b5ae6610e5cf3c9ba4890774edc9e",
+      "source_relative": "openvino/full_runtime/plus_weight_banks.py",
+      "origin_sha256": "60054e2f7726a1eced8420549622149d7e1b5ae6610e5cf3c9ba4890774edc9e",
+      "sanitized_sha256": "60054e2f7726a1eced8420549622149d7e1b5ae6610e5cf3c9ba4890774edc9e",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_weight_banks.py"
+    },
+    {
+      "bytes": 8191,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/plus_weights.py",
+      "sha256": "c9a89c3eabcce654b2a3055bbb1c62e16ccc7f96425f130cef2b8fdcbe9d0ca7",
+      "source_relative": "openvino/full_runtime/plus_weights.py",
+      "origin_sha256": "c9a89c3eabcce654b2a3055bbb1c62e16ccc7f96425f130cef2b8fdcbe9d0ca7",
+      "sanitized_sha256": "c9a89c3eabcce654b2a3055bbb1c62e16ccc7f96425f130cef2b8fdcbe9d0ca7",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/plus_weights.py"
+    },
+    {
+      "bytes": 32222,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/prepare_plus_video_input.py",
+      "sha256": "58bc7de409d1a540d7b5f62b1ff62ecc3e8e378bc54cd2c2cb63ff3c21dad11d",
+      "source_relative": "openvino/full_runtime/prepare_plus_video_input.py",
+      "origin_sha256": "58bc7de409d1a540d7b5f62b1ff62ecc3e8e378bc54cd2c2cb63ff3c21dad11d",
+      "sanitized_sha256": "58bc7de409d1a540d7b5f62b1ff62ecc3e8e378bc54cd2c2cb63ff3c21dad11d",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/prepare_plus_video_input.py"
+    },
+    {
+      "bytes": 14045,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/prepare_real.py",
+      "sha256": "625d1f3a7e2528551d79a835dd9befbcce9e9b3138b959f873dc3094110fa825",
+      "source_relative": "openvino/full_runtime/prepare_real.py",
+      "origin_sha256": "625d1f3a7e2528551d79a835dd9befbcce9e9b3138b959f873dc3094110fa825",
+      "sanitized_sha256": "625d1f3a7e2528551d79a835dd9befbcce9e9b3138b959f873dc3094110fa825",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/prepare_real.py"
+    },
+    {
+      "bytes": 2852,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/real_inputs.py",
+      "sha256": "b372f16306d59be345f436c5884f87d29978053265bde5c93d310815b7d7b560",
+      "source_relative": "openvino/full_runtime/real_inputs.py",
+      "origin_sha256": "3b331ff7e5064bf0ee1f6aadf08f19700e6d50d037257b970460db4a3a08e201",
+      "sanitized_sha256": "b372f16306d59be345f436c5884f87d29978053265bde5c93d310815b7d7b560",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/real_inputs.py"
+    },
+    {
+      "bytes": 19354,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/run_plus_native_xpu.py",
+      "sha256": "1923128108389bb549306b33cd366c0d07fe9a92290c708984337985d3de3999",
+      "source_relative": "openvino/full_runtime/run_plus_native_xpu.py",
+      "origin_sha256": "1923128108389bb549306b33cd366c0d07fe9a92290c708984337985d3de3999",
+      "sanitized_sha256": "1923128108389bb549306b33cd366c0d07fe9a92290c708984337985d3de3999",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/run_plus_native_xpu.py"
+    },
+    {
+      "bytes": 63554,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/run_plus_resident.py",
+      "sha256": "a2e85d05575e14563ab1338b642223f1681ec8911d8b4d74fd105f7f4b8e22ec",
+      "source_relative": "openvino/full_runtime/run_plus_resident.py",
+      "origin_sha256": "a2e85d05575e14563ab1338b642223f1681ec8911d8b4d74fd105f7f4b8e22ec",
+      "sanitized_sha256": "a2e85d05575e14563ab1338b642223f1681ec8911d8b4d74fd105f7f4b8e22ec",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/run_plus_resident.py"
+    },
+    {
+      "bytes": 4411,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/source_precision_check.py",
+      "sha256": "a0353cd32bc15dc001d3a9477ef779da6ad441ba3688ff990dfbda85c8057173",
+      "source_relative": "openvino/full_runtime/source_precision_check.py",
+      "origin_sha256": "a0353cd32bc15dc001d3a9477ef779da6ad441ba3688ff990dfbda85c8057173",
+      "sanitized_sha256": "a0353cd32bc15dc001d3a9477ef779da6ad441ba3688ff990dfbda85c8057173",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/source_precision_check.py"
+    },
+    {
+      "bytes": 13150,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/test_external_decoder_builder_cpu.py",
+      "sha256": "be025b22ebc28c90761e5e76201def6754fd4b3a47c4628ca7530701ebb70ad2",
+      "source_relative": "openvino/full_runtime/test_external_decoder_builder_cpu.py",
+      "origin_sha256": "be025b22ebc28c90761e5e76201def6754fd4b3a47c4628ca7530701ebb70ad2",
+      "sanitized_sha256": "be025b22ebc28c90761e5e76201def6754fd4b3a47c4628ca7530701ebb70ad2",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/test_external_decoder_builder_cpu.py"
+    },
+    {
+      "bytes": 6056,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/test_plus_edges_export_cpu.py",
+      "sha256": "bab3886b8318bf6678b0c85de868e328f5b91540ddd2864a778cf8bcd2f426ab",
+      "source_relative": "openvino/full_runtime/test_plus_edges_export_cpu.py",
+      "origin_sha256": "bab3886b8318bf6678b0c85de868e328f5b91540ddd2864a778cf8bcd2f426ab",
+      "sanitized_sha256": "bab3886b8318bf6678b0c85de868e328f5b91540ddd2864a778cf8bcd2f426ab",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/test_plus_edges_export_cpu.py"
+    },
+    {
+      "path": "reference/openvino/full_runtime/test_plus_projection_export_cpu.py",
+      "origin": "research_closure",
+      "source_relative": "openvino/full_runtime/test_plus_projection_export_cpu.py",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/test_plus_projection_export_cpu.py",
+      "origin_sha256": "ee042428e763fcfa7c362d8fd2656342c522c709c21a8e9f2ebe4c8d55ade58c",
+      "bytes": 3693,
+      "sha256": "ee042428e763fcfa7c362d8fd2656342c522c709c21a8e9f2ebe4c8d55ade58c",
+      "sanitized_sha256": "ee042428e763fcfa7c362d8fd2656342c522c709c21a8e9f2ebe4c8d55ade58c"
+    },
+    {
+      "bytes": 3474,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/test_plus_text_export_cpu.py",
+      "sha256": "62d60beb0e3aad9ff4298027df25c48a489b2f8a256884dffa5fe0f4292dd6fc",
+      "source_relative": "openvino/full_runtime/test_plus_text_export_cpu.py",
+      "origin_sha256": "62d60beb0e3aad9ff4298027df25c48a489b2f8a256884dffa5fe0f4292dd6fc",
+      "sanitized_sha256": "62d60beb0e3aad9ff4298027df25c48a489b2f8a256884dffa5fe0f4292dd6fc",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/test_plus_text_export_cpu.py"
+    },
+    {
+      "bytes": 12045,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/token_batch_post.py",
+      "sha256": "f7500916b6bbe218b44a19e189116d83bca9561fe75f8c9db7318613cb959369",
+      "source_relative": "openvino/full_runtime/token_batch_post.py",
+      "origin_sha256": "f7500916b6bbe218b44a19e189116d83bca9561fe75f8c9db7318613cb959369",
+      "sanitized_sha256": "f7500916b6bbe218b44a19e189116d83bca9561fe75f8c9db7318613cb959369",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/token_batch_post.py"
+    },
+    {
+      "bytes": 19155,
+      "origin": "research_closure",
+      "path": "reference/openvino/full_runtime/window_pre.py",
+      "sha256": "3e8773136be80069ea444b6b27031a9636f6c2b15b8e1ed6f55e5cf145360978",
+      "source_relative": "openvino/full_runtime/window_pre.py",
+      "origin_sha256": "3e8773136be80069ea444b6b27031a9636f6c2b15b8e1ed6f55e5cf145360978",
+      "sanitized_sha256": "3e8773136be80069ea444b6b27031a9636f6c2b15b8e1ed6f55e5cf145360978",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/full_runtime/window_pre.py"
+    },
+    {
+      "bytes": 2860,
+      "origin": "research_closure",
+      "path": "reference/openvino/mask_pool_probe.py",
+      "sha256": "959093e454aed25c3d961f8ea9a5d1aa41e052076faf2d3254585a89f72aeefb",
+      "source_relative": "openvino/mask_pool_probe.py",
+      "origin_sha256": "959093e454aed25c3d961f8ea9a5d1aa41e052076faf2d3254585a89f72aeefb",
+      "sanitized_sha256": "959093e454aed25c3d961f8ea9a5d1aa41e052076faf2d3254585a89f72aeefb",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/mask_pool_probe.py"
+    },
+    {
+      "bytes": 9522,
+      "origin": "research_closure",
+      "path": "reference/openvino/model_edges/convert.py",
+      "sha256": "d0b47cffe15bd1b1fc06a2ed49236c38f939263807a3a19b4ea5bcd58535d359",
+      "source_relative": "openvino/model_edges/convert.py",
+      "origin_sha256": "d0b47cffe15bd1b1fc06a2ed49236c38f939263807a3a19b4ea5bcd58535d359",
+      "sanitized_sha256": "d0b47cffe15bd1b1fc06a2ed49236c38f939263807a3a19b4ea5bcd58535d359",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/model_edges/convert.py"
+    },
+    {
+      "bytes": 12860,
+      "origin": "research_closure",
+      "path": "reference/openvino/parameter_layers/builders.py",
+      "sha256": "1c79aded2260be476a5b99a20ea1fe18feab667219a28743f43221925182261f",
+      "source_relative": "openvino/parameter_layers/builders.py",
+      "origin_sha256": "1c79aded2260be476a5b99a20ea1fe18feab667219a28743f43221925182261f",
+      "sanitized_sha256": "1c79aded2260be476a5b99a20ea1fe18feab667219a28743f43221925182261f",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/parameter_layers/builders.py"
+    },
+    {
+      "bytes": 4248,
+      "origin": "research_closure",
+      "path": "reference/openvino/parameter_layers/contract.py",
+      "sha256": "1050e4dc27557273d38c2f38e9380d34ca7b7d87664bc018cdee2cb582158575",
+      "source_relative": "openvino/parameter_layers/contract.py",
+      "origin_sha256": "1050e4dc27557273d38c2f38e9380d34ca7b7d87664bc018cdee2cb582158575",
+      "sanitized_sha256": "1050e4dc27557273d38c2f38e9380d34ca7b7d87664bc018cdee2cb582158575",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/parameter_layers/contract.py"
+    },
+    {
+      "bytes": 3159,
+      "origin": "research_closure",
+      "path": "reference/openvino/parameter_layers/geometry_scaling.py",
+      "sha256": "1a21e624929ce1ee91886fc8cbff94cb48d7a82d429d0ef90182c8c5a7f6de20",
+      "source_relative": "openvino/parameter_layers/geometry_scaling.py",
+      "origin_sha256": "1a21e624929ce1ee91886fc8cbff94cb48d7a82d429d0ef90182c8c5a7f6de20",
+      "sanitized_sha256": "1a21e624929ce1ee91886fc8cbff94cb48d7a82d429d0ef90182c8c5a7f6de20",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/parameter_layers/geometry_scaling.py"
+    },
+    {
+      "bytes": 7859,
+      "origin": "research_closure",
+      "path": "reference/openvino/post_diagnostic/first_boundary_variants.py",
+      "sha256": "c38aa9e0aef90360af5b445d2b51ea34ba9cad33e5246bbc792308aac0b80bbe",
+      "source_relative": "openvino/post_diagnostic/first_boundary_variants.py",
+      "origin_sha256": "c38aa9e0aef90360af5b445d2b51ea34ba9cad33e5246bbc792308aac0b80bbe",
+      "sanitized_sha256": "c38aa9e0aef90360af5b445d2b51ea34ba9cad33e5246bbc792308aac0b80bbe",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/post_diagnostic/first_boundary_variants.py"
+    },
+    {
+      "bytes": 10746,
+      "origin": "research_closure",
+      "path": "reference/openvino/source_cross_cache/qualify.py",
+      "sha256": "3d9daffb6442e46a9ef915d93d58a7d2b5bc6b4bc266fa48239a17a2aade29eb",
+      "source_relative": "openvino/source_cross_cache/qualify.py",
+      "origin_sha256": "3d9daffb6442e46a9ef915d93d58a7d2b5bc6b4bc266fa48239a17a2aade29eb",
+      "sanitized_sha256": "3d9daffb6442e46a9ef915d93d58a7d2b5bc6b4bc266fa48239a17a2aade29eb",
+      "origin_path": "otc-dist/flashvsr-trial-20261013/openvino/source_cross_cache/qualify.py"
+    },
+    {
+      "bytes": 11357,
+      "origin": "official_source",
+      "path": "reference/source/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source_relative": "LICENSE",
+      "origin_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "sanitized_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "origin_path": "flashvsr-plus-source/LICENSE"
+    },
+    {
+      "bytes": 67,
+      "origin": "extraction_source_marker",
+      "path": "reference/source/__init__.py",
+      "sha256": "e77f2424952c4b7e5130d61c53caf999f02fc63f51e51598b2142deb0060b73a",
+      "source_relative": null,
+      "origin_sha256": null,
+      "sanitized_sha256": "e77f2424952c4b7e5130d61c53caf999f02fc63f51e51598b2142deb0060b73a",
+      "origin_path": null
+    },
+    {
+      "bytes": 781,
+      "origin": "official_source",
+      "path": "reference/source/flashvsr_plus/__init__.py",
+      "sha256": "a7dbdc4a4f0d91f72970bf2bbec811d431cefbde29b27f1c60f3c678d1bc2c5a",
+      "source_relative": "flashvsr_plus/__init__.py",
+      "origin_sha256": "a7dbdc4a4f0d91f72970bf2bbec811d431cefbde29b27f1c60f3c678d1bc2c5a",
+      "sanitized_sha256": "a7dbdc4a4f0d91f72970bf2bbec811d431cefbde29b27f1c60f3c678d1bc2c5a",
+      "origin_path": "flashvsr-plus-source/flashvsr_plus/__init__.py"
+    },
+    {
+      "bytes": 0,
+      "origin": "official_source",
+      "path": "reference/source/flashvsr_plus/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_relative": "flashvsr_plus/py.typed",
+      "origin_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sanitized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin_path": "flashvsr-plus-source/flashvsr_plus/py.typed"
+    },
+    {
+      "bytes": 1048,
+      "origin": "official_source",
+      "path": "reference/source/inference/__init__.py",
+      "sha256": "09cee4d2a442fbd26a1468dbd7c70f738919697ded4e9cacdee4aa73e90adbd4",
+      "source_relative": "inference/__init__.py",
+      "origin_sha256": "09cee4d2a442fbd26a1468dbd7c70f738919697ded4e9cacdee4aa73e90adbd4",
+      "sanitized_sha256": "09cee4d2a442fbd26a1468dbd7c70f738919697ded4e9cacdee4aa73e90adbd4",
+      "origin_path": "flashvsr-plus-source/inference/__init__.py"
+    },
+    {
+      "bytes": 9728,
+      "origin": "official_source",
+      "path": "reference/source/inference/cli.py",
+      "sha256": "a7a0d987a3f9c74f6cfc38bf27ae43fa4dcfcddef211fd2d67f344228c6652af",
+      "source_relative": "inference/cli.py",
+      "origin_sha256": "a7a0d987a3f9c74f6cfc38bf27ae43fa4dcfcddef211fd2d67f344228c6652af",
+      "sanitized_sha256": "a7a0d987a3f9c74f6cfc38bf27ae43fa4dcfcddef211fd2d67f344228c6652af",
+      "origin_path": "flashvsr-plus-source/inference/cli.py"
+    },
+    {
+      "bytes": 12078,
+      "origin": "official_source",
+      "path": "reference/source/inference/config.py",
+      "sha256": "17cf55c5bcd7526a921011533267a08900df889e54ac51d253467b9a72928d7a",
+      "source_relative": "inference/config.py",
+      "origin_sha256": "17cf55c5bcd7526a921011533267a08900df889e54ac51d253467b9a72928d7a",
+      "sanitized_sha256": "17cf55c5bcd7526a921011533267a08900df889e54ac51d253467b9a72928d7a",
+      "origin_path": "flashvsr-plus-source/inference/config.py"
+    },
+    {
+      "bytes": 5880,
+      "origin": "official_source",
+      "path": "reference/source/inference/console.py",
+      "sha256": "0cc9ff4c438358df565f35e2d447c3bee575177c9815a78005829b401cdecc5e",
+      "source_relative": "inference/console.py",
+      "origin_sha256": "0cc9ff4c438358df565f35e2d447c3bee575177c9815a78005829b401cdecc5e",
+      "sanitized_sha256": "0cc9ff4c438358df565f35e2d447c3bee575177c9815a78005829b401cdecc5e",
+      "origin_path": "flashvsr-plus-source/inference/console.py"
+    },
+    {
+      "bytes": 218,
+      "origin": "official_source",
+      "path": "reference/source/inference/decoders/__init__.py",
+      "sha256": "37c7d1e1b6444064abbcb61846047968654380d8670f32cd18df9c212d47c0d3",
+      "source_relative": "inference/decoders/__init__.py",
+      "origin_sha256": "37c7d1e1b6444064abbcb61846047968654380d8670f32cd18df9c212d47c0d3",
+      "sanitized_sha256": "37c7d1e1b6444064abbcb61846047968654380d8670f32cd18df9c212d47c0d3",
+      "origin_path": "flashvsr-plus-source/inference/decoders/__init__.py"
+    },
+    {
+      "bytes": 460,
+      "origin": "official_source",
+      "path": "reference/source/inference/decoders/base.py",
+      "sha256": "33e025cbf12a9879d4bf7335bd7e762680e3ae2516ff5b36988a196ece8f4c9b",
+      "source_relative": "inference/decoders/base.py",
+      "origin_sha256": "33e025cbf12a9879d4bf7335bd7e762680e3ae2516ff5b36988a196ece8f4c9b",
+      "sanitized_sha256": "33e025cbf12a9879d4bf7335bd7e762680e3ae2516ff5b36988a196ece8f4c9b",
+      "origin_path": "flashvsr-plus-source/inference/decoders/base.py"
+    },
+    {
+      "bytes": 590,
+      "origin": "official_source",
+      "path": "reference/source/inference/decoders/factory.py",
+      "sha256": "b3597812d676ba0b13dfc16da1036f87e37d26e2ece2bdcae6a24bac728a67c7",
+      "source_relative": "inference/decoders/factory.py",
+      "origin_sha256": "b3597812d676ba0b13dfc16da1036f87e37d26e2ece2bdcae6a24bac728a67c7",
+      "sanitized_sha256": "b3597812d676ba0b13dfc16da1036f87e37d26e2ece2bdcae6a24bac728a67c7",
+      "origin_path": "flashvsr-plus-source/inference/decoders/factory.py"
+    },
+    {
+      "bytes": 9390,
+      "origin": "official_source",
+      "path": "reference/source/inference/decoders/tiny.py",
+      "sha256": "1f6e599c959925216d865d14cfa8daafff0ce092be218f3865c473282c131446",
+      "source_relative": "inference/decoders/tiny.py",
+      "origin_sha256": "1f6e599c959925216d865d14cfa8daafff0ce092be218f3865c473282c131446",
+      "sanitized_sha256": "1f6e599c959925216d865d14cfa8daafff0ce092be218f3865c473282c131446",
+      "origin_path": "flashvsr-plus-source/inference/decoders/tiny.py"
+    },
+    {
+      "bytes": 14521,
+      "origin": "official_source",
+      "path": "reference/source/inference/decoders/tiny_model.py",
+      "sha256": "85369a0fcd41073a2acc1050cfeb37a85d123e84c12cbee6339bb4308dc04ac6",
+      "source_relative": "inference/decoders/tiny_model.py",
+      "origin_sha256": "85369a0fcd41073a2acc1050cfeb37a85d123e84c12cbee6339bb4308dc04ac6",
+      "sanitized_sha256": "85369a0fcd41073a2acc1050cfeb37a85d123e84c12cbee6339bb4308dc04ac6",
+      "origin_path": "flashvsr-plus-source/inference/decoders/tiny_model.py"
+    },
+    {
+      "bytes": 2357,
+      "origin": "official_source",
+      "path": "reference/source/inference/decoders/vae.py",
+      "sha256": "e6912d710072fe1365e127bd75dca51b08b66f2804eb311c1cd0f6c24bffeac7",
+      "source_relative": "inference/decoders/vae.py",
+      "origin_sha256": "e6912d710072fe1365e127bd75dca51b08b66f2804eb311c1cd0f6c24bffeac7",
+      "sanitized_sha256": "e6912d710072fe1365e127bd75dca51b08b66f2804eb311c1cd0f6c24bffeac7",
+      "origin_path": "flashvsr-plus-source/inference/decoders/vae.py"
+    },
+    {
+      "bytes": 3532,
+      "origin": "official_source",
+      "path": "reference/source/inference/hardware.py",
+      "sha256": "4ec1e9b126c2add2df01d1535c24e88b0e5312d286f1dad3d73830b28423e18b",
+      "source_relative": "inference/hardware.py",
+      "origin_sha256": "4ec1e9b126c2add2df01d1535c24e88b0e5312d286f1dad3d73830b28423e18b",
+      "sanitized_sha256": "4ec1e9b126c2add2df01d1535c24e88b0e5312d286f1dad3d73830b28423e18b",
+      "origin_path": "flashvsr-plus-source/inference/hardware.py"
+    },
+    {
+      "bytes": 430,
+      "origin": "official_source",
+      "path": "reference/source/inference/loading/__init__.py",
+      "sha256": "d2228c32408b281c049a0afe6ba68d8120d9affb882d2afa6ae352beabb6f693",
+      "source_relative": "inference/loading/__init__.py",
+      "origin_sha256": "d2228c32408b281c049a0afe6ba68d8120d9affb882d2afa6ae352beabb6f693",
+      "sanitized_sha256": "d2228c32408b281c049a0afe6ba68d8120d9affb882d2afa6ae352beabb6f693",
+      "origin_path": "flashvsr-plus-source/inference/loading/__init__.py"
+    },
+    {
+      "bytes": 4034,
+      "origin": "official_source",
+      "path": "reference/source/inference/loading/loader.py",
+      "sha256": "5c07b6b2a6996ae1c28a38d53e5b9037e31128261a6e8aa3a2e0ab466ac042ba",
+      "source_relative": "inference/loading/loader.py",
+      "origin_sha256": "5c07b6b2a6996ae1c28a38d53e5b9037e31128261a6e8aa3a2e0ab466ac042ba",
+      "sanitized_sha256": "5c07b6b2a6996ae1c28a38d53e5b9037e31128261a6e8aa3a2e0ab466ac042ba",
+      "origin_path": "flashvsr-plus-source/inference/loading/loader.py"
+    },
+    {
+      "bytes": 3115,
+      "origin": "official_source",
+      "path": "reference/source/inference/loading/model_bundle.py",
+      "sha256": "57bc692d0ae330297019537059ee682c9e8418bf5a01f341f43ff4027b640aeb",
+      "source_relative": "inference/loading/model_bundle.py",
+      "origin_sha256": "57bc692d0ae330297019537059ee682c9e8418bf5a01f341f43ff4027b640aeb",
+      "sanitized_sha256": "57bc692d0ae330297019537059ee682c9e8418bf5a01f341f43ff4027b640aeb",
+      "origin_path": "flashvsr-plus-source/inference/loading/model_bundle.py"
+    },
+    {
+      "bytes": 6271,
+      "origin": "official_source",
+      "path": "reference/source/inference/output.py",
+      "sha256": "d47c44d751284631b6722ca5db707d6a8f0b4407c4091378e008149ed30b5f9c",
+      "source_relative": "inference/output.py",
+      "origin_sha256": "d47c44d751284631b6722ca5db707d6a8f0b4407c4091378e008149ed30b5f9c",
+      "sanitized_sha256": "d47c44d751284631b6722ca5db707d6a8f0b4407c4091378e008149ed30b5f9c",
+      "origin_path": "flashvsr-plus-source/inference/output.py"
+    },
+    {
+      "bytes": 10342,
+      "origin": "official_source",
+      "path": "reference/source/inference/pipeline.py",
+      "sha256": "232810d812d76f850ce6e00a9052869679d9206c665c6b035ec464d9cb8d9443",
+      "source_relative": "inference/pipeline.py",
+      "origin_sha256": "232810d812d76f850ce6e00a9052869679d9206c665c6b035ec464d9cb8d9443",
+      "sanitized_sha256": "232810d812d76f850ce6e00a9052869679d9206c665c6b035ec464d9cb8d9443",
+      "origin_path": "flashvsr-plus-source/inference/pipeline.py"
+    },
+    {
+      "bytes": 89,
+      "origin": "official_source",
+      "path": "reference/source/inference/postprocessing/__init__.py",
+      "sha256": "707a70f74d8848be5e86c5aded7efc2ffe0558b59a09774c2345df6bd07af475",
+      "source_relative": "inference/postprocessing/__init__.py",
+      "origin_sha256": "707a70f74d8848be5e86c5aded7efc2ffe0558b59a09774c2345df6bd07af475",
+      "sanitized_sha256": "707a70f74d8848be5e86c5aded7efc2ffe0558b59a09774c2345df6bd07af475",
+      "origin_path": "flashvsr-plus-source/inference/postprocessing/__init__.py"
+    },
+    {
+      "bytes": 2932,
+      "origin": "official_source",
+      "path": "reference/source/inference/postprocessing/color_correction.py",
+      "sha256": "57b9182098c152c1a85a3268559169a545b1b8f71a31dec856676cdcf124e071",
+      "source_relative": "inference/postprocessing/color_correction.py",
+      "origin_sha256": "57b9182098c152c1a85a3268559169a545b1b8f71a31dec856676cdcf124e071",
+      "sanitized_sha256": "57b9182098c152c1a85a3268559169a545b1b8f71a31dec856676cdcf124e071",
+      "origin_path": "flashvsr-plus-source/inference/postprocessing/color_correction.py"
+    },
+    {
+      "bytes": 747,
+      "origin": "official_source",
+      "path": "reference/source/inference/preprocessing/__init__.py",
+      "sha256": "1c8d303aeae29d9e67b46d94fe184514ddcdfe03d74a148e79a8507b442ee216",
+      "source_relative": "inference/preprocessing/__init__.py",
+      "origin_sha256": "1c8d303aeae29d9e67b46d94fe184514ddcdfe03d74a148e79a8507b442ee216",
+      "sanitized_sha256": "1c8d303aeae29d9e67b46d94fe184514ddcdfe03d74a148e79a8507b442ee216",
+      "origin_path": "flashvsr-plus-source/inference/preprocessing/__init__.py"
+    },
+    {
+      "bytes": 8701,
+      "origin": "official_source",
+      "path": "reference/source/inference/preprocessing/input.py",
+      "sha256": "bef72536b024e97b0a87c589c7f56fe1f37463308616752d0635fa2f15b66706",
+      "source_relative": "inference/preprocessing/input.py",
+      "origin_sha256": "bef72536b024e97b0a87c589c7f56fe1f37463308616752d0635fa2f15b66706",
+      "sanitized_sha256": "bef72536b024e97b0a87c589c7f56fe1f37463308616752d0635fa2f15b66706",
+      "origin_path": "flashvsr-plus-source/inference/preprocessing/input.py"
+    },
+    {
+      "bytes": 2012,
+      "origin": "official_source",
+      "path": "reference/source/inference/preprocessing/padding.py",
+      "sha256": "d1ec91aa6a4ae00ceebd2b1367e7e87c588838aba5231f5962b4d479476aa4e2",
+      "source_relative": "inference/preprocessing/padding.py",
+      "origin_sha256": "d1ec91aa6a4ae00ceebd2b1367e7e87c588838aba5231f5962b4d479476aa4e2",
+      "sanitized_sha256": "d1ec91aa6a4ae00ceebd2b1367e7e87c588838aba5231f5962b4d479476aa4e2",
+      "origin_path": "flashvsr-plus-source/inference/preprocessing/padding.py"
+    },
+    {
+      "bytes": 4224,
+      "origin": "official_source",
+      "path": "reference/source/inference/preprocessing/stream.py",
+      "sha256": "6197759fec8a0edfd9936bce067c58ac6811ada7017d561439ebc7e2c46d4783",
+      "source_relative": "inference/preprocessing/stream.py",
+      "origin_sha256": "6197759fec8a0edfd9936bce067c58ac6811ada7017d561439ebc7e2c46d4783",
+      "sanitized_sha256": "6197759fec8a0edfd9936bce067c58ac6811ada7017d561439ebc7e2c46d4783",
+      "origin_path": "flashvsr-plus-source/inference/preprocessing/stream.py"
+    },
+    {
+      "bytes": 3778,
+      "origin": "official_source",
+      "path": "reference/source/inference/preprocessing/temporal.py",
+      "sha256": "b8b7cc5fd8252c4ef24ca8cbcee7e2030e70d6ff38bb1fa9062abf8bf5f17156",
+      "source_relative": "inference/preprocessing/temporal.py",
+      "origin_sha256": "b8b7cc5fd8252c4ef24ca8cbcee7e2030e70d6ff38bb1fa9062abf8bf5f17156",
+      "sanitized_sha256": "b8b7cc5fd8252c4ef24ca8cbcee7e2030e70d6ff38bb1fa9062abf8bf5f17156",
+      "origin_path": "flashvsr-plus-source/inference/preprocessing/temporal.py"
+    },
+    {
+      "bytes": 3786,
+      "origin": "official_source",
+      "path": "reference/source/inference/presets.py",
+      "sha256": "30bf300fe28c94a237733c27e359e2d1e2377bbd4aa54c9183914760830c7733",
+      "source_relative": "inference/presets.py",
+      "origin_sha256": "30bf300fe28c94a237733c27e359e2d1e2377bbd4aa54c9183914760830c7733",
+      "sanitized_sha256": "30bf300fe28c94a237733c27e359e2d1e2377bbd4aa54c9183914760830c7733",
+      "origin_path": "flashvsr-plus-source/inference/presets.py"
+    },
+    {
+      "bytes": 366,
+      "origin": "official_source",
+      "path": "reference/source/inference/randomness.py",
+      "sha256": "5e6d110244297e715a0c6e3039b6e3fe7408be14b11d95f90ab9c991c7b2d072",
+      "source_relative": "inference/randomness.py",
+      "origin_sha256": "5e6d110244297e715a0c6e3039b6e3fe7408be14b11d95f90ab9c991c7b2d072",
+      "sanitized_sha256": "5e6d110244297e715a0c6e3039b6e3fe7408be14b11d95f90ab9c991c7b2d072",
+      "origin_path": "flashvsr-plus-source/inference/randomness.py"
+    },
+    {
+      "bytes": 1491,
+      "origin": "official_source",
+      "path": "reference/source/inference/request.py",
+      "sha256": "de7f3537c77317500880bcfe0c52694f3ee06bed6380bb053626c52bbf6499f3",
+      "source_relative": "inference/request.py",
+      "origin_sha256": "de7f3537c77317500880bcfe0c52694f3ee06bed6380bb053626c52bbf6499f3",
+      "sanitized_sha256": "de7f3537c77317500880bcfe0c52694f3ee06bed6380bb053626c52bbf6499f3",
+      "origin_path": "flashvsr-plus-source/inference/request.py"
+    },
+    {
+      "bytes": 1792,
+      "origin": "official_source",
+      "path": "reference/source/inference/run_single.sh",
+      "sha256": "73c72ab951221e6b80856e3d00b54507d11fcb96870cd2f349d2d0fff08e36a7",
+      "source_relative": "inference/run_single.sh",
+      "origin_sha256": "73c72ab951221e6b80856e3d00b54507d11fcb96870cd2f349d2d0fff08e36a7",
+      "sanitized_sha256": "73c72ab951221e6b80856e3d00b54507d11fcb96870cd2f349d2d0fff08e36a7",
+      "origin_path": "flashvsr-plus-source/inference/run_single.sh"
+    },
+    {
+      "bytes": 7091,
+      "origin": "official_source",
+      "path": "reference/source/inference/run_stream.py",
+      "sha256": "aaac5a26e429a5d4ab1c0205eaf314fc6fcc5bed415d0752d1ea617a7092f9d5",
+      "source_relative": "inference/run_stream.py",
+      "origin_sha256": "aaac5a26e429a5d4ab1c0205eaf314fc6fcc5bed415d0752d1ea617a7092f9d5",
+      "sanitized_sha256": "aaac5a26e429a5d4ab1c0205eaf314fc6fcc5bed415d0752d1ea617a7092f9d5",
+      "origin_path": "flashvsr-plus-source/inference/run_stream.py"
+    },
+    {
+      "bytes": 61,
+      "origin": "official_source",
+      "path": "reference/source/inference/runners/__init__.py",
+      "sha256": "f9a8d35c8b629015cff6abc1f2c453dffa9632e403a41bf89b8bbecd0e9a53c0",
+      "source_relative": "inference/runners/__init__.py",
+      "origin_sha256": "f9a8d35c8b629015cff6abc1f2c453dffa9632e403a41bf89b8bbecd0e9a53c0",
+      "sanitized_sha256": "f9a8d35c8b629015cff6abc1f2c453dffa9632e403a41bf89b8bbecd0e9a53c0",
+      "origin_path": "flashvsr-plus-source/inference/runners/__init__.py"
+    },
+    {
+      "bytes": 3804,
+      "origin": "official_source",
+      "path": "reference/source/inference/runners/base.py",
+      "sha256": "66040804cd07563adc758ba442fb03229ad44e4921da4cfd47c15a7a3682fca3",
+      "source_relative": "inference/runners/base.py",
+      "origin_sha256": "66040804cd07563adc758ba442fb03229ad44e4921da4cfd47c15a7a3682fca3",
+      "sanitized_sha256": "66040804cd07563adc758ba442fb03229ad44e4921da4cfd47c15a7a3682fca3",
+      "origin_path": "flashvsr-plus-source/inference/runners/base.py"
+    },
+    {
+      "bytes": 22780,
+      "origin": "official_source",
+      "path": "reference/source/inference/runners/stream.py",
+      "sha256": "900830c0742df6bff15423cca6cc8b8e2b8fe9589dfb70756c212791206888bc",
+      "source_relative": "inference/runners/stream.py",
+      "origin_sha256": "900830c0742df6bff15423cca6cc8b8e2b8fe9589dfb70756c212791206888bc",
+      "sanitized_sha256": "900830c0742df6bff15423cca6cc8b8e2b8fe9589dfb70756c212791206888bc",
+      "origin_path": "flashvsr-plus-source/inference/runners/stream.py"
+    },
+    {
+      "bytes": 192,
+      "origin": "official_source",
+      "path": "reference/source/inference/streaming/__init__.py",
+      "sha256": "d2fd480ab5058230b940dcaf93882df74df99466b0a13f1c7edc3facc2306ca9",
+      "source_relative": "inference/streaming/__init__.py",
+      "origin_sha256": "d2fd480ab5058230b940dcaf93882df74df99466b0a13f1c7edc3facc2306ca9",
+      "sanitized_sha256": "d2fd480ab5058230b940dcaf93882df74df99466b0a13f1c7edc3facc2306ca9",
+      "origin_path": "flashvsr-plus-source/inference/streaming/__init__.py"
+    },
+    {
+      "bytes": 8304,
+      "origin": "official_source",
+      "path": "reference/source/inference/streaming/memory_policy.py",
+      "sha256": "9b305f1c1e274b6b2367dc5886e356351f01acb8fe6bfa7c7013424d553bf729",
+      "source_relative": "inference/streaming/memory_policy.py",
+      "origin_sha256": "9b305f1c1e274b6b2367dc5886e356351f01acb8fe6bfa7c7013424d553bf729",
+      "sanitized_sha256": "9b305f1c1e274b6b2367dc5886e356351f01acb8fe6bfa7c7013424d553bf729",
+      "origin_path": "flashvsr-plus-source/inference/streaming/memory_policy.py"
+    },
+    {
+      "bytes": 1226,
+      "origin": "official_source",
+      "path": "reference/source/inference/streaming/state.py",
+      "sha256": "b68c0b579f0499e06032216e016cbc1932e34dd05dd77e3079c2d8609d530ed9",
+      "source_relative": "inference/streaming/state.py",
+      "origin_sha256": "b68c0b579f0499e06032216e016cbc1932e34dd05dd77e3079c2d8609d530ed9",
+      "sanitized_sha256": "b68c0b579f0499e06032216e016cbc1932e34dd05dd77e3079c2d8609d530ed9",
+      "origin_path": "flashvsr-plus-source/inference/streaming/state.py"
+    },
+    {
+      "bytes": 219,
+      "origin": "official_source",
+      "path": "reference/source/model_io/__init__.py",
+      "sha256": "4879476894ca7513b20b2431516673451274d4929488e702fa2bad554e5e905e",
+      "source_relative": "model_io/__init__.py",
+      "origin_sha256": "4879476894ca7513b20b2431516673451274d4929488e702fa2bad554e5e905e",
+      "sanitized_sha256": "4879476894ca7513b20b2431516673451274d4929488e702fa2bad554e5e905e",
+      "origin_path": "flashvsr-plus-source/model_io/__init__.py"
+    },
+    {
+      "bytes": 3904,
+      "origin": "official_source",
+      "path": "reference/source/model_io/io.py",
+      "sha256": "917ee0cf1759196303245e76a0281168f12b75b5b414ddd06539655da4c5fe65",
+      "source_relative": "model_io/io.py",
+      "origin_sha256": "917ee0cf1759196303245e76a0281168f12b75b5b414ddd06539655da4c5fe65",
+      "sanitized_sha256": "917ee0cf1759196303245e76a0281168f12b75b5b414ddd06539655da4c5fe65",
+      "origin_path": "flashvsr-plus-source/model_io/io.py"
+    },
+    {
+      "bytes": 1210,
+      "origin": "official_source",
+      "path": "reference/source/models/__init__.py",
+      "sha256": "115382768e5b29858da7fecb08f3148347e6cc7f9545df4238de31208790bc74",
+      "source_relative": "models/__init__.py",
+      "origin_sha256": "115382768e5b29858da7fecb08f3148347e6cc7f9545df4238de31208790bc74",
+      "sanitized_sha256": "115382768e5b29858da7fecb08f3148347e6cc7f9545df4238de31208790bc74",
+      "origin_path": "flashvsr-plus-source/models/__init__.py"
+    },
+    {
+      "bytes": 16510,
+      "origin": "official_source",
+      "path": "reference/source/models/attention.py",
+      "sha256": "39efb42b2e40f1b41d13f5e598944da2111019fcb56793d14cb689c75e094e7e",
+      "source_relative": "models/attention.py",
+      "origin_sha256": "39efb42b2e40f1b41d13f5e598944da2111019fcb56793d14cb689c75e094e7e",
+      "sanitized_sha256": "39efb42b2e40f1b41d13f5e598944da2111019fcb56793d14cb689c75e094e7e",
+      "origin_path": "flashvsr-plus-source/models/attention.py"
+    },
+    {
+      "bytes": 341,
+      "origin": "official_source",
+      "path": "reference/source/models/attention_backends/__init__.py",
+      "sha256": "84942d9c5e6f41d10959311e23905e51082907533df238b5f9fd90bd7b498cdb",
+      "source_relative": "models/attention_backends/__init__.py",
+      "origin_sha256": "84942d9c5e6f41d10959311e23905e51082907533df238b5f9fd90bd7b498cdb",
+      "sanitized_sha256": "84942d9c5e6f41d10959311e23905e51082907533df238b5f9fd90bd7b498cdb",
+      "origin_path": "flashvsr-plus-source/models/attention_backends/__init__.py"
+    },
+    {
+      "bytes": 7983,
+      "origin": "official_source",
+      "path": "reference/source/models/attention_backends/kernels.py",
+      "sha256": "f046b48b23ce5dcdef3e4351943929d792d93a90a2a62b9861b1a20a0e39b2c0",
+      "source_relative": "models/attention_backends/kernels.py",
+      "origin_sha256": "f046b48b23ce5dcdef3e4351943929d792d93a90a2a62b9861b1a20a0e39b2c0",
+      "sanitized_sha256": "f046b48b23ce5dcdef3e4351943929d792d93a90a2a62b9861b1a20a0e39b2c0",
+      "origin_path": "flashvsr-plus-source/models/attention_backends/kernels.py"
+    },
+    {
+      "bytes": 18001,
+      "origin": "official_source",
+      "path": "reference/source/models/attention_backends/sparse.py",
+      "sha256": "a48f57d8e4e348ece1cd9d08bb82fe7b7246f9fd56b80f0d614d88625db80517",
+      "source_relative": "models/attention_backends/sparse.py",
+      "origin_sha256": "a48f57d8e4e348ece1cd9d08bb82fe7b7246f9fd56b80f0d614d88625db80517",
+      "sanitized_sha256": "a48f57d8e4e348ece1cd9d08bb82fe7b7246f9fd56b80f0d614d88625db80517",
+      "origin_path": "flashvsr-plus-source/models/attention_backends/sparse.py"
+    },
+    {
+      "bytes": 4822,
+      "origin": "official_source",
+      "path": "reference/source/models/blocks.py",
+      "sha256": "9c60efdff2fadc569d40d86ab54019b56ae6c579a3ab205086dca6e41bd6364f",
+      "source_relative": "models/blocks.py",
+      "origin_sha256": "9c60efdff2fadc569d40d86ab54019b56ae6c579a3ab205086dca6e41bd6364f",
+      "sanitized_sha256": "9c60efdff2fadc569d40d86ab54019b56ae6c579a3ab205086dca6e41bd6364f",
+      "origin_path": "flashvsr-plus-source/models/blocks.py"
+    },
+    {
+      "bytes": 6699,
+      "origin": "official_source",
+      "path": "reference/source/models/conditioning.py",
+      "sha256": "494c14f2f33a6904aebf12cb77d90d6dd6a6d2840d73ab7f298829590615d079",
+      "source_relative": "models/conditioning.py",
+      "origin_sha256": "494c14f2f33a6904aebf12cb77d90d6dd6a6d2840d73ab7f298829590615d079",
+      "sanitized_sha256": "494c14f2f33a6904aebf12cb77d90d6dd6a6d2840d73ab7f298829590615d079",
+      "origin_path": "flashvsr-plus-source/models/conditioning.py"
+    },
+    {
+      "bytes": 9130,
+      "origin": "official_source",
+      "path": "reference/source/models/config.py",
+      "sha256": "c3cafca58f8ca05dd02ba8517bce2ff07a555be4bfb4b854de5bc882c9361fbd",
+      "source_relative": "models/config.py",
+      "origin_sha256": "c3cafca58f8ca05dd02ba8517bce2ff07a555be4bfb4b854de5bc882c9361fbd",
+      "sanitized_sha256": "c3cafca58f8ca05dd02ba8517bce2ff07a555be4bfb4b854de5bc882c9361fbd",
+      "origin_path": "flashvsr-plus-source/models/config.py"
+    },
+    {
+      "bytes": 18280,
+      "origin": "official_source",
+      "path": "reference/source/models/dit.py",
+      "sha256": "cfca4fb06f0f25e99c1865813d5db43d42503bd2eef6d492d71e24f301403a05",
+      "source_relative": "models/dit.py",
+      "origin_sha256": "cfca4fb06f0f25e99c1865813d5db43d42503bd2eef6d492d71e24f301403a05",
+      "sanitized_sha256": "cfca4fb06f0f25e99c1865813d5db43d42503bd2eef6d492d71e24f301403a05",
+      "origin_path": "flashvsr-plus-source/models/dit.py"
+    },
+    {
+      "bytes": 2431,
+      "origin": "official_source",
+      "path": "reference/source/models/embeddings.py",
+      "sha256": "827c33153bf3c7ea1fe174b18e0e88ab20d678a5b44cde30927a4c86b6f987d8",
+      "source_relative": "models/embeddings.py",
+      "origin_sha256": "827c33153bf3c7ea1fe174b18e0e88ab20d678a5b44cde30927a4c86b6f987d8",
+      "sanitized_sha256": "827c33153bf3c7ea1fe174b18e0e88ab20d678a5b44cde30927a4c86b6f987d8",
+      "origin_path": "flashvsr-plus-source/models/embeddings.py"
+    },
+    {
+      "bytes": 185,
+      "origin": "official_source",
+      "path": "reference/source/models/factory.py",
+      "sha256": "7a6857138dd3a9bd435c275410a52fef11a9d4044d59c485df75a0240966fc98",
+      "source_relative": "models/factory.py",
+      "origin_sha256": "7a6857138dd3a9bd435c275410a52fef11a9d4044d59c485df75a0240966fc98",
+      "sanitized_sha256": "7a6857138dd3a9bd435c275410a52fef11a9d4044d59c485df75a0240966fc98",
+      "origin_path": "flashvsr-plus-source/models/factory.py"
+    },
+    {
+      "bytes": 844,
+      "origin": "official_source",
+      "path": "reference/source/models/vae/__init__.py",
+      "sha256": "26c9e041d61c9adbd311c66a7252194c9a4bd7563a6456a9e91b0defa54054b2",
+      "source_relative": "models/vae/__init__.py",
+      "origin_sha256": "26c9e041d61c9adbd311c66a7252194c9a4bd7563a6456a9e91b0defa54054b2",
+      "sanitized_sha256": "26c9e041d61c9adbd311c66a7252194c9a4bd7563a6456a9e91b0defa54054b2",
+      "origin_path": "flashvsr-plus-source/models/vae/__init__.py"
+    },
+    {
+      "bytes": 28466,
+      "origin": "official_source",
+      "path": "reference/source/models/vae/wan.py",
+      "sha256": "eb805ad3f782ebb0bd032800aa04c40c87c8b9cc0f7ba0fa99eb9a165c91e98c",
+      "source_relative": "models/vae/wan.py",
+      "origin_sha256": "eb805ad3f782ebb0bd032800aa04c40c87c8b9cc0f7ba0fa99eb9a165c91e98c",
+      "sanitized_sha256": "eb805ad3f782ebb0bd032800aa04c40c87c8b9cc0f7ba0fa99eb9a165c91e98c",
+      "origin_path": "flashvsr-plus-source/models/vae/wan.py"
+    },
+    {
+      "bytes": 72,
+      "origin": "official_source",
+      "path": "reference/source/operators/flashvsr_attn/.gitignore",
+      "sha256": "0c43b49e86f51aad7305e97da8dd23db90b6f11660b0488e91bba0e20fa6c3dc",
+      "source_relative": "operators/flashvsr_attn/.gitignore",
+      "origin_sha256": "0c43b49e86f51aad7305e97da8dd23db90b6f11660b0488e91bba0e20fa6c3dc",
+      "sanitized_sha256": "0c43b49e86f51aad7305e97da8dd23db90b6f11660b0488e91bba0e20fa6c3dc",
+      "origin_path": "flashvsr-plus-source/operators/flashvsr_attn/.gitignore"
+    },
+    {
+      "bytes": 2092,
+      "origin": "official_source",
+      "path": "reference/source/operators/flashvsr_attn/README.md",
+      "sha256": "3abba87d9177dc3a85f6f0e18925130d85d6aee921be71da701e400df3ab19fa",
+      "source_relative": "operators/flashvsr_attn/README.md",
+      "origin_sha256": "3abba87d9177dc3a85f6f0e18925130d85d6aee921be71da701e400df3ab19fa",
+      "sanitized_sha256": "3abba87d9177dc3a85f6f0e18925130d85d6aee921be71da701e400df3ab19fa",
+      "origin_path": "flashvsr-plus-source/operators/flashvsr_attn/README.md"
+    },
+    {
+      "bytes": 434,
+      "origin": "official_source",
+      "path": "reference/source/operators/flashvsr_attn/UPSTREAM.md",
+      "sha256": "ec087bac641714f1615cfd8fb5964e1eb481b422731c230b9884c9e80e524ca7",
+      "source_relative": "operators/flashvsr_attn/UPSTREAM.md",
+      "origin_sha256": "ec087bac641714f1615cfd8fb5964e1eb481b422731c230b9884c9e80e524ca7",
+      "sanitized_sha256": "ec087bac641714f1615cfd8fb5964e1eb481b422731c230b9884c9e80e524ca7",
+      "origin_path": "flashvsr-plus-source/operators/flashvsr_attn/UPSTREAM.md"
+    },
+    {
+      "bytes": 7902,
+      "origin": "official_source",
+      "path": "reference/source/operators/flashvsr_attn/benchmarks/benchmark_forward.py",
+      "sha256": "d848d73e43e16267e8f84263989495ac0d29c31835223f28febf5b65b5f9a84e",
+      "source_relative": "operators/flashvsr_attn/benchmarks/benchmark_forward.py",
+      "origin_sha256": "d848d73e43e16267e8f84263989495ac0d29c31835223f28febf5b65b5f9a84e",
+      "sanitized_sha256": "d848d73e43e16267e8f84263989495ac0d29c31835223f28febf5b65b5f9a84e",
+      "origin_path": "flashvsr-plus-source/operators/flashvsr_attn/benchmarks/benchmark_forward.py"
+    },
+    {
+      "bytes": 821,
+      "origin": "official_source",
+      "path": "reference/source/operators/flashvsr_attn/examples/flashvsr_stream_example.py",
+      "sha256": "3de9ad600f2fab3d9b17ed63837e368f610da376e35bbf05e8f56bacdbaf87c3",
+      "source_relative": "operators/flashvsr_attn/examples/flashvsr_stream_example.py",
+      "origin_sha256": "3de9ad600f2fab3d9b17ed63837e368f610da376e35bbf05e8f56bacdbaf87c3",
+      "sanitized_sha256": "3de9ad600f2fab3d9b17ed63837e368f610da376e35bbf05e8f56bacdbaf87c3",
+      "origin_path": "flashvsr-plus-source/operators/flashvsr_attn/examples/flashvsr_stream_example.py"
+    },
+    {
+      "bytes": 345,
+      "origin": "official_source",
+      "path": "reference/source/operators/flashvsr_attn/flashvsr_attn/__init__.py",
+      "sha256": "65915158f24d794c7c01eefcf4c37144e9bf7c2d756665517d529febbd48eeea",
+      "source_relative": "operators/flashvsr_attn/flashvsr_attn/__init__.py",
+      "origin_sha256": "65915158f24d794c7c01eefcf4c37144e9bf7c2d756665517d529febbd48eeea",
+      "sanitized_sha256": "65915158f24d794c7c01eefcf4c37144e9bf7c2d756665517d529febbd48eeea",
+      "origin_path": "flashvsr-plus-source/operators/flashvsr_attn/flashvsr_attn/__init__.py"
+    },
+    {
+      "bytes": 170,
+      "origin": "official_source",
+      "path": "reference/source/operators/flashvsr_attn/flashvsr_attn/api.py",
+      "sha256": "4d23cc2f0000e809820b5aab424a6ba1d3758c0d4549436936f00307abdffef9",
+      "source_relative": "operators/flashvsr_attn/flashvsr_attn/api.py",
+      "origin_sha256": "4d23cc2f0000e809820b5aab424a6ba1d3758c0d4549436936f00307abdffef9",
+      "sanitized_sha256": "4d23cc2f0000e809820b5aab424a6ba1d3758c0d4549436936f00307abdffef9",
+      "origin_path": "flashvsr-plus-source/operators/flashvsr_attn/flashvsr_attn/api.py"
+    },
+    {
+      "bytes": 6611,
+      "origin": "official_source",
+      "path": "reference/source/operators/flashvsr_attn/flashvsr_attn/layout.py",
+      "sha256": "60beb1a477183dfb2b6987d1ae7c82fb0f3aab44e8737480ffb748f6f1a74618",
+      "source_relative": "operators/flashvsr_attn/flashvsr_attn/layout.py",
+      "origin_sha256": "60beb1a477183dfb2b6987d1ae7c82fb0f3aab44e8737480ffb748f6f1a74618",
+      "sanitized_sha256": "60beb1a477183dfb2b6987d1ae7c82fb0f3aab44e8737480ffb748f6f1a74618",
+      "origin_path": "flashvsr-plus-source/operators/flashvsr_attn/flashvsr_attn/layout.py"
+    },
+    {
+      "bytes": 1437,
+      "origin": "official_source",
+      "path": "reference/source/operators/flashvsr_attn/flashvsr_attn/reference.py",
+      "sha256": "51a8628844ce18d403e970e49095a71fa576a5d7d89cd3f0589fb21373d2946c",
+      "source_relative": "operators/flashvsr_attn/flashvsr_attn/reference.py",
+      "origin_sha256": "51a8628844ce18d403e970e49095a71fa576a5d7d89cd3f0589fb21373d2946c",
+      "sanitized_sha256": "51a8628844ce18d403e970e49095a71fa576a5d7d89cd3f0589fb21373d2946c",
+      "origin_path": "flashvsr-plus-source/operators/flashvsr_attn/flashvsr_attn/reference.py"
+    },
+    {
+      "bytes": 6958,
+      "origin": "official_source",
+      "path": "reference/source/operators/flashvsr_attn/flashvsr_attn/triton_kernel.py",
+      "sha256": "4a8c7221c9fb3cdcbd23291ed1a0e673c9ea7f331d4cdea87040e4ff4aa5ac16",
+      "source_relative": "operators/flashvsr_attn/flashvsr_attn/triton_kernel.py",
+      "origin_sha256": "4a8c7221c9fb3cdcbd23291ed1a0e673c9ea7f331d4cdea87040e4ff4aa5ac16",
+      "sanitized_sha256": "4a8c7221c9fb3cdcbd23291ed1a0e673c9ea7f331d4cdea87040e4ff4aa5ac16",
+      "origin_path": "flashvsr-plus-source/operators/flashvsr_attn/flashvsr_attn/triton_kernel.py"
+    },
+    {
+      "bytes": 458,
+      "origin": "official_source",
+      "path": "reference/source/operators/flashvsr_attn/pyproject.toml",
+      "sha256": "63d50d03c0035b02cc74be054bcb0339bfb7f44638667b9e21f928c6e552a6b2",
+      "source_relative": "operators/flashvsr_attn/pyproject.toml",
+      "origin_sha256": "63d50d03c0035b02cc74be054bcb0339bfb7f44638667b9e21f928c6e552a6b2",
+      "sanitized_sha256": "63d50d03c0035b02cc74be054bcb0339bfb7f44638667b9e21f928c6e552a6b2",
+      "origin_path": "flashvsr-plus-source/operators/flashvsr_attn/pyproject.toml"
+    },
+    {
+      "bytes": 10251,
+      "origin": "extraction_build_support",
+      "path": "reference/test_reference_graphs.py",
+      "sha256": "93d0beca9b64acf2e3288eb20ddeea3ac40ea449433adc260d839afa32e262b1",
+      "source_relative": null,
+      "origin_sha256": null,
+      "sanitized_sha256": "93d0beca9b64acf2e3288eb20ddeea3ac40ea449433adc260d839afa32e262b1",
+      "origin_path": null
+    },
+    {
+      "bytes": 21504,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_fixed_conditioning_bf16_base.bin",
+      "path": "assets/flash-assets/flash_fixed_conditioning_bf16_base.bin",
+      "sanitized_sha256": "dd78d1930d595a5a58cc9e8f284c4265056b428513350f83f1dead62e67f3d4d",
+      "sha256": "dd78d1930d595a5a58cc9e8f284c4265056b428513350f83f1dead62e67f3d4d",
+      "source_relative": "flash-assets/flash_fixed_conditioning_bf16_base.bin",
+      "origin_sha256": "dd78d1930d595a5a58cc9e8f284c4265056b428513350f83f1dead62e67f3d4d"
+    },
+    {
+      "bytes": 21504,
+      "origin": "otc_native_wip",
+      "origin_path": "otc-native-ai-enhance/flash-assets/flash_fixed_conditioning_bf16_turbo.bin",
+      "path": "assets/flash-assets/flash_fixed_conditioning_bf16_turbo.bin",
+      "sanitized_sha256": "7d49032ce9f91fdc13d6dba00f22efacb4e91fbdac2e9797a48f34fb7adf915b",
+      "sha256": "7d49032ce9f91fdc13d6dba00f22efacb4e91fbdac2e9797a48f34fb7adf915b",
+      "source_relative": "flash-assets/flash_fixed_conditioning_bf16_turbo.bin",
+      "origin_sha256": "7d49032ce9f91fdc13d6dba00f22efacb4e91fbdac2e9797a48f34fb7adf915b"
+    }
+  ],
+  "official_source_commit": "b548a2cc2c929d3d4676f2973abe27876ec4dee7",
+  "research_snapshot": "dist/flashvsr-trial-20261013",
+  "tree_sha256": "7fb71f121b05ea7f150747dda62e5420196a61e24cd947f1d20bc25e9e29a12e"
+}

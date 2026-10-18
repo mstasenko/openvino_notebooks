@@ -1,0 +1,676 @@
+{
+  "artifact": "flashvsr-plus-reference-extraction",
+  "status": "research_reference_not_product_backend",
+  "source": {
+    "official_flashvsr_plus_commit": "b548a2cc2c929d3d4676f2973abe27876ec4dee7",
+    "model_repository_revision": "46b79520946ac67dec94d1566490690953c7debc",
+    "openvino_revision": "7d81aad55a5",
+    "openvino_runtime_label": "2026.5.0 development runtime"
+  },
+  "modes": {
+    "turbo": {
+      "dit_bytes": 5676070392,
+      "lq_bytes": 1151384272,
+      "dit_sha256": "7862b92178176fa3aebc34c6c071daca6b56ab1dddb8e7ff9a01c47f5226ec8b",
+      "lq_sha256": "e77b378ae12342eefbb58f924256f362a151b93ce73dd32808fcdaca9c051496"
+    },
+    "base": {
+      "dit_bytes": 5676070392,
+      "lq_bytes": 1151384272,
+      "dit_sha256": "58d64c1f1b3a559bafb69bb014f3ab2745e800c89435afdc154966eb96bc7459",
+      "lq_sha256": "a1fe997f19060171db8dd4d58c30debc78ddfcc357b63481798792a38a356d8d"
+    }
+  },
+  "qualified_clock_scope": {
+    "device": "Intel B580 research device (captured qualification run)",
+    "stream": "45-frame 4K-output research run",
+    "turbo_seconds_per_frame": 3.6177,
+    "base_seconds_per_frame": 6.032,
+    "variant": "precise BF16 cross bridge plus FFN2 MatMul",
+    "included_in_processing_clock": [
+      "per-call model/weight-bank refills"
+    ],
+    "excluded_from_processing_clock": [
+      "one-time graph compilation",
+      "initial model/weight upload",
+      "source resize/preparation",
+      "RIFE and video encoding",
+      "archive and hash work",
+      "optional diagnostic profiling"
+    ],
+    "claim": "environment-specific measured reference; rerun qualification before comparison; not a product throughput claim"
+  },
+  "extraction": {
+    "weights_included": false,
+    "media_included": false,
+    "generated_evidence_included": false,
+    "native_cpp_subset": {
+      "status": "included_source_only_component_proof",
+      "path": "native/",
+      "selected_load_format": "assets/flash-assets/flash_post_4096_bf16.xml plus assets/flash-assets/flash_post_4096_bf16.bin",
+      "in_memory_state_rewrite": "prepareFlashPostModel reconstructs two owning BF16 Assign sinks from the ordinary Result model",
+      "state_xml_bin_omitted": true,
+      "learned_layer_bins_omitted": true,
+      "full_worker": false,
+      "component_qualification": "Historical previous-source-snapshot qualification: Intel B580 layers 0, 23, and 29; nine public outputs byte-exact across A/B/A refills; late-A and input-preservation checks passed; final tracked GPU allocations zero",
+      "historical_component_gate_seconds": 5.9237,
+      "historical_component_host_peak_bytes": 1395400704,
+      "latest_component_audit": {
+        "status": "completed_component_audit",
+        "receipt": "audit_native_post_shared_20261017.json",
+        "receipt_location": "external_otc_evidence_not_redistributed",
+        "source_snapshot": "historical previous-source snapshot; not the current synchronized guard/lifetime tree",
+        "gate_seconds": 5.563609172,
+        "source_snapshots": 40,
+        "raw_outputs": 9,
+        "aba_outputs_byte_exact": true,
+        "new_kernel_log_lines": 0,
+        "swap_events": 0,
+        "final_tracked_gpu_allocations_bytes": 0,
+        "host_cgroup_peak_bytes": 1492938752,
+        "host_peak_is_not_gpu_peak": true,
+        "not_per_frame_throughput": true,
+        "claim": "historical component evidence only; not a fresh GPU qualification of the current synchronized guard/lifetime sources; no full-pipeline speed or quality claim"
+      },
+      "front_host_usm_component": {
+        "status": "current_source_usm_front_component_qualified; full_worker_unqualified",
+        "device": "Intel B580 research device (GPU.1)",
+        "runtime": "2026.5.0-23457-7d81aad55a5",
+        "geometry": "fixed UHD working geometry 2176x3840",
+        "source_snapshot": "current synchronized flash_stage and flash_decoder_session sources",
+        "attempt_history": {
+          "attempt3": "compute/driver fault followed by targeted accelerator recovery",
+          "attempt4": "natural conservative memory-guard rejection",
+          "attempt5": "natural conservative memory-guard rejection",
+          "attempt6": "older harness rejected by all-bytes memory-budget guard",
+          "attempt7": "current front-host-USM component checks passed"
+        },
+        "gate_wall_seconds": 7.61,
+        "construction_device_root_bytes": 9206615570,
+        "host_usm_root_bytes": 3877109760,
+        "steady_device_bytes_after_first_lane": 6211968530,
+        "progress": 17,
+        "frame_sha256": "40ee40e0167405cabf47216d66dca8a7e495116053cd8acc6824bed7d1c11d4e",
+        "excess_and_sticky_error_rejection": true,
+        "final_tracked_gpu_allocations_bytes": 0,
+        "new_kernel_log_lines": 0,
+        "remaining_gpu_holders": 0,
+        "full_worker": false,
+        "full_pipeline_quality": false,
+        "fps_claim": false,
+        "receipt_location": "external_otc_evidence_not_redistributed"
+      },
+      "causal_49_frame_session": {
+        "status": "current_source_bounded_causal_session_evidence; full_worker_unqualified",
+        "frames": 49,
+        "parents": 13,
+        "progress_callbacks": 221,
+        "unique_finite_nonzero_frame_hashes": 49,
+        "frame0_matches_front_component": true,
+        "excess_and_sticky_error_rejection": true,
+        "final_tracked_gpu_allocations_bytes": 0,
+        "sampled_device_peak_bytes": 9206615570,
+        "host_usm_root_bytes": 3877109760,
+        "host_rss_kib": 1679216,
+        "swap_events": 0,
+        "wall_seconds": 68.33,
+        "wall_includes_cpu_input_generation_hashing_and_full_frame_scans": true,
+        "kernel_pre_post_comparison_identical": true,
+        "remaining_gpu_holders": 0,
+        "receipt_sha256": "d50e6abccd9fdf325d1fa5de7938f70ee1c7facb59b32b207653f129c782692a",
+        "later_frame_cpu_oracle": false,
+        "full_worker": false,
+        "full_pipeline_quality": false,
+        "fps_claim": false,
+        "receipt_location": "external_otc_evidence_not_redistributed"
+      },
+      "normal_xml_sha256": "1de0453729011b0d6e61f43a993e04b559fe27c3aa0e4894c69cf42f3afc3d37",
+      "normal_bin_sha256": "4fbc48e7bdaf2e07ba701b43367a4b573e5aef6cdad16b75219395aedad4ab5a",
+      "generated_asset_table_sha256": "931cb6da8b8d1603d326d9e46d29a072fdf484de3dbd8d6de311d9c306260636",
+      "pre_structure": {
+        "status": "structural_export_only; native_session_evidence_is_separate",
+        "xml_sha256": "a70c2bbb5fb0f65add9e93da461b9dee324a2fb5216c649ccf69edf84876087d",
+        "bin_bytes": 768,
+        "bin_sha256": "b4ce6a73d4445949f43264f8334d57fcedf5b29504bc2222c110be3e7c60646e",
+        "fresh_exports_byte_identical": true
+      },
+      "pre_session_source": {
+        "status": "historical_native_component_gpu_qualified_turbo_only",
+        "generated_table_header_sha256": "fe35e3adea136c46b60df69a7b2eda402f71ce33eb194875e5cd036c24f671b5",
+        "session_execution": "B580 bounded synthetic 4096-row PRE at layers 0, 23, and 29; not a full trajectory",
+        "learned_payloads_external": true,
+        "gpu_qualification": {
+          "receipt": "audit_native_pre_cpp_20261017.json",
+          "receipt_location": "external_otc_evidence_not_redistributed",
+          "source_snapshot": "historical previous-source snapshot; current synchronized sources have CPU structural qualification only",
+          "receipt_sha256": "89c3a0c662126b9a9f06dec8b14d3e99aabcaf2cbd35eccb04773bb95d99ad84",
+          "source_snapshots": 54,
+          "raw_output_arrays_byte_exact": 90,
+          "input_arrays_authenticated": 24,
+          "aba_and_late_a_exact": true,
+          "negative_api_checks_passed": true,
+          "final_tracked_gpu_allocations_bytes": 0,
+          "new_kernel_log_lines": 0,
+          "swap_events": 0,
+          "gate_seconds": 2.1074382229708135,
+          "host_cgroup_peak_bytes": 895311872,
+          "host_peak_is_not_gpu_peak": true,
+          "base_gpu_qualified": false,
+          "claim": "historical component evidence only; not a fresh GPU qualification of the current synchronized sources; no full-pipeline speed or quality claim"
+        }
+      },
+      "pre_usm_component_qualification": {
+        "status": "current_native_usm_component_gpu_qualified_turbo; full_pipeline_unqualified",
+        "mode": "turbo",
+        "device": "Intel B580 research device (GPU.1)",
+        "runtime": "2026.5.0-23457-7d81aad55a5",
+        "geometry": "fixed UHD working geometry 2176x3840",
+        "receipt": "native-pre-usm-20261018-attempt1/component-results.json",
+        "receipt_sha256": "f647fffb1ff4a73fdf97de94659cd0fe3fb723346eec4b47a340adcaabc1d1ee",
+        "reference_npz_sha256": "8b4915e3f7cb71dfc6ee0356ae29726430b7a0b012da799fb7f0954a83ebdb71",
+        "raw_output_arrays_byte_exact": 90,
+        "all_ten_remote_outputs_byte_exact": true,
+        "host_finite_flags_equal_one": true,
+        "all_four_input_roots_unchanged": true,
+        "negative_api_checks": true,
+        "final_tracked_gpu_allocations_bytes": 0,
+        "new_kernel_log_lines": 0,
+        "scope": "single PRE stage; not a full trajectory",
+        "full_trajectory": false,
+        "full_pipeline_quality": false,
+        "fps_claim": false,
+        "receipt_location": "external_otc_evidence_not_redistributed"
+      },
+      "pre_learned_preparation_audit": {
+        "status": "cpu_only_audit_pass; not_gpu_qualified",
+        "modes": [
+          "turbo",
+          "base"
+        ],
+        "layers_per_mode": 30,
+        "learned_spans_per_layer": 9,
+        "total_layer_records": 60,
+        "total_learned_spans": 540,
+        "converter": "independent NumPy uint32 BF16 round-to-nearest-even; nonfinite and overflow rejected",
+        "receipt_sha256": "cc927b35bf256272f1869cd22276abbaa6f895b2ec6b1cc04eb02a57221d0952",
+        "gpu_qualified": false,
+        "note": "Main independently reran the same receipt; learned BIN payloads remain external to this fork."
+      },
+      "lq_structural_evidence": {
+        "status": "fixed_uhd_usm_component_gpu_qualified_turbo_and_base; full_pipeline_unqualified",
+        "modes": [
+          "turbo",
+          "base"
+        ],
+        "bin_count": 6,
+        "learned_spans_total": 22,
+        "prepared_bytes_per_mode": 688947096,
+        "preparation_receipt_sha256": "88b8a5fa4cceff37e685dd93909859387c234ef98f62424b32f2396d81896597",
+        "receipt_location": "external_otc_evidence_not_redistributed",
+        "validation_checkpoint": "current public validation: 21 OFF / 24 ON native CTest entries, 51 exporter/contract tests (including 6 fixed-conditioning tests), 7 external decoder-builder tests, 9 decoder-preparation tests, 25 generator tests, 8 BF16 converter tests, and 8 portable-closure tests; public run used host read_model/evaluation only",
+        "scalar_finite_host_values": [
+          "signed_zero",
+          "plus_or_minus_one",
+          "max_bf16",
+          "65536",
+          "infinity",
+          "nan"
+        ],
+        "openvino_device_compile_or_inference": false,
+        "gpu_component_qualification": {
+          "status": "current_source_usm_component_qualified_turbo_and_base",
+          "device": "Intel B580 research device (GPU.1)",
+          "runtime": "2026.5.0-23457-7d81aad55a5",
+          "geometry": "fixed UHD working geometry 2176x3840",
+          "receipts": {
+            "turbo": "native-lq-usm-turbo-20261018-attempt1/component-results.json",
+            "base": "native-lq-usm-base-20261018-attempt1/component-results.json"
+          },
+          "receipt_sha256": {
+            "turbo": "8fa11dd67bcafa62dcd380e3e64452f2e9ed7ea274fa017518733e47c94d7460",
+            "base": "e8670c51c716f44502a7541ceb2b0eb7834008ef6347d78ab04d45e5d6cf6bac"
+          },
+          "comparisons": {
+            "turbo": "native-lq-usm-turbo-20261018-attempt1/comparison.json",
+            "base": "native-lq-usm-base-20261018-attempt1/comparison.json"
+          },
+          "comparison_sha256": {
+            "turbo": "88f5d46bc7f9781a981747646ad6a604588334140faa0aa781d5949d90fd5f43",
+            "base": "da52ba9b3e043c0adbc24e09a0758af28030bde6d6fb3758f4065e57c26c74e7"
+          },
+          "raw_outputs": "Turbo and Base startup plus three projection groups per mode byte-exact against independent constant-weight references",
+          "nonfinite_rejection": "injected BF16 non-finite output rejected and subsequent valid call remained rejected",
+          "final_tracked_gpu_allocations_bytes": 0,
+          "new_kernel_log_lines": 0,
+          "postflight": "idle",
+          "full_trajectory": false,
+          "full_pipeline_quality": false,
+          "fps_claim": false,
+          "receipt_location": "external_otc_evidence_not_redistributed",
+          "claim": "fixed-UHD Turbo and Base LQ component evidence only; not a full controller, video-quality, or product-throughput qualification"
+        }
+      },
+      "cross_structural_evidence": {
+        "status": "cpu_structural_plus_current_usm_component_gpu_qualified; full_pipeline_unqualified",
+        "modes": [
+          "turbo",
+          "base"
+        ],
+        "layers_per_mode": 30,
+        "weights_per_layer": 5,
+        "bin_count": 60,
+        "learned_spans_total": 300,
+        "rows": 512,
+        "prepared_bytes_per_mode": 283392360,
+        "generated_header_sha256": "73cbd2f7de0b5038a755b2fb786647ce1334d947ce15bba9330aeb89cb873709",
+        "preparation_receipt_sha256": "819eee0555b4fd7212612faab1814745022479c6813a48ba55da0b8a206cdade",
+        "receipt_location": "external_otc_evidence_not_redistributed",
+        "validation_checkpoint": "current public validation: 21 OFF / 24 ON native CTest entries, 51 exporter/contract tests (including 6 fixed-conditioning tests), 7 external decoder-builder tests, 9 decoder-preparation tests, 25 generator tests, 8 BF16 converter tests, and 8 portable-closure tests; public run used host read_model/evaluation only",
+        "openvino_device_compile_or_inference": false,
+        "component_gpu_qualification": {
+          "status": "current_source_usm_component_qualified_turbo_and_base",
+          "device": "Intel B580 research device (GPU.1)",
+          "runtime": "2026.5.0-23457-7d81aad55a5",
+          "modes": [
+            "turbo",
+            "base"
+          ],
+          "layer_sequence": [
+            0,
+            23,
+            0,
+            29,
+            0
+          ],
+          "reference": "resident Parameter-weight graph",
+          "receipts": {
+            "turbo": "native-cross-usm-turbo-20261018-attempt1/component-results.json",
+            "base": "native-cross-usm-base-20261018-attempt1/component-results.json"
+          },
+          "receipt_sha256": {
+            "turbo": "67264df98736465ce3e3b11916f33997fa59a136a404e75ee9eeac6d3a4d4482",
+            "base": "63a6933a7bdc0a1148fcaebc9e0a245f8e57bd5d5cee57f2705559b3837357ca"
+          },
+          "comparisons": {
+            "turbo": "native-cross-usm-turbo-20261018-attempt1/comparison.json",
+            "base": "native-cross-usm-base-20261018-attempt1/comparison.json"
+          },
+          "comparison_sha256": {
+            "turbo": "d1b6043986d7dda237ee21feedf69f9acc4a059f1f101c928e5c8736438dae4d",
+            "base": "a1f23cda23a9ec0d25c93fae7c53564e8dc7b78438905d36a001a9bcfbbe71ba"
+          },
+          "parameter_weight_outputs": "ten K/V outputs per mode byte-exact against independent resident Parameter-weight references",
+          "constant_graph_diagnostic_relative_l2": "approximately 0.0027-0.0029",
+          "negative_checks": true,
+          "final_tracked_gpu_allocations_bytes": 0,
+          "new_kernel_log_lines": 0,
+          "full_worker": false,
+          "full_pipeline_quality_claim": false,
+          "performance_claim": false,
+          "receipt_location": "external_otc_evidence_not_redistributed"
+        }
+      },
+      "stream_schedule": {
+        "status": "source_chronology_only_not_worker",
+        "memory": "scalar plan; one call at a time",
+        "differential_cases": 13062,
+        "mismatches": 0
+      },
+      "public_validation": {
+        "status": "passed",
+        "ctest_entries": 24,
+        "ctest_flags": [
+          "FLASH_POST_BUILD_PREPARER=ON",
+          "MemoryMax=3G",
+          "MemorySwapMax=0",
+          "CPUQuota=200%"
+        ],
+        "python_exporter_tests": 51,
+        "python_generator_tests": 25,
+        "bf16_converter_tests": 8,
+        "portable_closure_tests": 8,
+        "device_compile_or_inference": false,
+        "decoder_contract_tests": 12,
+        "external_decoder_builder_tests": 7,
+        "decoder_preparation_tests": 9,
+        "decoder_structural_tests": 1,
+        "mask_structural_tests": 1,
+        "text_structural_tests": 1,
+        "conditioning_export_tests": 6,
+        "ctest_entries_off": 21,
+        "ctest_entries_on": 24
+      },
+      "edge_preparation": {
+        "status": "current_source_component_gpu_qualified_turbo_and_base; full_worker_unqualified",
+        "modes": [
+          "turbo",
+          "base"
+        ],
+        "external_bins": 4,
+        "learned_spans_total": 10,
+        "roles": [
+          "prefix",
+          "suffix"
+        ],
+        "isolated_suffix_observation": "before the USM correction, native and Python suffix outputs were all-zero for both modes (16,711,680 bytes each) despite authenticated nonzero head weights",
+        "raw_equality_is_qualification": false,
+        "investigation": "an unwritten remote output destination was traced to the pinned oneDNN same-engine stream-copy path mixing buffer-backed and USM-backed roots; it was not a static remote flag. The shared stage now requires USM_DEVICE_BUFFER roots. Turbo and Base native edge component reruns passed their bounded output, finite/sticky-error, and authenticated A/B/A rebind checks.",
+        "root_cause": "same-engine oneDNN stream copy silently no-ops when buffer-backed and USM-backed device roots are mixed",
+        "component_followup": "Turbo and Base edge-component evidence only; the full worker remains unqualified",
+        "gpu_component_qualification": {
+          "status": "passed_turbo_and_base_usm_edge_components",
+          "device": "Intel B580 research device (GPU.1)",
+          "runtime": "2026.5.0-23457-7d81aad55a5",
+          "receipts": {
+            "turbo": "native-edges-usm-turbo-20261018-attempt3/component-results.json",
+            "base": "native-edges-usm-base-20261018-attempt2/component-results.json"
+          },
+          "receipt_sha256": {
+            "turbo": "f2eeb1e7bd79cfe469dc883625444391b4dc462f4ba2c99fff54d7348e155a7e",
+            "base": "efdead68d1270465c07585bb844965fe4c562e338293e46e9b41529915e7d3ec"
+          },
+          "output_hashes_nonzero": true,
+          "suffix_output_sha256": {
+            "turbo": "bf9a53ce548f45e22bf6b0fd21ec0c67485a6b28e62da1243d95aaac455310d8",
+            "base": "ed78cd4f956a09ffd70e45ad8bf7e1d56bc6a1ed04c38c73e99fadf2891c4867"
+          },
+          "suffix_host_oracles": {
+            "turbo": "native-suffix-constants-host-turbo-20261018-attempt1",
+            "base": "native-suffix-host-base-20261018-attempt1"
+          },
+          "buffer_output_rejected": true,
+          "finite_and_sticky_checks": true,
+          "authenticated_ab_a_rebind_recovery": true,
+          "final_tracked_gpu_allocations_bytes": 0,
+          "new_kernel_log_lines": 0,
+          "full_worker": false,
+          "full_pipeline_quality": false,
+          "performance_claim": false,
+          "receipt_location": "external_otc_evidence_not_redistributed"
+        },
+        "note": "CPU edge preparation plus Turbo/Base USM edge-component qualification; no full-worker, quality, or performance claim"
+      },
+      "text_structural_evidence": {
+        "status": "structural_export_only; external learned tables omitted",
+        "modes": [
+          "turbo",
+          "base"
+        ],
+        "rows": 512,
+        "xml_sha256": "d4f3a191a52f6bd499300310b90b9cfb70cf5bf92455b892549a6f0a81d03e21",
+        "bin_bytes": 0,
+        "bin_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "assets_header_sha256": "0119234f258bfe32c31bb1d8a209e141bbfa6b7d93b799b8f239eb67b119e233",
+        "learned_payloads_omitted": true,
+        "device_compile_or_inference": false,
+        "full_pipeline": false
+      },
+      "mask_layout_evidence": {
+        "status": "bounded_cpu_layout_helper_only",
+        "implementation": "native/flash_mask.cpp",
+        "tests": "flash-mask-structural",
+        "device_compile_or_inference": false,
+        "full_pipeline": false
+      },
+      "fixed_conditioning_evidence": {
+        "status": "fixed structure, derived mode assets, and provenance included; no learned checkpoint payloads",
+        "assets_header_sha256": "7ee0bef59493cac27af09ba9057d5e2a32e11af7639682e31de90ad00d8ab93e8",
+        "provenance_sha256": "78d086ea5ff8324cd56997a0d7c5654f181ce1946141cc4ebcfdb8f9acee21e8",
+        "conditioning_bytes": 21504,
+        "mode_count": 2,
+        "derived_payloads_included": true,
+        "exporter_tests": 6,
+        "system_python_result": "4 standard-library passes; 2 NumPy cases explicitly skipped when NumPy is unavailable",
+        "pinned_numeric_result": "6/6 pass in the pinned numeric environment (independent validation)",
+        "openvino_device_compile_or_inference": false,
+        "full_pipeline": false,
+        "assets": {
+          "base": {
+            "path": "assets/flash-assets/flash_fixed_conditioning_bf16_base.bin",
+            "bytes": 21504,
+            "sha256": "dd78d1930d595a5a58cc9e8f284c4265056b428513350f83f1dead62e67f3d4d"
+          },
+          "turbo": {
+            "path": "assets/flash-assets/flash_fixed_conditioning_bf16_turbo.bin",
+            "bytes": 21504,
+            "sha256": "7d49032ce9f91fdc13d6dba00f22efacb4e91fbdac2e9797a48f34fb7adf915b"
+          }
+        },
+        "attribution": "Derived at build time from the reviewed FlashVSR+ reference helpers recorded in flash_fixed_provenance.json; these are portable fixed-condition assets, not learned checkpoint data. The pinned FlashVSR+ source and model metadata declare Apache-2.0; the public reference retains that attribution and license text at its root."
+      }
+    },
+    "runner_scope": "captured B580 research runner; device-selection helpers are host-specific and require requalification on another accelerator",
+    "source_manifest": {
+      "file": "reference/provenance_sources.json",
+      "algorithm": "sha256(sorted relative_path NUL sha256 newline)",
+      "file_count": 317,
+      "tree_sha256": "7fb71f121b05ea7f150747dda62e5420196a61e24cd947f1d20bc25e9e29a12e"
+    },
+    "graph_closure": {
+      "bounded_cpu_test": "reference/test_reference_graphs.py plus scripts/test_export_flash_decoder.py, test_export_flash_edges.py, test_export_flash_text.py, test_export_flash_structure.py, test_export_flash_projection.py, test_export_flash_cross.py, reference/openvino/full_runtime/test_external_decoder_builder_cpu.py, and the native edge structural validator, native/flash_decoder_frame_tests.cpp",
+      "test_policy": "Python builder tests construct PRE/private/device views and precise+FFN2 POST without Core, device queries, weights, or inference; native structural tests may use Core::read_model and host-side evaluation but never compile a device graph or run inference",
+      "added_source_roots": [
+        "reference/openvino/full_model",
+        "reference/openvino/source_cross_cache",
+        "reference/openvino/mask_pool_probe.py",
+        "reference/openvino/chunked_attention/*.cl",
+        "reference/openvino/chunked_attention/*.xml",
+        "reference/evidence/bridge_and_native_post_helpers",
+        "reference/openvino/full_runtime/plus_edges.py",
+        "reference/openvino/full_runtime/plus_text.py",
+        "native/flash_model.*",
+        "native/flash_cross_session.*",
+        "native/flash_edges_model.*",
+        "reference/openvino/full_runtime/test_plus_text_export_cpu.py",
+        "reference/openvino/full_runtime/test_plus_edges_export_cpu.py",
+        "reference/openvino/decoder/convert_decoder.py",
+        "scripts/export-flash-decoder.py",
+        "scripts/test_export_flash_decoder.py",
+        "reference/openvino/full_runtime/test_external_decoder_builder_cpu.py",
+        "native/flash_decoder_model.*",
+        "assets/flash-assets/flash_decoder_assets.hpp",
+        "assets/flash-assets/flash_decoder_phased_*.xml",
+        "assets/flash-assets/flash_decoder_phased_*.bin",
+        "scripts/prepare-flash-decoder.py",
+        "scripts/test_prepare_flash_decoder.py",
+        "native/flash_decoder_frame.*",
+        "native/flash_decoder_session.*",
+        "native/flash_mode.hpp",
+        "native/flash_prepare.*",
+        "native/flash_rope.*",
+        "native/flash_text_session.*",
+        "native/flash_edges_session.*",
+        "native/flash_setup_tests.cpp",
+        "native/seedvr_prepare_detail.hpp",
+        "native/seedvr_prepare_tests.cpp",
+        "native/flash_attention_session.*",
+        "native/flash_token_session.*",
+        "native/flash_tokens.*",
+        "native/flash_history.*",
+        "native/flash_history_tests.cpp",
+        "native/flash_denoiser.*",
+        "native/flash_video.*",
+        "native/flash_prepare_cli.*",
+        "native/seedvr_assets.*",
+        "native/seedvr_assets_tests.cpp",
+        "native/seedvr_prepare.*",
+        "assets/flash-assets/flash_fixed_conditioning_bf16_*.bin"
+      ],
+      "prepare_real_status": "historical externally-evidenced utility; its version gate and external evidence/IR requirements remain unchanged",
+      "decoder_structural_export": {
+        "status": "cpu_structural_export_only; tiny 8x8 complete graph plus fixed-UHD phased structural bundle; full-worker/numerical UHD unqualified",
+        "exporter": "scripts/export-flash-decoder.py",
+        "contract_test": "scripts/test_export_flash_decoder.py",
+        "openvino_device_compile_or_inference": false,
+        "equivalence_audit": {
+          "status": "cpu_structural_abi_equivalence_pass; no_gpu_qualification",
+          "receipt": "report-lean-traversal-v4.json",
+          "receipt_sha256": "52e8044a6f24f9d7c8cc0d14f25a24d56322c129d9682324dd8b7d8d5139de27",
+          "semantic_dag_equal": true,
+          "control_candidate_fingerprint_sha256": "ff8404662fd6b85daa6cc3a4247aee8fb6e5ea680df0eb6aab91005bece8ba5b",
+          "core_created": false,
+          "device_queries": false,
+          "compilation": false,
+          "inference": false,
+          "checkpoint_loaded": false
+        },
+        "historical_source_control": {
+          "status": "historical_source_control_only; superseded by current strict complete export",
+          "xml_sha256": "3335de180beab2d6e47f9f9fc8b68699c39aa6a79fe0c44c079b2d6cd4fb35c6",
+          "bin_sha256": "b545661c58527706805bbc996cf2103ea18c3a6e424c8ab5cb49e16a9e96ac48",
+          "manifest_sha256": "85dac00445a07752361d527476d7be670e2be179cc2c685e14ad80a8d4f7eb1c",
+          "contract_tests_passed": 8,
+          "receipt_location": "external_otc_evidence_not_redistributed",
+          "gpu_qualified": false,
+          "full_worker": false
+        },
+        "current_complete_export": {
+          "status": "cpu_structural_export_pass; complete graph at 8x8 structural geometry; UHD numerical execution unqualified",
+          "manifest": "decoder-complete-export-20261018-attempt2/manifest.json",
+          "manifest_sha256": "a060095455b32f34a5ca1acaacf9eae9025b6943f8ae5517e79d1d432f26e4ec",
+          "xml_sha256": "a1908bd715773eb085187b644a82279cc8845f413a3ff7c22936660cf4ffb55c",
+          "bin_sha256": "7ccb1528f8e8850781dfc5687462f0427da148bc73cfe61237577fcb231a6e21",
+          "geometry": "8x8 structural graph; uhd_exported=false",
+          "contract_tests_passed": 12,
+          "external_builder_tests_passed": 7,
+          "strict_frontend_readback": true,
+          "openvino_device_compile_or_inference": false,
+          "receipt_location": "external_otc_evidence_not_redistributed",
+          "full_worker": false,
+          "gpu_qualification": false
+        },
+        "historical_phased_default_equivalence": {
+          "status": "cpu_structural_external_factory_equivalence_pass; no_gpu_qualification",
+          "receipt": "phased-default-equivalence-20261018/report.json",
+          "receipt_sha256": "e523743805a63873cb26f8249f479ab466ab15e220d8059affb10da95b751cfd",
+          "geometry": "16x16 structural test geometry",
+          "default_graphs_unchanged": 7,
+          "default_bank_arrays_unchanged": 4,
+          "source_identity_coverage": {
+            "static": 64,
+            "dynamic": 2,
+            "total": 66
+          },
+          "published_control_gitblob_sha256": "f629a88f98562cb0f524d180574238a939623051e3bd1a13c72fb7aa5f8049e1",
+          "external_builder_test": "reference/openvino/full_runtime/test_external_decoder_builder_cpu.py",
+          "core_created": false,
+          "device_queries": false,
+          "compilation": false,
+          "inference": false,
+          "checkpoint_loaded": false,
+          "note": "retained for provenance; no GPU or UHD numerical qualification"
+        },
+        "phased_default_equivalence": {
+          "status": "cpu_structural_external_factory_equivalence_pass; no_gpu_qualification",
+          "receipt": "report-node-normalization-v3.json",
+          "receipt_sha256": "83a30f5751329ac8830b7df66940a77a728e6c5196da888405825eda67ce64da",
+          "source_sha256": "e6c3d53cea1268525b4ed7074aac23bfccb5b915ed0e192719b098e09ebec6e0",
+          "geometry": "16x16 structural test geometry",
+          "default_graphs_unchanged": 7,
+          "default_bank_arrays_unchanged": 4,
+          "source_identity_coverage": {
+            "static": 64,
+            "dynamic": 2,
+            "total": 66
+          },
+          "published_control_gitblob_sha256": "f629a88f98562cb0f524d180574238a939623051e3bd1a13c72fb7aa5f8049e1",
+          "external_builder_test": "reference/openvino/full_runtime/test_external_decoder_builder_cpu.py",
+          "external_builder_tests_passed": 7,
+          "core_created": false,
+          "device_queries": false,
+          "compilation": false,
+          "inference": false,
+          "checkpoint_loaded": false,
+          "full_worker": false,
+          "gpu_qualification": false
+        },
+        "current_phased_export": {
+          "status": "cpu_structural_export_pass; reviewed UHD tile bundle; no_gpu_qualification",
+          "bundle": "phased",
+          "manifest": "decoder-phased-export-20261018-attempt5/manifest.json",
+          "manifest_sha256": "039d2cbf423cb45e90fe7b66802d1eafeaeab14239632e8fb349498aca2b98e5",
+          "strict_frontend_readback": true,
+          "independent_frontend_audit": true,
+          "geometry": {
+            "source_hw": [
+              2176,
+              3840
+            ],
+            "tile_count": 16,
+            "halo_rows": 12
+          },
+          "portable_state_abi": [
+            "middle_in",
+            "*_out"
+          ],
+          "openvino_device_compile_or_inference": false,
+          "full_worker": false,
+          "gpu_qualification": false,
+          "numerical_uhd_qualification": false,
+          "receipt_location": "external_otc_evidence_not_redistributed"
+        },
+        "current_public_assets": {
+          "geometry": "UHD working geometry 2176x3840; 16 tiles; 12-row halo",
+          "header_sha256": "2a2f3c703e4b6a48adb967afae1d1a388a14c022e4ce388ca07fdff9e5b722f3",
+          "files": {
+            "flash_decoder_assets.hpp": "2a2f3c703e4b6a48adb967afae1d1a388a14c022e4ce388ca07fdff9e5b722f3",
+            "flash_decoder_phased_front_bf16.xml": "939770c583753c61bffff06df2ab89506570d9c297f6215e8c9e41e46b03d1b2",
+            "flash_decoder_phased_front_bf16.bin": "7d6436e4d2c465b8bf268ec4d21bb3bc633942e4467b61b16867f1c6fa3b3ee1",
+            "flash_decoder_phased_grow_memory_bf16.xml": "fdd6b9bbd49e1e8c9eb0613895b1af17908b844dd1bd09cb41478788020baebf",
+            "flash_decoder_phased_grow_memory_bf16.bin": "bc67bbd892021822bb1bf0b354f573ce6b3b2e2ce09f215c51565b0a35e00d13",
+            "flash_decoder_phased_remote_frame_child_bf16.xml": "3fd0fe7b41a57728001f99d7cb26e5a2e72160bc0ac85cd9f15b5a5c6421e63e",
+            "flash_decoder_phased_remote_frame_child_bf16.bin": "517ce884675b6af0fcb51d7679faeb686ccd9690ba8c23551560cc590d98389b"
+          },
+          "source_bindings": {
+            "static": 64,
+            "dynamic": 2,
+            "total": 66,
+            "child_slices": 4
+          },
+          "checkpoint": {
+            "filename": "TCDecoder.ckpt",
+            "bytes": 189018333,
+            "sha256": "e224bdcf2f52745cbf4d393ff5374c2ba09e90285d5d19062d2bf63b915b6161",
+            "runtime_zip_pickle_parser": false,
+            "python_or_torch_runtime_dependency": false
+          },
+          "native_preparation_audit": {
+            "status": "cpu_only_source_span_byte_exact",
+            "receipt": "audit-main.json",
+            "receipt_sha256": "1b8491f5ac8599ee154356364e71d6469ee422e0fb90a21d2ad7dc26ea11cef4",
+            "device_compile_or_inference": false
+          },
+          "native_structural_model": "native/flash_decoder_model.cpp",
+          "preparer": "scripts/prepare-flash-decoder.py",
+          "preparer_tests": 8,
+          "learned_payloads_included": false,
+          "openvino_device_compile_or_inference": false,
+          "status": "CPU structural/reference assets only; full decoder worker and UHD numerical qualification remain unqualified",
+          "native_decoder_session": {
+            "status": "bounded source/session building block; not UHD numerical or full-worker qualified",
+            "files": {
+              "flash_decoder_frame.hpp": "50c30631654fe8cdefc9f94c13477c4a2dbe690639ae6b5af3b900a2ace056af",
+              "flash_decoder_frame.cpp": "26b44d7eb357361f70126e9450401d34349653c46ca7edefc879b84ebe074c79",
+              "flash_decoder_frame_tests.cpp": "14607a1cf39c4a7ccc4f8df1ada921bb5e777dd5e7048556d74c6cc9bba44beb",
+              "flash_decoder_session.hpp": "0fd26301e5f318216c1d21e880cb25d2033a94dbfc9c9d8fe28ca1411fb606fd",
+              "flash_decoder_session.cpp": "e7af160afad317d02b5e42552ea8df9244ee4b50899845da19a691c02160c916"
+            },
+            "cpu_test": "flash-decoder-frame-structural",
+            "history_ring_roots": 51,
+            "temporal_compression": 4,
+            "packed_input_finite_validation": "caller precondition",
+            "openvino_device_compile_or_inference": false,
+            "full_worker": false,
+            "gpu_qualification": false,
+            "source_identity": "hashes above are the synchronized public files, not historical snapshot hashes"
+          }
+        }
+      }
+    },
+    "path_policy": "reference/reference_paths.py and scripts/flashvsr_plus_openvino.py"
+  },
+  "licenses": {
+    "research_closure": "GPL-3.0-only",
+    "official_source_subtree": "Apache-2.0"
+  }
+}
