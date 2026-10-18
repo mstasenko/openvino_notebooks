@@ -1,0 +1,32 @@
+{
+  "runtime": {
+    "version": "2026.3.0",
+    "artifactSha256": "93e111164ccfd5c801edcfc3437683210837463bf57a2bd0518b940598664c2c",
+    "artifact": "openvino-2026.3.0-22451-cp311-cp311-manylinux_2_28_x86_64.whl"
+  },
+  "positiveText": {
+    "repository": "ByteDance-Seed/SeedVR",
+    "revision": "e4de8c24441a67e1b7df56abea10645059bb1185",
+    "source": "pos_emb.pt",
+    "sourceSha256": "fa07a14844314772266b66c3b95deb0027696d8fe7065721263db5176f45d799",
+    "sha256": "124724ab11176f0143f9f4975a5e784dade59fc04d762948361bb36d23e0ff49",
+    "licenseSha256": "5967a0c153e731109b76c5d83b5e0fae2382b6aaf7b898d08ff03702eea59430",
+    "recipe": "BF16-LE-u16-to-FP32-LE-u32-shift16"
+  },
+  "rife": {
+    "variant": "v2-packed7",
+    "sourceSha256": "65c57a5e4abb17ad67faf35054291ac53affab0506d509d2e66698f6ecd75584"
+  },
+  "seedvr": {
+    "revision": "09ced71023636e9bc8cdf9cdecfb2625d1e691e8"
+  },
+  "openssl": {
+    "version": "3.5.5-1ubuntu3.7",
+    "source": "openssl",
+    "distribution": "Ubuntu",
+    "artifactSha256": "3ff73e121f6cd4f19e80ab4329dfd914108b3936c9db3708200203a9b245b34d",
+    "url": "https://us.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl3t64_3.5.5-1ubuntu3.7_amd64.deb",
+    "glibcMinimum": "2.38"
+  },
+  "qualifiedPlatform": "local Linux x64; distribution portability unqualified"
+}

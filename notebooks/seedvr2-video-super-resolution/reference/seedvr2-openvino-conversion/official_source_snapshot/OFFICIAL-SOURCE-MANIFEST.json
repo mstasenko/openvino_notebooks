@@ -1,0 +1,35 @@
+{
+  "remote": "https://github.com/ByteDance-Seed/SeedVR.git",
+  "revision": "e4de8c24441a67e1b7df56abea10645059bb1185",
+  "revision_tree": "b86c7cbe7de195bd4a8c917ff40bfe43acae6b30",
+  "retrieved_utc": "2026-09-18T15:40:25Z",
+  "source_root": "official-source",
+  "retrieval": "git fetch --filter=blob:none --depth=1 origin <revision>; sparse checkout of executable source/config paths; detached checkout",
+  "checked_out_roots": [
+    "common/",
+    "configs_3b/main.yaml",
+    "data/",
+    "environment.yml",
+    "models/dit_v2/",
+    "models/video_vae_v3/modules/",
+    "models/video_vae_v3/s8_c16_t4_inflation_sd3.yaml",
+    "projects/inference_seedvr2_3b.py",
+    "projects/video_diffusion_sr/",
+    "requirements.txt"
+  ],
+  "excluded_or_not_retained": [
+    "pos_emb.pt",
+    "neg_emb.pt",
+    "all model checkpoints and other weight artifacts"
+  ],
+  "key_files_sha256": {
+    "configs_3b/main.yaml": "2606dcfde7544c3b69686b633411fcf6f37a4c159182596c4ce8347537d22f35",
+    "models/dit_v2/attention.py": "c19a980f4c52d96a6ee0d6931fd01afa7004dda96ef03bc3a9c974b970efaa8a",
+    "models/video_vae_v3/modules/attn_video_vae.py": "981faf238b040a9f62b29f4f10e3886ba7152ff24ece03713129f6f19ea44568",
+    "models/video_vae_v3/s8_c16_t4_inflation_sd3.yaml": "88135a1dd1d7fe0558c1d52633bb251cb3a86b420b98c416a735ab768e0f929d",
+    "projects/inference_seedvr2_3b.py": "089de47cd576bfd51b63b77b8f430146ae85bdd98bc2076011f869e54e2922ee",
+    "projects/video_diffusion_sr/infer.py": "8a4034c343cb8bdc816dc6e5686f8843be2812d7cc77786160a12af272d885ae",
+    "requirements.txt": "6736a9df3d7bc11ea985e09c7ab5c8fdb2126b7a26de97182adad06e2ba043a9",
+    "environment.yml": "77a762ca60d759965fa601e67d81e6c1eaec596500c4bfdc887b6f4b9b87cc7c"
+  }
+}
